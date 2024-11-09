@@ -5,11 +5,11 @@
       "rel": "canonical"
     },
     {
-      "href": "../collection.json",
+      "href": "./collection.json",
       "rel": "parent"
     },
     {
-      "href": "../collection.json",
+      "href": "./collection.json",
       "rel": "collection"
     },
     {
