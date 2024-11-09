@@ -44,9 +44,9 @@
   "type": "Catalog",
   "id": "heystac",
   "title": "heystac",
-  "description": "A curated geospatial asset discovery experience™",
+  "description": "A curated geospatial asset discovery experience™\n\nEach collection has a single item, fetched regularly when we crawl the APIs.",
   "created": "2024-11-08T15:12:00+00:00",
-  "updated": "2024-11-09T16:38:25.562129+00:00",
+  "updated": "2024-11-09T17:09:00.661014+00:00",
   "license": "MIT",
   "providers": [
     {
