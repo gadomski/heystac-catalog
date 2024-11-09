@@ -30,10 +30,11 @@
       "rel": "root"
     },
     {
-      "href": "./S2B_MSIL2A_20241108T151639_R025_T21VUE_20241108T172005.json",
+      "href": "./S2B_MSIL2A_20241109T094119_R036_T36WXV_20241109T104333.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -47,7 +48,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-2-l2a",
-  "heystac:rating": 1,
   "title": "Sentinel-2 Level-2A",
   "assets": {
     "thumbnail": {

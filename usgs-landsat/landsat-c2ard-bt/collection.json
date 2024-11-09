@@ -21,6 +21,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 0,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -30,12 +31,11 @@
       "name": "validate-core",
       "rating": 0,
       "total": 1,
-      "message": "Validation failed for Collection with ID landsat-c2ard-bt against schema at https://schemas.stacspec.org/v1.0.0/collection-spec/json-schema/collection.json\n'https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/Landsat_Data_Policy.pdf' does not match '^[\\\\w\\\\-\\\\.\\\\+]+$'\n\nFailed validating 'pattern' in schema['allOf'][0]['properties']['license']:\n    {'title': 'Collection License Name',\n     'type': 'string',\n     'pattern': '^[\\\\w\\\\-\\\\.\\\\+]+$'}\n\nOn instance['license']:\n    'https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/Landsat_Data_Policy.pdf'"
+      "message": "Validation failed for Collection with ID landsat-c2ard-bt against schema at https://schemas.stacspec..."
     }
   ],
   "type": "Collection",
   "id": "landsat-c2ard-bt",
-  "heystac:rating": 0,
   "stac_version": "1.0.0",
   "stac_extensions": [
     "https://stac-extensions.github.io/view/v1.0.0/schema.json",

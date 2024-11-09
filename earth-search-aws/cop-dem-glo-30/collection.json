@@ -43,6 +43,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -56,7 +57,6 @@
   ],
   "type": "Collection",
   "id": "cop-dem-glo-30",
-  "heystac:rating": 1,
   "title": "Copernicus DEM GLO-30",
   "extent": {
     "spatial": {

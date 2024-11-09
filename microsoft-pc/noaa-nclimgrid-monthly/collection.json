@@ -47,6 +47,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -60,7 +61,6 @@
   ],
   "type": "Collection",
   "id": "noaa-nclimgrid-monthly",
-  "heystac:rating": 1,
   "title": "Monthly NOAA U.S. Climate Gridded Dataset (NClimGrid)",
   "assets": {
     "thumbnail": {

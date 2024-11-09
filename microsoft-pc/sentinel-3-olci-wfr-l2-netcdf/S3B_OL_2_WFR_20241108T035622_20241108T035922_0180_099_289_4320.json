@@ -1,0 +1,1290 @@
+{
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-olci-wfr-l2-netcdf/items/S3B_OL_2_WFR_20241108T035622_20241108T035922_0180_099_289_4320",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "parent"
+    },
+    {
+      "href": "../collection.json",
+      "rel": "collection"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root"
+    }
+  ],
+  "id": "S3B_OL_2_WFR_20241108T035622_20241108T035922_0180_099_289_4320",
+  "properties": {
+    "heystac:rating": 1,
+    "heystac:total": 1,
+    "heystac:stars": 5.0,
+    "heystac:checks": [
+      {
+        "name": "validate-core",
+        "rating": 1,
+        "total": 1
+      }
+    ],
+    "s3:gsd": 300,
+    "s3:land": 98.0,
+    "datetime": "2024-11-08T03:57:51.847428Z",
+    "platform": "Sentinel-3B",
+    "s3:coastal": 0.003044,
+    "s3:invalid": 1.0,
+    "instruments": [
+      "OLCI"
+    ],
+    "s3:cosmetic": 0.0,
+    "end_datetime": "2024-11-08T03:59:21.847428Z",
+    "s3:saturated": 0.0,
+    "constellation": "Sentinel-3",
+    "s3:duplicated": 1.578061,
+    "eo:cloud_cover": 68.0,
+    "start_datetime": "2024-11-08T03:56:21.847428Z",
+    "s3:product_name": "olci-wfr",
+    "s3:product_type": "OL_2_WFR___",
+    "s3:saline_water": 0.0,
+    "s3:tidal_region": 0.0,
+    "sat:orbit_state": "descending",
+    "s3:dubious_samples": 0.0,
+    "sat:absolute_orbit": 34056,
+    "sat:relative_orbit": 289,
+    "s3:fresh_inland_water": 0.0,
+    "s3:processing_timeliness": "NT",
+    "sat:platform_international_designator": "2018-039A"
+  },
+  "bbox": [
+    8.6257,
+    -83.9145,
+    68.6399,
+    -68.2269
+  ],
+  "type": "Feature",
+  "assets": {
+    "iwv": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/iwv.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 57130,
+      "file:checksum": "e1769c6130babec8d994a9b2560ccc12",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa18",
+          "description": "Band 18 - Water vapour absorption reference. Common reference band with SLSTR. Vegetation monitoring",
+          "center_wavelength": 0.885,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa19",
+          "description": "Band 19 - Water vapour absorption, vegetation monitoring (maximum REFLECTANCE)",
+          "center_wavelength": 0.9,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Integrated water vapour column"
+    },
+    "par": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/par.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 54729,
+      "file:checksum": "45b8d39abac0aed6156e933982604644",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Photosynthetically active radiation"
+    },
+    "trsp": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/trsp.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 54733,
+      "file:checksum": "1e1d92977e4ec373f29bf926ec34ea66",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa04",
+          "description": "Band 4 - Chlorophyll",
+          "center_wavelength": 0.49,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa06",
+          "description": "Band 6 - Chlorophyll reference (minimum)",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Transparency properties of water"
+    },
+    "wqsf": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/wqsf.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 1663288,
+      "file:checksum": "be811266da6823c320c697c55e4947b2",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Water quality and science flags"
+    },
+    "w-aer": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/w_aer.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 100070,
+      "file:checksum": "e78c639d05c0c621e193901b9338c84b",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa05",
+          "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide",
+          "center_wavelength": 0.51,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa06",
+          "description": "Band 6 - Chlorophyll reference (minimum)",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa17",
+          "description": "Band 17 - Atmospheric / aerosol correction, clouds, pixel co-registration",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Aerosol over water"
+    },
+    "chl-nn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/chl_nn.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 54749,
+      "file:checksum": "038409cef155fca190bebb0fa1a3e51f",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa01",
+          "description": "Band 1 - Aerosol correction, improved water constituent retrieval",
+          "center_wavelength": 0.4,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa02",
+          "description": "Band 2 - Yellow substance and detrital pigments (turbidity)",
+          "center_wavelength": 0.4125,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa03",
+          "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa04",
+          "description": "Band 4 - Chlorophyll",
+          "center_wavelength": 0.49,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa05",
+          "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide",
+          "center_wavelength": 0.51,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa06",
+          "description": "Band 6 - Chlorophyll reference (minimum)",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa07",
+          "description": "Band 7 - Sediment loading",
+          "center_wavelength": 0.62,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa08",
+          "description": "Band 8 - 2nd Chlorophyll absorption maximum, sediment, yellow substance / vegetation",
+          "center_wavelength": 0.665,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa09",
+          "description": "Band 9 - Improved fluorescence retrieval",
+          "center_wavelength": 0.67375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa10",
+          "description": "Band 10 - Chlorophyll fluorescence peak, red edge",
+          "center_wavelength": 0.68125,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa11",
+          "description": "Band 11 - Chlorophyll fluorescence baseline, red edge transition",
+          "center_wavelength": 0.70875,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa12",
+          "description": "Band 12 - O2 absorption / clouds, vegetation",
+          "center_wavelength": 0.75375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa16",
+          "description": "Band 16 - Atmospheric / aerosol correction",
+          "center_wavelength": 0.77875,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa17",
+          "description": "Band 17 - Atmospheric / aerosol correction, clouds, pixel co-registration",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        },
+        {
+          "name": "Oa18",
+          "description": "Band 18 - Water vapour absorption reference. Common reference band with SLSTR. Vegetation monitoring",
+          "center_wavelength": 0.885,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa21",
+          "description": "Band 21 - Water vapour absorption, atmospheric / aerosol correction",
+          "center_wavelength": 1.02,
+          "full_width_half_max": 0.04
+        }
+      ],
+      "description": "Neural net chlorophyll concentration"
+    },
+    "iop-nn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/iop_nn.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 54741,
+      "file:checksum": "9d299a36a99386751020796d983d2988",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa01",
+          "description": "Band 1 - Aerosol correction, improved water constituent retrieval",
+          "center_wavelength": 0.4,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa12",
+          "description": "Band 12 - O2 absorption / clouds, vegetation",
+          "center_wavelength": 0.75375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa16",
+          "description": "Band 16 - Atmospheric / aerosol correction",
+          "center_wavelength": 0.77875,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa17",
+          "description": "Band 17 - Atmospheric / aerosol correction, clouds, pixel co-registration",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        },
+        {
+          "name": "Oa21",
+          "description": "Band 21 - Water vapour absorption, atmospheric / aerosol correction",
+          "center_wavelength": 1.02,
+          "full_width_half_max": 0.04
+        }
+      ],
+      "description": "Inherent optical properties of water"
+    },
+    "tsm-nn": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/tsm_nn.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 54765,
+      "file:checksum": "0af00b9fede895cde946002fdd3d58b4",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa01",
+          "description": "Band 1 - Aerosol correction, improved water constituent retrieval",
+          "center_wavelength": 0.4,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa02",
+          "description": "Band 2 - Yellow substance and detrital pigments (turbidity)",
+          "center_wavelength": 0.4125,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa03",
+          "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa04",
+          "description": "Band 4 - Chlorophyll",
+          "center_wavelength": 0.49,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa05",
+          "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide",
+          "center_wavelength": 0.51,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa06",
+          "description": "Band 6 - Chlorophyll reference (minimum)",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa07",
+          "description": "Band 7 - Sediment loading",
+          "center_wavelength": 0.62,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa08",
+          "description": "Band 8 - 2nd Chlorophyll absorption maximum, sediment, yellow substance / vegetation",
+          "center_wavelength": 0.665,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa09",
+          "description": "Band 9 - Improved fluorescence retrieval",
+          "center_wavelength": 0.67375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa10",
+          "description": "Band 10 - Chlorophyll fluorescence peak, red edge",
+          "center_wavelength": 0.68125,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa11",
+          "description": "Band 11 - Chlorophyll fluorescence baseline, red edge transition",
+          "center_wavelength": 0.70875,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa12",
+          "description": "Band 12 - O2 absorption / clouds, vegetation",
+          "center_wavelength": 0.75375,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa16",
+          "description": "Band 16 - Atmospheric / aerosol correction",
+          "center_wavelength": 0.77875,
+          "full_width_half_max": 0.015
+        },
+        {
+          "name": "Oa17",
+          "description": "Band 17 - Atmospheric / aerosol correction, clouds, pixel co-registration",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        },
+        {
+          "name": "Oa18",
+          "description": "Band 18 - Water vapour absorption reference. Common reference band with SLSTR. Vegetation monitoring",
+          "center_wavelength": 0.885,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa21",
+          "description": "Band 21 - Water vapour absorption, atmospheric / aerosol correction",
+          "center_wavelength": 1.02,
+          "full_width_half_max": 0.04
+        }
+      ],
+      "description": "Total suspended matter concentration"
+    },
+    "chl-oc4me": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/chl_oc4me.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 54739,
+      "file:checksum": "6ef549a6f95f8cde121a1592f5fcdb0b",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa03",
+          "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa04",
+          "description": "Band 4 - Chlorophyll",
+          "center_wavelength": 0.49,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa05",
+          "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide",
+          "center_wavelength": 0.51,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa06",
+          "description": "Band 6 - Chlorophyll reference (minimum)",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "OC4Me algorithm chlorophyll concentration"
+    },
+    "tie-meteo": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/tie_meteo.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 18291568,
+      "file:checksum": "96356a5bd0fb4076447da56c29c632a3",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Tie-point meteo annotations"
+    },
+    "browse-jpg": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/browse.jpg",
+      "file:size": 13321,
+      "file:checksum": "9e08986ec0f98dfb150a6aecb30df961",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "description": "Preview image produced by the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)"
+    },
+    "eop-metadata": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/EOPMetadata.xml",
+      "file:size": 6182,
+      "file:checksum": "c2d5c04f35e80f5ccfcf7349b95d2fc0",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "Metadata produced by the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)"
+    },
+    "safe-manifest": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/xfdumanifest.xml",
+      "file:size": 322429,
+      "file:checksum": "4f83f1f8726efa028ed122d2340de0fd",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    },
+    "tie-geometries": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/tie_geometries.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 2294720,
+      "file:checksum": "c5606dc7db0bc17120431aa60d2e390b",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Tie-point geometry annotations"
+    },
+    "geo-coordinates": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/geo_coordinates.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 60465497,
+      "file:checksum": "34ef808747c2c93f7179c097c01d6c26",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Geo coordinate annotations"
+    },
+    "instrument-data": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/instrument_data.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 730882,
+      "file:checksum": "eab18da7b4793c234fc920bdfc3f4761",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Instrument annotations"
+    },
+    "oa01-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa01_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "932f9f3e7ee69f18417d7668698ec57b",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa01",
+          "description": "Band 1 - Aerosol correction, improved water constituent retrieval",
+          "center_wavelength": 0.4,
+          "full_width_half_max": 0.015
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa01"
+    },
+    "oa02-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa02_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "3d5b47efe681aad0dcb9330555f5892f",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa02",
+          "description": "Band 2 - Yellow substance and detrital pigments (turbidity)",
+          "center_wavelength": 0.4125,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa02"
+    },
+    "oa03-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa03_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "9e1b1c966c4a1b42803c621be90a0e5c",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa03",
+          "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa03"
+    },
+    "oa04-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa04_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "240f3ab1a9b02ea00d4c2b991dd43720",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa04",
+          "description": "Band 4 - Chlorophyll",
+          "center_wavelength": 0.49,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa04"
+    },
+    "oa05-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa05_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "648d4891df701a9543960852ab435423",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa05",
+          "description": "Band 5 - Chlorophyll, sediment, turbidity, red tide",
+          "center_wavelength": 0.51,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa05"
+    },
+    "oa06-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa06_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "17f36a824689e1e97c18cac28f509d04",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa06",
+          "description": "Band 6 - Chlorophyll reference (minimum)",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa06"
+    },
+    "oa07-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa07_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "c7d75222b5c6ef769661cc60c7b45c38",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa07",
+          "description": "Band 7 - Sediment loading",
+          "center_wavelength": 0.62,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa07"
+    },
+    "oa08-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa08_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "ea9054a5a6883df41209fc5cfb38b361",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa08",
+          "description": "Band 8 - 2nd Chlorophyll absorption maximum, sediment, yellow substance / vegetation",
+          "center_wavelength": 0.665,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa08"
+    },
+    "oa09-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa09_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "079bc77e0cd38f94214d6e00909bfadf",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa09",
+          "description": "Band 9 - Improved fluorescence retrieval",
+          "center_wavelength": 0.67375,
+          "full_width_half_max": 0.0075
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa09"
+    },
+    "oa10-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa10_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "23912943257d51be037808653a068d42",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa10",
+          "description": "Band 10 - Chlorophyll fluorescence peak, red edge",
+          "center_wavelength": 0.68125,
+          "full_width_half_max": 0.0075
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa10"
+    },
+    "oa11-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa11_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "43b6f411d5a9e9f204cc33b87a54cfcc",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa11",
+          "description": "Band 11 - Chlorophyll fluorescence baseline, red edge transition",
+          "center_wavelength": 0.70875,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa11"
+    },
+    "oa12-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa12_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "8488caf1f6ef13ecbe0bd44fa54cf6fe",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa12",
+          "description": "Band 12 - O2 absorption / clouds, vegetation",
+          "center_wavelength": 0.75375,
+          "full_width_half_max": 0.0075
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa12"
+    },
+    "oa16-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa16_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "cf9f1befe6745c517aefb6f22299b537",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa16",
+          "description": "Band 16 - Atmospheric / aerosol correction",
+          "center_wavelength": 0.77875,
+          "full_width_half_max": 0.015
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa16"
+    },
+    "oa17-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa17_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "dc90b96d8af0079b7603bc03eb20df50",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa17",
+          "description": "Band 17 - Atmospheric / aerosol correction, clouds, pixel co-registration",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa17"
+    },
+    "oa18-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa18_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "ae1fa9cf1a8eb477108aa3dce2c60b25",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa18",
+          "description": "Band 18 - Water vapour absorption reference. Common reference band with SLSTR. Vegetation monitoring",
+          "center_wavelength": 0.885,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa18"
+    },
+    "oa21-reflectance": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/Oa21_reflectance.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 74143,
+      "file:checksum": "a25dbf3b012c147c7481216f59f46d14",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa21",
+          "description": "Band 21 - Water vapour absorption, atmospheric / aerosol correction",
+          "center_wavelength": 1.02,
+          "full_width_half_max": 0.04
+        }
+      ],
+      "description": "Reflectance for OLCI acquisition band Oa21"
+    },
+    "time-coordinates": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/time_coordinates.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 15210,
+      "file:checksum": "22570019f25b2975cdecf11cdef2fa70",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Time coordinate annotations"
+    },
+    "tie-geo-coordinates": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_WFR___/2024/11/08/S3B_OL_2_WFR____20241108T035622_20241108T035922_20241109T101324_0180_099_289_4320_MAR_O_NT_003.SEN3/tie_geo_coordinates.nc",
+      "s3:shape": [
+        4090,
+        4865
+      ],
+      "file:size": 1327201,
+      "file:checksum": "9c937d07867c877e378c4e2989028b3e",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Tie-point geo coordinate annotations"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          8.6257,
+          -72.4924
+        ],
+        [
+          8.9503,
+          -73.1458
+        ],
+        [
+          9.2692,
+          -73.7524
+        ],
+        [
+          9.6145,
+          -74.3622
+        ],
+        [
+          9.9855,
+          -74.9686
+        ],
+        [
+          10.4003,
+          -75.5777
+        ],
+        [
+          10.8373,
+          -76.1824
+        ],
+        [
+          11.3082,
+          -76.7889
+        ],
+        [
+          11.8321,
+          -77.3935
+        ],
+        [
+          12.4089,
+          -77.9975
+        ],
+        [
+          13.0519,
+          -78.6007
+        ],
+        [
+          13.7602,
+          -79.2029
+        ],
+        [
+          14.5478,
+          -79.8011
+        ],
+        [
+          15.431,
+          -80.3974
+        ],
+        [
+          16.4342,
+          -80.994
+        ],
+        [
+          17.5719,
+          -81.5844
+        ],
+        [
+          18.8814,
+          -82.1752
+        ],
+        [
+          20.4201,
+          -82.7563
+        ],
+        [
+          22.204,
+          -83.3329
+        ],
+        [
+          24.3636,
+          -83.9145
+        ],
+        [
+          43.2411,
+          -82.4627
+        ],
+        [
+          55.3593,
+          -80.49
+        ],
+        [
+          63.2299,
+          -78.2569
+        ],
+        [
+          68.6399,
+          -75.8863
+        ],
+        [
+          66.3546,
+          -75.6125
+        ],
+        [
+          64.1732,
+          -75.3246
+        ],
+        [
+          62.0851,
+          -75.0155
+        ],
+        [
+          60.0887,
+          -74.6882
+        ],
+        [
+          58.1704,
+          -74.3439
+        ],
+        [
+          56.3329,
+          -73.9832
+        ],
+        [
+          54.577,
+          -73.6072
+        ],
+        [
+          52.9066,
+          -73.22
+        ],
+        [
+          51.3044,
+          -72.8183
+        ],
+        [
+          49.7703,
+          -72.4055
+        ],
+        [
+          48.3091,
+          -71.9803
+        ],
+        [
+          46.9133,
+          -71.5444
+        ],
+        [
+          45.5807,
+          -71.0964
+        ],
+        [
+          44.3003,
+          -70.6385
+        ],
+        [
+          43.0788,
+          -70.1765
+        ],
+        [
+          41.9047,
+          -69.6996
+        ],
+        [
+          40.784,
+          -69.2156
+        ],
+        [
+          39.7045,
+          -68.7209
+        ],
+        [
+          38.681,
+          -68.2269
+        ],
+        [
+          32.4041,
+          -69.7331
+        ],
+        [
+          25.2519,
+          -70.9814
+        ],
+        [
+          17.262,
+          -71.918
+        ],
+        [
+          8.6257,
+          -72.4924
+        ]
+      ]
+    ]
+  },
+  "collection": "sentinel-3-olci-wfr-l2-netcdf",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

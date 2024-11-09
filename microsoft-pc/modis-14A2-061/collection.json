@@ -55,10 +55,11 @@
       "rel": "root"
     },
     {
-      "href": "./MYD14A2.A2024297.h35v10.061.2024306175359.json",
+      "href": "./MYD14A2.A2024305.h21v00.061.2024313150309.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -72,7 +73,6 @@
   ],
   "type": "Collection",
   "id": "modis-14A2-061",
-  "heystac:rating": 1,
   "title": "MODIS Thermal Anomalies/Fire 8-Day",
   "assets": {
     "thumbnail": {

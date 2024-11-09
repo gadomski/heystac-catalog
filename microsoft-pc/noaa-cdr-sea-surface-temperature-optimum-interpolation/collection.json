@@ -45,6 +45,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -58,7 +59,6 @@
   ],
   "type": "Collection",
   "id": "noaa-cdr-sea-surface-temperature-optimum-interpolation",
-  "heystac:rating": 1,
   "title": "Sea Surface Temperature - Optimum Interpolation CDR",
   "assets": {
     "thumbnail": {

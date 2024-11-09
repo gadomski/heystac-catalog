@@ -55,10 +55,11 @@
       "rel": "root"
     },
     {
-      "href": "./MYD17A2H.A2024297.h35v10.061.2024306222320.json",
+      "href": "./MYD17A2H.A2024305.h19v00.061.2024313203500.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -72,7 +73,6 @@
   ],
   "type": "Collection",
   "id": "modis-17A2H-061",
-  "heystac:rating": 1,
   "title": "MODIS Gross Primary Productivity 8-Day",
   "assets": {
     "thumbnail": {

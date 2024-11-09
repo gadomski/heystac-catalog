@@ -37,10 +37,11 @@
       "rel": "root"
     },
     {
-      "href": "./S5P_L2_O3_____20241108T123718_20241108T124218_36648.json",
+      "href": "./S5P_L2_SO2____20241109T125218_20241109T125718_36662.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -54,7 +55,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-5p-l2-netcdf",
-  "heystac:rating": 1,
   "title": "Sentinel-5P Level-2",
   "assets": {
     "thumbnail": {

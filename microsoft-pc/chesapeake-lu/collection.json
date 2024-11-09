@@ -41,6 +41,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -54,7 +55,6 @@
   ],
   "type": "Collection",
   "id": "chesapeake-lu",
-  "heystac:rating": 1,
   "title": "Chesapeake Land Use",
   "assets": {
     "thumbnail": {

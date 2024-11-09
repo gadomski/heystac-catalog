@@ -37,10 +37,11 @@
       "rel": "root"
     },
     {
-      "href": "./S3B_SL_2_FRP_20241107T213925_20241107T214124_0119_099_285_5940.json",
+      "href": "./S3B_SL_2_FRP_20241108T211314_20241108T211513_0119_099_299_5940.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -54,7 +55,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-3-slstr-frp-l2-netcdf",
-  "heystac:rating": 1,
   "title": "Sentinel-3 Fire Radiative Power",
   "assets": {
     "thumbnail": {

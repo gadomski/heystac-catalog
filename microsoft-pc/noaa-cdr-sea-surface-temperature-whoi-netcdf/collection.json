@@ -45,6 +45,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -58,7 +59,6 @@
   ],
   "type": "Collection",
   "id": "noaa-cdr-sea-surface-temperature-whoi-netcdf",
-  "heystac:rating": 1,
   "title": "Sea Surface Temperature - WHOI CDR NetCDFs",
   "assets": {
     "thumbnail": {

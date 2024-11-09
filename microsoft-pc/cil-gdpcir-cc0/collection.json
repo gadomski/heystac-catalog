@@ -46,6 +46,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -59,7 +60,6 @@
   ],
   "type": "Collection",
   "id": "cil-gdpcir-cc0",
-  "heystac:rating": 1,
   "title": "CIL Global Downscaled Projections for Climate Impacts Research (CC0-1.0)",
   "assets": {
     "thumbnail": {

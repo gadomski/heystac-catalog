@@ -55,10 +55,11 @@
       "rel": "root"
     },
     {
-      "href": "./MYD11A1.A2024311.h35v10.061.2024312185027.json",
+      "href": "./MYD11A1.A2024312.h35v10.061.2024313185751.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -72,7 +73,6 @@
   ],
   "type": "Collection",
   "id": "modis-11A1-061",
-  "heystac:rating": 1,
   "title": "MODIS Land Surface Temperature/Emissivity Daily",
   "assets": {
     "thumbnail": {

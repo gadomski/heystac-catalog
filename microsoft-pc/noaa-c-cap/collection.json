@@ -53,6 +53,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -66,7 +67,6 @@
   ],
   "type": "Collection",
   "id": "noaa-c-cap",
-  "heystac:rating": 1,
   "title": "C-CAP Regional Land Cover and Change",
   "assets": {
     "boundary": {

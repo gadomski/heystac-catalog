@@ -55,10 +55,11 @@
       "rel": "root"
     },
     {
-      "href": "./MOD13A1.A2024289.h35v10.061.2024306175730.json",
+      "href": "./MYD13A1.A2024297.h21v00.061.2024313150752.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -72,7 +73,6 @@
   ],
   "type": "Collection",
   "id": "modis-13A1-061",
-  "heystac:rating": 1,
   "title": "MODIS Vegetation Indices 16-Day (500m)",
   "assets": {
     "thumbnail": {

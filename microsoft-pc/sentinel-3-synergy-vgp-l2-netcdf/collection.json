@@ -37,10 +37,11 @@
       "rel": "root"
     },
     {
-      "href": "./S3B_SY_2_VGP_20241106T173649_20241106T182106_2657_099_269.json",
+      "href": "./S3A_SY_2_VGP_20241107T042132_20241107T050549_2657_119_033.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -54,7 +55,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-3-synergy-vgp-l2-netcdf",
-  "heystac:rating": 1,
   "title": "Sentinel-3 Top of Atmosphere Reflectance (SPOT VEGETATION)",
   "assets": {
     "thumbnail": {

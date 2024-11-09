@@ -44,10 +44,11 @@
       "rel": "root"
     },
     {
-      "href": "./S2B_5KKA_20241108_0_L2A.json",
+      "href": "./S2B_24WWV_20241109_0_L2A.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -61,7 +62,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-2-l2a",
-  "heystac:rating": 1,
   "stac_version": "1.0.0",
   "title": "Sentinel-2 Level-2A",
   "description": "Global Sentinel-2 data from the Multispectral Instrument (MSI) onboard Sentinel-2",

@@ -28,13 +28,25 @@
       "heystac:id": "usgs-landsat"
     }
   ],
+  "heystac:rating": 1,
+  "heystac:cumulative_rating": 214,
+  "heystac:total": 1,
+  "heystac:cumulative_total": 285,
+  "heystac:stars": 3.754385964912281,
+  "heystac:checks": [
+    {
+      "name": "validate-core",
+      "rating": 1,
+      "total": 1
+    }
+  ],
   "stac_version": "1.0.0",
   "type": "Catalog",
   "id": "heystac",
   "title": "heystac",
   "description": "A curated geospatial asset discovery experience™",
   "created": "2024-11-08T15:12:00+00:00",
-  "updated": "2024-11-08T22:50:54.822241+00:00",
+  "updated": "2024-11-09T16:38:25.562129+00:00",
   "license": "MIT",
   "providers": [
     {

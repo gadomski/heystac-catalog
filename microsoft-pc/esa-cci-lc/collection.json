@@ -69,6 +69,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -82,7 +83,6 @@
   ],
   "type": "Collection",
   "id": "esa-cci-lc",
-  "heystac:rating": 1,
   "title": "ESA Climate Change Initiative Land Cover Maps (Cloud Optimized GeoTIFF)",
   "assets": {
     "thumbnail": {

@@ -37,10 +37,11 @@
       "rel": "root"
     },
     {
-      "href": "./S3B_SY_2_AOD_20241107T084545_20241107T093003_2658_099_278.json",
+      "href": "./S3B_SY_2_AOD_20241108T200637_20241108T205054_2657_099_299.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -54,7 +55,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-3-synergy-aod-l2-netcdf",
-  "heystac:rating": 1,
   "title": "Sentinel-3 Global Aerosol",
   "assets": {
     "thumbnail": {

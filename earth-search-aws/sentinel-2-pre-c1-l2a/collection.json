@@ -48,6 +48,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -61,7 +62,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-2-pre-c1-l2a",
-  "heystac:rating": 1,
   "title": "Sentinel-2 Pre-Collection 1 Level-2A ",
   "description": "Sentinel-2 Pre-Collection 1 Level-2A (baseline < 05.00), with data and metadata matching collection sentinel-2-c1-l2a",
   "stac_version": "1.0.0",

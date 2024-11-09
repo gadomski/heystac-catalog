@@ -53,6 +53,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -66,7 +67,6 @@
   ],
   "type": "Collection",
   "id": "drcog-lulc",
-  "heystac:rating": 1,
   "title": "Denver Regional Council of Governments Land Use Land Cover",
   "assets": {
     "thumbnail": {

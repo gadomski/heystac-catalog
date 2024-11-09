@@ -30,10 +30,11 @@
       "rel": "root"
     },
     {
-      "href": "./S1A_IW_GRDH_1SDV_20241108T055512_20241108T055539_056459_06EB6C.json",
+      "href": "./S1A_IW_GRDH_1SDV_20241109T050854_20241109T050911_056473_06EBF9.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -47,7 +48,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-1-grd",
-  "heystac:rating": 1,
   "title": "Sentinel 1 Level-1 Ground Range Detected (GRD)",
   "assets": {
     "thumbnail": {

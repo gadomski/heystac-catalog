@@ -40,6 +40,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -53,7 +54,6 @@
   ],
   "type": "Collection",
   "id": "nasa-nex-gddp-cmip6",
-  "heystac:rating": 1,
   "title": "Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6)",
   "assets": {
     "thumbnail": {

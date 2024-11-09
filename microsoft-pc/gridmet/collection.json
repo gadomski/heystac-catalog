@@ -31,6 +31,7 @@
       "rel": "root"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 1,
@@ -44,7 +45,6 @@
   ],
   "type": "Collection",
   "id": "gridmet",
-  "heystac:rating": 1,
   "title": "gridMET",
   "assets": {
     "thumbnail": {

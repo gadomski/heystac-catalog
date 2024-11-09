@@ -59,6 +59,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -72,7 +73,6 @@
   ],
   "type": "Collection",
   "id": "modis-16A3GF-061",
-  "heystac:rating": 1,
   "title": "MODIS Net Evapotranspiration Yearly Gap-Filled",
   "assets": {
     "thumbnail": {

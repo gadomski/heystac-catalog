@@ -39,6 +39,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -52,7 +53,6 @@
   ],
   "type": "Collection",
   "id": "usda-cdl",
-  "heystac:rating": 1,
   "title": "USDA Cropland Data Layers (CDLs)",
   "assets": {
     "thumbnail": {

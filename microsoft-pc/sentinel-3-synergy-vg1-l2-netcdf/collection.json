@@ -37,10 +37,11 @@
       "rel": "root"
     },
     {
-      "href": "./S3B_SY_2_VG1_20241105T000000_20241105T235959_EUROPE.json",
+      "href": "./S3B_SY_2_VG1_20241106T000000_20241106T235959_EUROPE.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -54,7 +55,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-3-synergy-vg1-l2-netcdf",
-  "heystac:rating": 1,
   "title": "Sentinel-3 1-Day Surface Reflectance and NDVI (SPOT VEGETATION)",
   "assets": {
     "thumbnail": {

@@ -34,6 +34,7 @@
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 1,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -47,7 +48,6 @@
   ],
   "type": "Collection",
   "id": "3dep-lidar-dtm-native",
-  "heystac:rating": 1,
   "title": "USGS 3DEP Lidar Digital Terrain Model (Native)",
   "assets": {
     "thumbnail": {

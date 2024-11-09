@@ -44,10 +44,11 @@
       "rel": "root"
     },
     {
-      "href": "./S1A_EW_GRDM_1SDH_20241108T202153_20241108T202217_056468_06EBC8.json",
+      "href": "./S1A_IW_GRDH_1SSH_20241109T135712_20241109T135732_056478_06EC39.json",
       "rel": "item"
     }
   ],
+  "heystac:rating": 1,
   "heystac:cumulative_rating": 2,
   "heystac:total": 1,
   "heystac:cumulative_total": 2,
@@ -61,7 +62,6 @@
   ],
   "type": "Collection",
   "id": "sentinel-1-grd",
-  "heystac:rating": 1,
   "title": "Sentinel-1 Level-1C Ground Range Detected (GRD)",
   "description": "Sentinel-1 is a pair of Synthetic Aperture Radar (SAR) imaging satellites launched in 2014 and 2016 by the European Space Agency (ESA). Their 6 day revisit cycle and ability to observe through clouds makes this dataset perfect for sea and land monitoring, emergency response due to environmental disasters, and economic applications. This dataset represents the global Sentinel-1 GRD archive, from beginning to the present, converted to cloud-optimized GeoTIFF format.",
   "extent": {
