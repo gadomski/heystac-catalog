@@ -569,21 +569,21 @@
   "title": "Microsoft Planetary Computer",
   "description": "Searchable spatiotemporal metadata describing Earth science datasets hosted by the Microsoft Planetary Computer",
   "conformsTo": [
-    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+    "http://www.opengis.net/spec/cql2/1.0/conf/basic-cql2",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+    "http://www.opengis.net/spec/cql2/1.0/conf/cql2-text",
+    "http://www.opengis.net/spec/ogcapi-features-3/1.0/conf/filter",
     "https://api.stacspec.org/v1.0.0-rc.2/item-search#filter",
-    "https://api.stacspec.org/v1.0.0/collections",
     "https://api.stacspec.org/v1.0.0/item-search",
+    "https://api.stacspec.org/v1.0.0/item-search#fields",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
     "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
+    "http://www.opengis.net/spec/cql2/1.0/conf/cql2-json",
     "https://api.stacspec.org/v1.0.0/item-search#query",
     "https://api.stacspec.org/v1.0.0/item-search#sort",
-    "http://www.opengis.net/spec/cql2/1.0/conf/cql2-text",
-    "http://www.opengis.net/spec/cql2/1.0/conf/basic-cql2",
     "https://api.stacspec.org/v1.0.0/ogcapi-features",
-    "https://api.stacspec.org/v1.0.0/item-search#fields",
-    "http://www.opengis.net/spec/cql2/1.0/conf/cql2-json",
     "https://api.stacspec.org/v1.0.0/core",
-    "http://www.opengis.net/spec/ogcapi-features-3/1.0/conf/filter",
-    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30"
+    "https://api.stacspec.org/v1.0.0/collections"
   ],
   "stac_extensions": []
 }
