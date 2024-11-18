@@ -1,4 +1,10 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "fws-nwi",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/fws-nwi/items",
@@ -7,33 +13,33 @@
     },
     {
       "href": "https://www.fws.gov/wetlands/Data/metadata/FWS_Wetlands.xml",
-      "title": "Wetlands metadata",
       "rel": "describedby",
-      "type": "application/xml"
+      "type": "application/xml",
+      "title": "Wetlands metadata"
     },
     {
       "href": "https://www.fws.gov/sites/default/files/documents/national-wetlands-inventory-fact-sheet.pdf",
-      "title": "Project Fact Sheet",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Project Fact Sheet"
     },
     {
       "href": "https://www.fws.gov/program/national-wetlands-inventory",
-      "title": "Project Landing Page",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Project Landing Page"
     },
     {
       "href": "http://www.usa.gov/publicdomain/label/1.0/",
-      "title": "US Public Domain",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "US Public Domain"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/fws-nwi",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/fws-nwi",
@@ -42,31 +48,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./WY.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "fws-nwi",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "FWS National Wetlands Inventory",
   "assets": {
     "thumbnail": {
@@ -263,11 +270,7 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "fws-nwi",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
-  ],
   "msft:storage_account": "ai4edataeuwest",
   "msft:short_description": "Vector dataset containing wetlands boundaries and identification across the United States.",
   "msft:region": "westeurope"

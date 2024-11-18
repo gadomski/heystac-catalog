@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "UKESM1-0-LL.ssp585.2100",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasa-nex-gddp-cmip6/items/UKESM1-0-LL.ssp585.2100",
@@ -7,30 +13,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "UKESM1-0-LL.ssp585.2100",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID UKESM1-0-LL.ssp585.2100 against schema at https://schemas.stac..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.440745",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID UKESM1-0-LL.ssp585.2100 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "cmip6:year": 2100,
     "cmip6:model": "UKESM1-0-LL",
     "end_datetime": "2100-12-30T12:00:00Z",
@@ -293,7 +307,6 @@
     180,
     90
   ],
-  "type": "Feature",
   "assets": {
     "pr": {
       "href": "https://nasagddp.blob.core.windows.net/nex-gddp-cmip6/NEX/GDDP-CMIP6/UKESM1-0-LL/ssp585/r1i1p1f2/pr/pr_day_UKESM1-0-LL_ssp585_r1i1p1f2_gn_2100.nc",
@@ -395,9 +408,5 @@
       ]
     ]
   },
-  "collection": "nasa-nex-gddp-cmip6",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "nasa-nex-gddp-cmip6"
 }

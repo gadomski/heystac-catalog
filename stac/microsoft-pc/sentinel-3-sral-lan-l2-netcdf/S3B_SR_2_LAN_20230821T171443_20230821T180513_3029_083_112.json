@@ -1,4 +1,11 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "S3B_SR_2_LAN_20230821T171443_20230821T180513_3029_083_112",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-sral-lan-l2-netcdf/items/S3B_SR_2_LAN_20230821T171443_20230821T180513_3029_083_112",
@@ -7,35 +14,37 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "S3B_SR_2_LAN_20230821T171443_20230821T180513_3029_083_112",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
+    "datetime": "2023-08-21T17:39:57.999194Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "s3:gsd": {
       "along-track": 300,
       "across-track": 1640
     },
     "s3:land": 46.0,
-    "datetime": "2023-08-21T17:39:57.999194Z",
     "platform": "Sentinel-3B",
     "instruments": [
       "SRAL"
@@ -62,7 +71,6 @@
     180.0,
     81.4246
   ],
-  "type": "Feature",
   "assets": {
     "safe-manifest": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SRAL/SR_2_LAN___/2023/08/21/S3B_SR_2_LAN____20230821T171443_20230821T180513_20230914T210451_3029_083_112______PS2_O_NT_004.SEN3/xfdumanifest.xml",
@@ -986,10 +994,5 @@
       ]
     ]
   },
-  "collection": "sentinel-3-sral-lan-l2-netcdf",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "sentinel-3-sral-lan-l2-netcdf"
 }

@@ -1,34 +1,41 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "2006_2020-seasonal-4",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/prcp-2006_2020-monthly-normals-v1.0",
-      "title": "Source NetCDF File from NOAA NCEI",
       "rel": "derived_from",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "Source NetCDF File from NOAA NCEI"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/tavg-2006_2020-monthly-normals-v1.0",
-      "title": "Source NetCDF File from NOAA NCEI",
       "rel": "derived_from",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "Source NetCDF File from NOAA NCEI"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/tmax-2006_2020-monthly-normals-v1.0",
-      "title": "Source NetCDF File from NOAA NCEI",
       "rel": "derived_from",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "Source NetCDF File from NOAA NCEI"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/tmin-2006_2020-monthly-normals-v1.0",
-      "title": "Source NetCDF File from NOAA NCEI",
       "rel": "derived_from",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "Source NetCDF File from NOAA NCEI"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-climate-normals-gridded&item=2006_2020-seasonal-4",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-gridded/items/2006_2020-seasonal-4",
@@ -37,30 +44,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "2006_2020-seasonal-4",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID 2006_2020-seasonal-4 against schema at https://schemas.stacspe..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.473642",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID 2006_2020-seasonal-4 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "title": "2006-2020 Seasonal Climate Normals for Fall (Sep-Oct-Nov)",
     "created": "2023-01-11T20:13:58.656543Z",
     "proj:epsg": 4326,
@@ -88,7 +103,6 @@
     -66.999995,
     49.375001
   ],
-  "type": "Feature",
   "assets": {
     "prcp_max": {
       "href": "https://noaanormals.blob.core.windows.net/gridded-normals-cogs/normals-seasonal/2006-2020/2006_2020-seasonal-4-prcp_max.tif",
@@ -455,10 +469,5 @@
       ]
     ]
   },
-  "collection": "noaa-climate-normals-gridded",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "noaa-climate-normals-gridded"
 }

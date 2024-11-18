@@ -1,10 +1,17 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "MYD21A2.A2024305.h35v10.061.2024317195931",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=modis-21A2-061&item=MYD21A2.A2024305.h35v10.061.2024317195931",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-21A2-061/items/MYD21A2.A2024305.h35v10.061.2024317195931",
@@ -13,30 +20,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "MYD21A2.A2024305.h35v10.061.2024317195931",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID MYD21A2.A2024305.h35v10.061.2024317195931 against schema at ht..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.457175",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID MYD21A2.A2024305.h35v10.061.2024317195931 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "created": "2024-11-12T19:59:31Z",
     "updated": "2024-11-12T14:01:32.300000Z",
     "platform": "",
@@ -93,7 +108,6 @@
     180.1436,
     -9.9753
   ],
-  "type": "Feature",
   "assets": {
     "hdf": {
       "href": "https://modiseuwest.blob.core.windows.net/modis-061/MYD21A2/35/10/2024305/MYD21A2.A2024305.h35v10.061.2024317195931.hdf",
@@ -323,10 +337,5 @@
       ]
     ]
   },
-  "collection": "modis-21A2-061",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "modis-21A2-061"
 }

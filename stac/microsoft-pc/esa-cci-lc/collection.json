@@ -1,4 +1,14 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "esa-cci-lc",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/classification/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-cci-lc/items",
@@ -7,49 +17,50 @@
     },
     {
       "href": "https://cds.climate.copernicus.eu/api/v2/terms/static/satellite-land-cover.pdf",
-      "title": "ESA CCI license",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "ESA CCI license"
     },
     {
       "href": "https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf",
-      "title": "COPERNICUS license",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "COPERNICUS license"
     },
     {
       "href": "https://cds.climate.copernicus.eu/api/v2/terms/static/vito-proba-v.pdf",
-      "title": "VITO License",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "VITO License"
     },
     {
       "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-land-cover",
-      "title": "Product Landing Page",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Product Landing Page"
     },
     {
       "href": "https://datastore.copernicus-climate.eu/documents/satellite-land-cover/D5.3.1_PUGS_ICDR_LC_v2.1.x_PRODUCTS_v1.1.pdf",
-      "title": "Product user guide for version 2.1",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Product user guide for version 2.1"
     },
     {
       "href": "https://datastore.copernicus-climate.eu/documents/satellite-land-cover/D3.3.11-v1.0_PUGS_CDR_LC-CCI_v2.0.7cds_Products_v1.0.1_APPROVED_Ver1.pdf",
-      "title": "Product user guide for version 2.0",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Product user guide for version 2.0"
     },
     {
       "href": "https://doi.org/10.24381/cds.006f2c9a",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/esa-cci-lc",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-cci-lc",
@@ -58,31 +69,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "esa-cci-lc",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "ESA Climate Change Initiative Land Cover Maps (Cloud Optimized GeoTIFF)",
   "assets": {
     "thumbnail": {
@@ -564,16 +576,8 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "esa-cci-lc",
   "msft:container": "esa-cci-lc",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/classification/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
-  ],
   "msft:storage_account": "landcoverdata",
   "msft:short_description": "Tiled ESA CCI global land cover maps in COG format",
   "msft:region": "westeurope"

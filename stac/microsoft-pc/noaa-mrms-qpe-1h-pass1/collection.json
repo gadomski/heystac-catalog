@@ -1,4 +1,12 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "noaa-mrms-qpe-1h-pass1",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/noaa-mrms-qpe/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-mrms-qpe-1h-pass1/items",
@@ -7,27 +15,27 @@
     },
     {
       "href": "https://www.nssl.noaa.gov/projects/mrms/nmq_data_policy_OGCrevised.pdf",
-      "title": "MRMS Dataset Sharing Policy",
       "rel": "license",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "MRMS Dataset Sharing Policy"
     },
     {
       "href": "https://mrms.nssl.noaa.gov",
-      "title": "MRMS Homepage",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "MRMS Homepage"
     },
     {
       "href": "https://vlab.noaa.gov/web/wdtd/-/multi-sensor-qpe-1?selectedFolder=9234881",
-      "title": "MRMS QPE Technical Product Guide",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "MRMS QPE Technical Product Guide"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/noaa-mrms-qpe-1h-pass1",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-mrms-qpe-1h-pass1",
@@ -36,31 +44,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
-      "href": "./HAWAII_MRMS_MultiSensor_QPE_01H_Pass1_00.00_20241115-180000.json",
-      "rel": "item"
+      "href": "./HAWAII_MRMS_MultiSensor_QPE_01H_Pass1_00.00_20241118-180000.json",
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "noaa-mrms-qpe-1h-pass1",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "NOAA MRMS QPE 1-Hour Pass 1",
   "assets": {
     "thumbnail": {
@@ -213,14 +222,8 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "noaa-mrms-qpe",
   "msft:container": "mrms-cogs",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/noaa-mrms-qpe/v1.0.0/schema.json"
-  ],
   "msft:storage_account": "mrms",
   "msft:short_description": "Integrated multi-sensor cumulative precipation estimate for the past hour with a 1-hour latency.",
   "msft:region": "westeurope"

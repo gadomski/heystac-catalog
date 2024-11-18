@@ -1,10 +1,16 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "hgb",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=hgb&item=hgb",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/hgb/items/hgb",
@@ -13,30 +19,32 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "hgb",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
     "datetime": "2010-12-31T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "proj:bbox": [
       -180.00000000000006,
       -61.002777777777894,
@@ -66,7 +74,6 @@
     180.0,
     84.0
   ],
-  "type": "Feature",
   "assets": {
     "aboveground": {
       "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/2010-harmonized-biomass/global/300m/aboveground.tif",
@@ -145,9 +152,5 @@
       ]
     ]
   },
-  "collection": "hgb",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "hgb"
 }

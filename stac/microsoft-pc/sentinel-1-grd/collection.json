@@ -1,4 +1,13 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "sentinel-1-grd",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd/items",
@@ -7,14 +16,15 @@
     },
     {
       "href": "https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
-      "title": "Copernicus Sentinel data terms",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "Copernicus Sentinel data terms"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-grd",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-grd",
@@ -23,31 +33,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
-      "href": "./S1A_IW_GRDH_1SDV_20241115T054752_20241115T054811_056561_06EF7F.json",
-      "rel": "item"
+      "href": "./S1A_IW_GRDH_1SDV_20241118T061311_20241118T061329_056605_06F14B.json",
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "sentinel-1-grd",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "Sentinel 1 Level-1 Ground Range Detected (GRD)",
   "assets": {
     "thumbnail": {
@@ -392,15 +403,8 @@
       "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration."
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "sentinel-1",
   "msft:container": "s1-grd",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "sentinel1euwest",
   "msft:short_description": "Sentinel-1 Level-1 Ground Range Detected (GRD) products consist of focused SAR data that has been detected, multi-looked and projected to ground range using an Earth ellipsoid model.",
   "msft:region": "westeurope"

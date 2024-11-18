@@ -1,52 +1,45 @@
 {
+  "type": "Catalog",
+  "stac_version": "1.0.0",
+  "id": "heystac",
+  "stac_extensions": [],
   "links": [
     {
-      "href": "https://www.gadom.ski/heystac/catalog.json",
-      "title": "heystac",
-      "rel": "self",
+      "href": "./catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./usgs-landsat/catalog.json",
+      "rel": "child",
       "type": "application/json"
     },
     {
       "href": "./microsoft-pc/catalog.json",
-      "title": "Microsoft Planetary Computer",
       "rel": "child",
-      "type": "application/json",
-      "heystac:id": "microsoft-pc"
+      "type": "application/json"
     },
     {
       "href": "./earth-search-aws/catalog.json",
-      "title": "Earth Search by Element 84",
       "rel": "child",
-      "type": "application/json",
-      "heystac:id": "earth-search-aws"
-    },
-    {
-      "href": "./usgs-landsat/catalog.json",
-      "title": "USGS Landsat",
-      "rel": "child",
-      "type": "application/json",
-      "heystac:id": "usgs-landsat"
+      "type": "application/json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 214,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 285,
-  "heystac:stars": 3.754385964912281,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "stac_version": "1.0.0",
-  "type": "Catalog",
-  "id": "heystac",
   "title": "heystac",
+  "heystac:rating": {
+    "stars": 4.323880176791824,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 10.0,
+    "total": 10,
+    "aggregate_score": 3875.9261904761906,
+    "aggregate_total": 4482
+  },
   "description": "A curated geospatial asset discovery experience™\n\nEach collection has a single item, fetched regularly when we crawl the APIs.",
-  "created": "2024-11-08T15:12:00+00:00",
-  "updated": "2024-11-09T17:09:00.661014+00:00",
+  "created": "2024-11-08T08:12:00-07:00",
   "license": "MIT",
   "providers": [
     {

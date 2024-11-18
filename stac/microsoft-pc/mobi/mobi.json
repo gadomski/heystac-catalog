@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "mobi",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/mobi/items/mobi",
@@ -7,30 +13,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "mobi",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
     "datetime": "2020-04-14T00:00:00Z",
+    "heystac:rating": {
+      "stars": 4.5,
+      "issues": {
+        "high": [],
+        "medium": [
+          {
+            "rule_id": "validate-extensions",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID mobi against schema at https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+          }
+        ],
+        "low": []
+      },
+      "score": 18.0,
+      "total": 20
+    },
     "proj:bbox": [
       -2493045.0,
       176655.0,
@@ -60,7 +74,6 @@
     -63.66198266211968,
     49.184200486300604
   ],
-  "type": "Feature",
   "assets": {
     "RSR_All": {
       "href": "https://ai4edataeuwest.blob.core.windows.net/mobi/spatial_data/RSR_All.tif",
@@ -225,9 +238,5 @@
       ]
     ]
   },
-  "collection": "mobi",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "mobi"
 }

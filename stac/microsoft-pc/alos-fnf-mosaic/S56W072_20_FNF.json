@@ -1,10 +1,17 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "S56W072_20_FNF",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-fnf-mosaic&item=S56W072_20_FNF",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/alos-fnf-mosaic/items/S56W072_20_FNF",
@@ -13,32 +20,34 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "S56W072_20_FNF",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
+    "datetime": "2020-01-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "gsd": 25,
     "title": "S56W072_20_FNF",
-    "datetime": "2020-01-01T00:00:00Z",
     "platform": "ALOS-2",
     "proj:bbox": [
       -72.0,
@@ -75,7 +84,6 @@
     -71.0,
     -56.0
   ],
-  "type": "Feature",
   "assets": {
     "C": {
       "href": "https://pceo.blob.core.windows.net/palsar/v200/alos_fnf_mosaic/2020/S55W075/S56W072_20_C.tif",
@@ -163,10 +171,5 @@
       ]
     ]
   },
-  "collection": "alos-fnf-mosaic",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "alos-fnf-mosaic"
 }

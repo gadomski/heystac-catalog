@@ -1,14 +1,22 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "90W_80Nv1_3_2020",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://doi.org/10.1038/nature20584",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=jrc-gsw&item=90W_80Nv1_3_2020",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/jrc-gsw/items/90W_80Nv1_3_2020",
@@ -17,31 +25,33 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "90W_80Nv1_3_2020",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
-    "sci:doi": "10.1038/nature20584",
     "datetime": "2020-07-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
+    "sci:doi": "10.1038/nature20584",
     "proj:bbox": [
       -90.0,
       70.0,
@@ -71,7 +81,6 @@
     -80.0,
     80.0
   ],
-  "type": "Feature",
   "assets": {
     "change": {
       "href": "https://ai4edataeuwest.blob.core.windows.net/jrcglobalwater/change/change_90W_80Nv1_3_2020cog.tif",
@@ -174,10 +183,5 @@
       ]
     ]
   },
-  "collection": "jrc-gsw",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "jrc-gsw"
 }

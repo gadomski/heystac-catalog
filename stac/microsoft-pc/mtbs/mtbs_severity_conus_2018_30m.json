@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "mtbs_severity_conus_2018_30m",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/mtbs/items/mtbs_severity_conus_2018_30m",
@@ -7,30 +13,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "mtbs_severity_conus_2018_30m",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
     "datetime": "2018-12-31T00:00:00Z",
+    "heystac:rating": {
+      "stars": 4.5,
+      "issues": {
+        "high": [],
+        "medium": [
+          {
+            "rule_id": "validate-extensions",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID mtbs_severity_conus_2018_30m against schema at https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+          }
+        ],
+        "low": []
+      },
+      "score": 18.0,
+      "total": 20
+    },
     "proj:bbox": [
       -2298465.0,
       985335.0,
@@ -49,7 +63,6 @@
     -98.23213521170842,
     50.870717610255156
   ],
-  "type": "Feature",
   "assets": {
     "metadata": {
       "href": "https://cpdataeuwest.blob.core.windows.net/cpdata/raw/mtbs/conus/30m/severity/2018.htm",
@@ -106,9 +119,5 @@
       ]
     ]
   },
-  "collection": "mtbs",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "mtbs"
 }

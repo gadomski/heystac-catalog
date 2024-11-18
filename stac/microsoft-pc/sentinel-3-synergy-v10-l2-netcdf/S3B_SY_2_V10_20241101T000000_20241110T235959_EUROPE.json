@@ -1,4 +1,12 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "S3B_SY_2_V10_20241101T000000_20241110T235959_EUROPE",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-synergy-v10-l2-netcdf/items/S3B_SY_2_V10_20241101T000000_20241110T235959_EUROPE",
@@ -7,29 +15,32 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "S3B_SY_2_V10_20241101T000000_20241110T235959_EUROPE",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
+    "datetime": "2024-11-05T23:59:59.500000Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "s3:gsd": {
       "OLCI": 300,
       "SLSTR": {
@@ -38,7 +49,6 @@
       }
     },
     "s3:land": 62.50076,
-    "datetime": "2024-11-05T23:59:59.500000Z",
     "platform": "Sentinel-3B",
     "instruments": [
       "OLCI",
@@ -63,7 +73,6 @@
     62.0,
     75.0
   ],
-  "type": "Feature",
   "assets": {
     "ag": {
       "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/SYNERGY/SY_2_V10___/2024/11/01/S3B_SY_2_V10____20241101T000000_20241110T235959_20241113T141450_EUROPE____________PS2_O_NT_002.SEN3/ag.nc",
@@ -1569,11 +1578,5 @@
       ]
     ]
   },
-  "collection": "sentinel-3-synergy-v10-l2-netcdf",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "sentinel-3-synergy-v10-l2-netcdf"
 }

@@ -1,22 +1,29 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "naip",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://www.fsa.usda.gov/help/policies-and-links/",
-      "title": "Public Domain",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Public Domain"
     },
     {
       "href": "https://doi.org/10.5066/F7QN651G",
-      "title": "NAIP Overview",
       "rel": "cite-as",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "NAIP Overview"
     },
     {
       "href": "https://doi.org/10.14358/PERS.83.10.737",
-      "title": "Publication",
       "rel": "cite-as",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Publication"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/naip/items",
@@ -31,7 +38,8 @@
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/naip/aggregate",
       "rel": "aggregate",
-      "type": "application/json"
+      "type": "application/json",
+      "method": "GET"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/naip/aggregations",
@@ -45,31 +53,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./ny_m_4207710_sw_18_060_20221126.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "naip",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "description": "The [National Agriculture Imagery Program](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/) (NAIP) provides U.S.-wide, high-resolution aerial imagery, with four spectral bands (R, G, B, IR).  NAIP is administered by the [Aerial Field Photography Office](https://www.fsa.usda.gov/programs-and-services/aerial-photography/) (AFPO) within the [US Department of Agriculture](https://www.usda.gov/) (USDA).  Data are captured at least once every three years for each state.  This dataset represents NAIP data from 2010-present, in [cloud-optimized GeoTIFF](https://www.cogeo.org/) format.\n",
   "title": "NAIP: National Agriculture Imagery Program",
   "extent": {
@@ -202,10 +211,5 @@
       "doi": "10.14358/PERS.83.10.737",
       "citation": "Maxwell, A. E., Warner, T. A., Vanderbilt, B. C., &amp; Ramezan, C. A. (2017). Land cover classification and feature extraction from National Agriculture Imagery Program (NAIP) orthoimagery: A Review. Photogrammetric Engineering &amp; Remote Sensing, 83(11), 737-747. https://doi.org/10.14358/pers.83.10.737"
     }
-  ],
-  "stac_version": "1.0.0",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
   ]
 }

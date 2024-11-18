@@ -1,10 +1,19 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ESA_WorldCover_10m_2021_v200_S60W030",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=esa-worldcover&item=ESA_WorldCover_10m_2021_v200_S60W030",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-worldcover/items/ESA_WorldCover_10m_2021_v200_S60W030",
@@ -13,30 +22,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "ESA_WorldCover_10m_2021_v200_S60W030",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID ESA_WorldCover_10m_2021_v200_S60W030 against schema at https:/..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.484513",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID ESA_WorldCover_10m_2021_v200_S60W030 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "created": "2023-04-06T16:03:26.737751Z",
     "mission": "sentinel-1, sentinel-2",
     "platform": "sentinel-1a, sentinel-1b, sentinel-2a, sentinel-2b",
@@ -58,7 +75,6 @@
     -27.0,
     -57.0
   ],
-  "type": "Feature",
   "assets": {
     "map": {
       "href": "https://ai4edataeuwest.blob.core.windows.net/esa-worldcover/v200/2021/map/ESA_WorldCover_10m_2021_v200_S60W030_Map.tif",
@@ -298,12 +314,5 @@
       ]
     ]
   },
-  "collection": "esa-worldcover",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "esa-worldcover"
 }

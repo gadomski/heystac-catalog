@@ -1,0 +1,97 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ecmwf-2024-11-17T12-wave-fc-360h-0.25",
+  "stac_extensions": [],
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/ecmwf-forecast/items/ecmwf-2024-11-17T12-wave-fc-360h-0.25",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-12-02T12:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 18.0,
+      "total": 18
+    },
+    "ecmwf:step": "360h",
+    "ecmwf:type": "fc",
+    "ecmwf:stream": "wave",
+    "ecmwf:resolution": "0.25",
+    "ecmwf:forecast_datetime": "2024-12-02T12:00:00Z",
+    "ecmwf:reference_datetime": "2024-11-17T12:00:00Z"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "assets": {
+    "data": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20241117/12z/ifs/0p25/wave/20241117120000-360h-wave-fc.grib2",
+      "type": "application/wmo-GRIB2",
+      "roles": [
+        "data"
+      ]
+    },
+    "index": {
+      "href": "https://ai4edataeuwest.blob.core.windows.net/ecmwf/20241117/12z/ifs/0p25/wave/20241117120000-360h-wave-fc.index",
+      "type": "application/x-ndjson",
+      "roles": [
+        "index"
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "collection": "ecmwf-forecast"
+}

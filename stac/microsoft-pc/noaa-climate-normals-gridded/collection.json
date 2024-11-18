@@ -1,4 +1,11 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "noaa-climate-normals-gridded",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-gridded/items",
@@ -7,33 +14,33 @@
     },
     {
       "href": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
-      "title": "NOAA U.S. Climate Normals Landing Page",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "NOAA U.S. Climate Normals Landing Page"
     },
     {
       "href": "https://www.noaa.gov/information-technology/open-data-dissemination",
-      "title": "NOAA Open Data Dissemination",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "NOAA Open Data Dissemination"
     },
     {
       "href": "https://www.ncei.noaa.gov/sites/default/files/2022-04/Readme_Monthly_Gridded_Normals.pdf",
-      "title": "Readme for Monthly Gridded Normals",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Readme for Monthly Gridded Normals"
     },
     {
       "href": "https://www.ncei.noaa.gov/sites/default/files/2022-04/Documentation_Monthly_Gridded_Normals.pdf",
-      "title": "Documentation for Monthly Gridded Normals",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Documentation for Monthly Gridded Normals"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/noaa-climate-normals-gridded",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-gridded",
@@ -42,31 +49,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./2006_2020-seasonal-4.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "noaa-climate-normals-gridded",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "NOAA US Gridded Climate Normals (Cloud-Optimized GeoTIFF)",
   "assets": {
     "thumbnail": {
@@ -468,13 +476,8 @@
     }
   },
   "msft:region": "eastus",
-  "stac_version": "1.0.0",
   "msft:group_id": "noaa-climate-normals",
   "msft:container": "gridded-normals-cogs",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-  ],
   "msft:storage_account": "noaanormals",
   "msft:short_description": "Gridded Climate Normals for the contiguous United States in Cloud Optimized GeoTIFF (COG) format."
 }

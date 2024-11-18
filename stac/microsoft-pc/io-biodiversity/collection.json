@@ -1,4 +1,12 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "io-biodiversity",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/io-biodiversity/items",
@@ -7,21 +15,21 @@
     },
     {
       "href": "https://creativecommons.org/licenses/by/4.0/",
-      "title": "CC BY 4.0",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "CC BY 4.0"
     },
     {
       "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/pdfs/io-biodiversity/Biodiversity_Intactness_whitepaper.pdf",
-      "title": "Technical White Paper",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Technical White Paper"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/io-biodiversity",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/io-biodiversity",
@@ -30,31 +38,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./bii_2020_85.0_99.9940942766454_cog.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "io-biodiversity",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "Biodiversity Intactness",
   "assets": {
     "thumbnail": {
@@ -152,13 +161,7 @@
     }
   },
   "msft:region": "westeurope",
-  "stac_version": "1.0.0",
   "msft:container": "impact",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "pcdata01euw",
   "msft:short_description": "Global terrestrial biodiversity intactness at 100m resolution for years 2017-2020"
 }

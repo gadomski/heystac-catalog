@@ -1,4 +1,12 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "noaa-climate-normals-tabular",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-tabular/items",
@@ -7,29 +15,31 @@
     },
     {
       "href": "https://doi.org/10.1175/BAMS-D-11-00197.1",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json"
     },
     {
       "href": "https://doi.org/10.1175/BAMS-D-11-00173.1",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json"
     },
     {
       "href": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
-      "title": "NOAA U.S. Climate Normals Landing Page",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "NOAA U.S. Climate Normals Landing Page"
     },
     {
       "href": "https://www.noaa.gov/information-technology/open-data-dissemination",
-      "title": "NOAA Open Data Dissemination",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "NOAA Open Data Dissemination"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/noaa-climate-normals-tabular",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-tabular",
@@ -38,31 +48,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./2006_2020-monthly.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "noaa-climate-normals-tabular",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "NOAA US Tabular Climate Normals",
   "assets": {
     "thumbnail": {
@@ -164,7 +175,6 @@
     }
   },
   "msft:region": "eastus",
-  "stac_version": "1.0.0",
   "table:tables": [
     {
       "name": "1981_2010-hourly",
@@ -217,11 +227,6 @@
   ],
   "msft:group_id": "noaa-climate-normals",
   "msft:container": "climate-normals-geoparquet",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "sci:publications": [
     {
       "doi": "10.1175/BAMS-D-11-00197.1",

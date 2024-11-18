@@ -1,10 +1,17 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "oisst-avhrr-v02r01.20240619",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-cdr-sea-surface-temperature-optimum-interpolation&item=oisst-avhrr-v02r01.20240619",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-sea-surface-temperature-optimum-interpolation/items/oisst-avhrr-v02r01.20240619",
@@ -13,30 +20,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "oisst-avhrr-v02r01.20240619",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID oisst-avhrr-v02r01.20240619 against schema at https://schemas...."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.477607",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID oisst-avhrr-v02r01.20240619 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "proj:epsg": 4326,
     "proj:shape": [
       720,
@@ -60,7 +75,6 @@
     180,
     90.0
   ],
-  "type": "Feature",
   "assets": {
     "err": {
       "href": "https://noaacdr.blob.core.windows.net/cogs/sea-surface-temperature-optimum-interpolation/202406/oisst-avhrr-v02r01.20240619-err.tif",
@@ -182,10 +196,5 @@
       ]
     ]
   },
-  "collection": "noaa-cdr-sea-surface-temperature-optimum-interpolation",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "noaa-cdr-sea-surface-temperature-optimum-interpolation"
 }

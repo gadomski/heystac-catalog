@@ -1,4 +1,11 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "terraclimate",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/xarray-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/terraclimate/items",
@@ -7,15 +14,15 @@
     },
     {
       "href": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
-      "title": "CC0-1.0 License",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "CC0-1.0 License"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/terraclimate",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/terraclimate",
@@ -24,27 +31,25 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 1,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "terraclimate",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12
+  },
   "title": "TerraClimate",
   "assets": {
     "thumbnail": {
@@ -145,7 +150,6 @@
     }
   ],
   "description": "[TerraClimate](http://www.climatologylab.org/terraclimate.html) is a dataset of monthly climate and climatic water balance for global terrestrial surfaces from 1958 to the present. These data provide important inputs for ecological and hydrological studies at global scales that require high spatial resolution and time-varying data. All data have monthly temporal resolution and a ~4-km (1/24th degree) spatial resolution. This dataset is provided in [Zarr](https://zarr.readthedocs.io/) format.\n",
-  "stac_version": "1.0.0",
   "cube:variables": {
     "q": {
       "type": "data",
@@ -585,10 +589,6 @@
       "description": "time"
     }
   },
-  "stac_extensions": [
-    "https://stac-extensions.github.io/xarray-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
   "msft:storage_account": "cpdataeuwest",
   "msft:short_description": "High-resolution global dataset of monthly climate and climatic water balance",
   "msft:region": "westeurope"

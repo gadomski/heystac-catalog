@@ -1,4 +1,12 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "3dep-lidar-returns",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json#",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-returns/items",
@@ -7,14 +15,15 @@
     },
     {
       "href": "https://www.usgs.gov/3d-elevation-program/about-3dep-products-services",
-      "title": "About 3DEP Products & Services",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "About 3DEP Products & Services"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/3dep-lidar-returns",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-returns",
@@ -23,31 +32,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./UT_StatewideSouth_2_2020-returns-5m-0-3.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "3dep-lidar-returns",
+  "heystac:rating": {
+    "stars": 3.645833333333334,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 23.333333333333336,
+    "aggregate_total": 32
+  },
   "title": "USGS 3DEP Lidar Returns",
   "assets": {
     "thumbnail": {
@@ -165,14 +175,8 @@
       "title": "3DEP Lidar COG"
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "3dep-lidar",
   "msft:container": "usgs-3dep-cogs",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json#",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "usgslidareuwest",
   "msft:short_description": "3DEP Lidar collection for the Cloud Optimized Geotiffs (COGs) based on the ReturnNumber dimension.",
   "msft:region": "westeurope"

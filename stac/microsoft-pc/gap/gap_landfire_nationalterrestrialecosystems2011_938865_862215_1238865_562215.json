@@ -1,10 +1,17 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "gap_landfire_nationalterrestrialecosystems2011_938865_862215_1238865_562215",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/label/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=gap&item=gap_landfire_nationalterrestrialecosystems2011_938865_862215_1238865_562215",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/gap/items/gap_landfire_nationalterrestrialecosystems2011_938865_862215_1238865_562215",
@@ -13,30 +20,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "gap_landfire_nationalterrestrialecosystems2011_938865_862215_1238865_562215",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
     "datetime": "2011-12-31T00:00:00Z",
+    "heystac:rating": {
+      "stars": 4.5,
+      "issues": {
+        "high": [],
+        "medium": [
+          {
+            "rule_id": "validate-extensions",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID gap_landfire_nationalterrestrialecosystems2011_938865_862215_1238865_562215 against schema at https://stac-extensions.github.io/projection/v1.0.0/schema.jsonValidation failed for Feature with ID gap_landfire_nationalterrestrialecosystems2011_938865_862215_1238865_562215 against schema at https://stac-extensions.github.io/label/v1.0.0/schema.json"
+          }
+        ],
+        "low": []
+      },
+      "score": 18.0,
+      "total": 20
+    },
     "proj:wkt2": "PROJCS[\"NAD83 / Conus Albers\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"5070\"]]",
     "label:type": "raster",
     "proj:shape": [
@@ -656,7 +671,6 @@
     -83.094706715818,
     30.39956432670431
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "https://ai4edataeuwest.blob.core.windows.net/usgs-gap/conus/gap_landfire_nationalterrestrialecosystems2011_938865_862215_1238865_562215.tif",
@@ -711,10 +725,5 @@
       ]
     ]
   },
-  "collection": "gap",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/label/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "gap"
 }

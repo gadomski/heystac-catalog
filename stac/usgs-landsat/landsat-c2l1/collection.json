@@ -1,46 +1,56 @@
 {
-  "links": [
-    {
-      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l1/items",
-      "rel": "items"
-    },
-    {
-      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l1",
-      "rel": "canonical"
-    },
-    {
-      "href": "../catalog.json",
-      "rel": "parent"
-    },
-    {
-      "href": "../../catalog.json",
-      "rel": "root"
-    },
-    {
-      "href": "./LC09_L1GT_228122_20241109_20241109_02_T2.json",
-      "rel": "item"
-    }
-  ],
-  "heystac:rating": 0,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 0,
-      "total": 1,
-      "message": "Validation failed for Collection with ID landsat-c2l1 against schema at https://schemas.stacspec.org..."
-    }
-  ],
   "type": "Collection",
-  "id": "landsat-c2l1",
   "stac_version": "1.0.0",
+  "id": "landsat-c2l1",
   "stac_extensions": [
     "https://stac-extensions.github.io/view/v1.0.0/schema.json",
     "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
   ],
+  "links": [
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l1/items",
+      "rel": "items",
+      "type": "application/json"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l1",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./LC09_L1TP_042037_20241118_20241118_02_T1.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.7109375,
+    "issues": {
+      "high": [
+        {
+          "rule_id": "validate-core",
+          "score": 0.0,
+          "message": "Validation failed for Collection with ID landsat-c2l1 against schema at https://schemas.stacspec.org/v1.0.0/collection-spec/json-schema/collection.json"
+        }
+      ],
+      "medium": [],
+      "low": []
+    },
+    "score": 4.0,
+    "total": 12,
+    "aggregate_score": 23.75,
+    "aggregate_total": 32
+  },
   "title": "Landsat Collection 2 Level-1 Product",
   "description": "The Landsat Level-1 product is a top of atmosphere product distributed as scaled and calibrated digital numbers.",
   "keywords": [

@@ -1,4 +1,10 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "gnatsgo-rasters",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/gnatsgo-rasters/items",
@@ -7,26 +13,29 @@
     },
     {
       "href": "https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=nrcs142p2_051847&ext=pdf",
-      "title": "gSSURGO User Guide",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "gSSURGO User Guide",
+      "description": "User guide for gSSURGO"
     },
     {
       "href": "https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=nrcseprd1464658&ext=pdf",
-      "title": "gNATSGO Overview Slides",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "gNATSGO Overview Slides",
+      "description": "Slides giving a high level overview of the gNATSGO dataset"
     },
     {
       "href": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "title": "CC0 1.0 Universal Public Domain Dedication",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "CC0 1.0 Universal Public Domain Dedication"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/gnatsgo-rasters",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/gnatsgo-rasters",
@@ -35,31 +44,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./pw_-2391035_-539485_-2227195_-703325.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "gnatsgo-rasters",
+  "heystac:rating": {
+    "stars": 4.895833333333333,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 31.333333333333332,
+    "aggregate_total": 32
+  },
   "title": "gNATSGO Soil Database - Rasters",
   "assets": {
     "thumbnail": {
@@ -657,12 +667,8 @@
       "description": "Thickness of soil components used in standard layer 6 (150 cm to the reported depth of the soil profile) expressed in cm (weighted average) for the Soil Organic Carbon calculation. NULL values are presented where data are incomplete or not available."
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "gnatsgo",
   "msft:container": "gnatsgo-stac",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "soils",
   "msft:short_description": "Raster data for the gridded National Soil Survey Geographic Database (gNATSGO), a USDA-NRCS Soil & Plant Science Division (SPSD) composite database that provides complete coverage of the best available soils information for all areas of the United States and Island Territories.",
   "msft:region": "westeurope"

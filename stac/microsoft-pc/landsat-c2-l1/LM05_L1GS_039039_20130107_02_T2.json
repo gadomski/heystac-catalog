@@ -1,21 +1,34 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "LM05_L1GS_039039_20130107_02_T2",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://doi.org/10.5066/P9AF14YV",
-      "title": "Landsat 1-5 MSS Collection 2 Level-1",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "Landsat 1-5 MSS Collection 2 Level-1"
     },
     {
       "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l1/items/LM05_L1GS_039039_20130107_20200820_02_T2",
-      "title": "USGS STAC Item",
       "rel": "via",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "USGS STAC Item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=landsat-c2-l1&item=LM05_L1GS_039039_20130107_02_T2",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l1/items/LM05_L1GS_039039_20130107_02_T2",
@@ -24,33 +37,35 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "LM05_L1GS_039039_20130107_02_T2",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
+    "datetime": "2013-01-07T17:52:14.088001Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "gsd": 79,
     "created": "2022-06-28T09:36:44.703787Z",
     "sci:doi": "10.5066/P9AF14YV",
-    "datetime": "2013-01-07T17:52:14.088001Z",
     "platform": "landsat-5",
     "proj:epsg": 32611,
     "proj:shape": [
@@ -88,7 +103,6 @@
     -115.11943478,
     31.33978061
   ],
-  "type": "Feature",
   "assets": {
     "red": {
       "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-1/standard/mss/2013/039/039/LM05_L1GS_039039_20130107_20200820_02_T2/LM05_L1GS_039039_20130107_20200820_02_T2_B2.TIF",
@@ -516,15 +530,5 @@
       ]
     ]
   },
-  "collection": "landsat-c2-l1",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
-    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "landsat-c2-l1"
 }

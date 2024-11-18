@@ -1,10 +1,18 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "chloris_biomass_50km_2019",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=chloris-biomass&item=chloris_biomass_50km_2019",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/chloris-biomass/items/chloris_biomass_50km_2019",
@@ -13,31 +21,39 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "chloris_biomass_50km_2019",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
-    "gsd": 4633,
     "datetime": "2019-01-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 4.833333333333333,
+      "issues": {
+        "high": [],
+        "medium": [
+          {
+            "rule_id": "validate-extensions",
+            "score": 0.6666666666666666,
+            "message": "Validation failed for Feature with ID chloris_biomass_50km_2019 against schema at https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+          }
+        ],
+        "low": []
+      },
+      "score": 19.333333333333332,
+      "total": 20
+    },
+    "gsd": 4633,
     "proj:bbox": [
       -20015109.354,
       -6671703.11790004,
@@ -66,7 +82,6 @@
     179.95,
     90.0
   ],
-  "type": "Feature",
   "assets": {
     "biomass": {
       "href": "https://ai4edataeuwest.blob.core.windows.net/chloris-biomass/cog/bio_2019.tif",
@@ -201,11 +216,5 @@
       ]
     ]
   },
-  "collection": "chloris-biomass",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/file/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "chloris-biomass"
 }

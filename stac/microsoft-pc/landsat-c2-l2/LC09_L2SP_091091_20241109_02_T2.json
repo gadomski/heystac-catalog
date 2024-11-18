@@ -1,27 +1,40 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "LC09_L2SP_091091_20241109_02_T2",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://doi.org/10.5066/P9OGBGM6",
-      "title": "Landsat 8-9 OLI/TIRS Collection 2 Level-2",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "Landsat 8-9 OLI/TIRS Collection 2 Level-2"
     },
     {
       "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC09_L2SP_091091_20241109_20241110_02_T2_SR",
-      "title": "USGS STAC Item",
       "rel": "via",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "USGS STAC Item"
     },
     {
       "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-st/items/LC09_L2SP_091091_20241109_20241110_02_T2_ST",
-      "title": "USGS STAC Item",
       "rel": "via",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "USGS STAC Item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=landsat-c2-l2&item=LC09_L2SP_091091_20241109_02_T2",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2/items/LC09_L2SP_091091_20241109_02_T2",
@@ -30,33 +43,35 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "LC09_L2SP_091091_20241109_02_T2",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
-    "gsd": 30,
-    "created": "2024-11-15T09:34:11.036283Z",
-    "sci:doi": "10.5066/P9OGBGM6",
     "datetime": "2024-11-09T23:59:20.529729Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
+    "gsd": 30,
+    "created": "2024-11-18T09:35:43.492334Z",
+    "sci:doi": "10.5066/P9OGBGM6",
     "platform": "landsat-9",
     "proj:epsg": 32655,
     "proj:shape": [
@@ -95,7 +110,6 @@
     146.59644558520472,
     -43.52681512897144
   ],
-  "type": "Feature",
   "assets": {
     "qa": {
       "href": "https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2024/091/091/LC09_L2SP_091091_20241109_20241110_02_T2/LC09_L2SP_091091_20241109_20241110_02_T2_ST_QA.TIF",
@@ -1125,15 +1139,5 @@
       ]
     ]
   },
-  "collection": "landsat-c2-l2",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
-    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "landsat-c2-l2"
 }

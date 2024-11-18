@@ -1,4 +1,13 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "modis-21A2-061",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-21A2-061/items",
@@ -7,39 +16,45 @@
     },
     {
       "href": "https://lpdaac.usgs.gov/documents/620/MOD21_User_Guide_V61.pdf",
-      "title": "MOD21 User Guide",
-      "rel": "help"
+      "rel": "help",
+      "type": "application/json",
+      "title": "MOD21 User Guide"
     },
     {
       "href": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD21A2",
-      "title": "MOD21A2 file specification",
-      "rel": "describedby"
+      "rel": "describedby",
+      "type": "application/json",
+      "title": "MOD21A2 file specification"
     },
     {
       "href": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD21A2",
-      "title": "MYD21A2 file specification",
-      "rel": "describedby"
+      "rel": "describedby",
+      "type": "application/json",
+      "title": "MYD21A2 file specification"
     },
     {
       "href": "https://doi.org/10.5067/MODIS/MOD21A2.061",
-      "title": "LP DAAC - MOD21A2",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "LP DAAC - MOD21A2"
     },
     {
       "href": "https://doi.org/10.5067/MODIS/MYD21A2.061",
-      "title": "LP DAAC - MYD21A2",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "LP DAAC - MYD21A2"
     },
     {
       "href": "https://lpdaac.usgs.gov/data/data-citation-and-policies/",
-      "title": "LP DAAC - Data Citation and Policies",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "LP DAAC - Data Citation and Policies"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/modis-21A2-061",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-21A2-061",
@@ -48,31 +63,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./MYD21A2.A2024305.h35v10.061.2024317195931.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "modis-21A2-061",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "MODIS Land Surface Temperature/3-Band Emissivity 8-Day",
   "assets": {
     "thumbnail": {
@@ -331,15 +347,8 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "modis",
   "msft:container": "modis-061",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "sci:publications": [
     {
       "doi": "10.5067/MODIS/MOD21A2.061",

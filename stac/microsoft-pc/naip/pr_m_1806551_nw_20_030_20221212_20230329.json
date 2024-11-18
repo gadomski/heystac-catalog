@@ -1,10 +1,17 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "pr_m_1806551_nw_20_030_20221212_20230329",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=naip&item=pr_m_1806551_nw_20_030_20221212_20230329",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip/items/pr_m_1806551_nw_20_030_20221212_20230329",
@@ -13,31 +20,33 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "pr_m_1806551_nw_20_030_20221212_20230329",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
-    "gsd": 0.3,
     "datetime": "2022-12-12T16:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
+    "gsd": 0.3,
     "naip:year": "2022",
     "proj:bbox": [
       208796.4,
@@ -83,7 +92,6 @@
     -65.683663,
     18.253643
   ],
-  "type": "Feature",
   "assets": {
     "image": {
       "href": "https://naipeuwest.blob.core.windows.net/naip/v002/pr/2022/pr_030cm_2022/18065/51/m_1806551_nw_20_030_20221212_20230329.tif",
@@ -165,10 +173,5 @@
       ]
     ]
   },
-  "collection": "naip",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "naip"
 }

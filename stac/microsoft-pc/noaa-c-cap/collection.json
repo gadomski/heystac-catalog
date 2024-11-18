@@ -1,4 +1,14 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "noaa-c-cap",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-c-cap/items",
@@ -7,33 +17,33 @@
     },
     {
       "href": "https://coast.noaa.gov/data/digitalcoast/pdf/ccap-product-page.pdf",
-      "title": "Handout - C-CAP Products",
       "rel": "describedby",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Handout - C-CAP Products"
     },
     {
       "href": "https://coast.noaa.gov/data/digitalcoast/pdf/ccap-faq-regional.pdf",
-      "title": "Frequently Asked Questions",
       "rel": "describedby",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Frequently Asked Questions"
     },
     {
       "href": "https://coast.noaa.gov/data/digitalcoast/pdf/ccap-class-scheme-regional.pdf",
-      "title": "C-CAP Classification Scheme and Class Definitions",
       "rel": "describedby",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "C-CAP Classification Scheme and Class Definitions"
     },
     {
       "href": "https://coast.noaa.gov/digitalcoast/data/ccapregional.html",
-      "title": "C-CAP Regional Land Cover and Change",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "C-CAP Regional Land Cover and Change"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/noaa-c-cap",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-c-cap",
@@ -42,31 +52,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./conus_2016_ccap_landcover_20200311.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "noaa-c-cap",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "C-CAP Regional Land Cover and Change",
   "assets": {
     "boundary": {
@@ -325,15 +336,7 @@
     }
   },
   "sci:citation": "National Oceanic and Atmospheric Administration, Office for Coastal Management. Name of Data Set: Coastal Change Analysis Program (C-CAP) Regional Land Cover. Charleston, SC: NOAA Office for Coastal Management. Accessed April 2022 at www.coast.noaa.gov/htdata/raster1/landcover/bulkdownload/30m_lc/.",
-  "stac_version": "1.0.0",
   "msft:container": "noaa-c-cap",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "ai4edataeuwest",
   "msft:short_description": "Periodic coastal landcover classifications back to 1975",
   "msft:region": "westeurope"

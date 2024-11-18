@@ -1,4 +1,8 @@
 {
+  "type": "Catalog",
+  "stac_version": "1.0.0",
+  "id": "earth-search-aws",
+  "stac_extensions": [],
   "links": [
     {
       "href": "https://earth-search.aws.element84.com/v1/conformance",
@@ -13,17 +17,20 @@
     {
       "href": "https://earth-search.aws.element84.com/v1/search",
       "rel": "search",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "method": "GET"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/search",
       "rel": "search",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "method": "POST"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/aggregate",
       "rel": "aggregate",
-      "type": "application/json"
+      "type": "application/json",
+      "method": "GET"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/aggregations",
@@ -57,65 +64,73 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "root"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./sentinel-2-pre-c1-l2a/collection.json",
-      "rel": "child"
+      "rel": "child",
+      "type": "application/json"
     },
     {
       "href": "./cop-dem-glo-30/collection.json",
-      "rel": "child"
+      "rel": "child",
+      "type": "application/json"
     },
     {
       "href": "./naip/collection.json",
-      "rel": "child"
+      "rel": "child",
+      "type": "application/json"
     },
     {
       "href": "./cop-dem-glo-90/collection.json",
-      "rel": "child"
+      "rel": "child",
+      "type": "application/json"
     },
     {
       "href": "./landsat-c2-l2/collection.json",
-      "rel": "child"
+      "rel": "child",
+      "type": "application/json"
     },
     {
       "href": "./sentinel-2-l2a/collection.json",
-      "rel": "child"
+      "rel": "child",
+      "type": "application/json"
     },
     {
       "href": "./sentinel-2-l1c/collection.json",
-      "rel": "child"
+      "rel": "child",
+      "type": "application/json"
     },
     {
       "href": "./sentinel-2-c1-l2a/collection.json",
-      "rel": "child"
+      "rel": "child",
+      "type": "application/json"
     },
     {
       "href": "./sentinel-1-grd/collection.json",
-      "rel": "child"
+      "rel": "child",
+      "type": "application/json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 19,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 19,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "stac_version": "1.0.0",
-  "type": "Catalog",
-  "id": "earth-search-aws",
   "title": "Earth Search by Element 84",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 10.0,
+    "total": 10,
+    "aggregate_score": 298.0,
+    "aggregate_total": 298
+  },
   "description": "A STAC API of public datasets on AWS",
   "conformsTo": [
     "https://api.stacspec.org/v1.0.0/core",

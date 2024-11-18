@@ -1,16 +1,23 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ALPSMLC30_S084W180_DSM",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://www.eorc.jaxa.jp/ALOS/en/doc/alos_userhb_en.pdf",
-      "title": "ALOS User handbook",
       "rel": "handbook",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "ALOS User handbook",
+      "description": "Also includes data usage information"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=alos-dem&item=ALPSMLC30_S084W180_DSM",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/alos-dem/items/ALPSMLC30_S084W180_DSM",
@@ -19,31 +26,33 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "ALPSMLC30_S084W180_DSM",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
-    "gsd": 30,
     "datetime": "2016-12-07T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
+    "gsd": 30,
     "platform": "alos",
     "proj:epsg": 4326,
     "proj:shape": [
@@ -68,7 +77,6 @@
     -179.0,
     -83.0
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "https://ai4edataeuwest.blob.core.windows.net/alos-dem/AW3D30_global/ALPSMLC30_S084W180_DSM.tif",
@@ -123,9 +131,5 @@
       ]
     ]
   },
-  "collection": "alos-dem",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "alos-dem"
 }

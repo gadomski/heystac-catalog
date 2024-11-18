@@ -1,4 +1,14 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "io-lulc-annual-v02",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/label/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/io-lulc-annual-v02/items",
@@ -7,19 +17,20 @@
     },
     {
       "href": "https://livingatlas.arcgis.com/landcover/",
-      "rel": "related"
+      "rel": "related",
+      "type": "application/json"
     },
     {
       "href": "https://creativecommons.org/licenses/by/4.0/",
-      "title": "CC BY 4.0",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "CC BY 4.0"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/io-lulc-annual-v02",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/io-lulc-annual-v02",
@@ -28,31 +39,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./60W-2023.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "io-lulc-annual-v02",
+  "heystac:rating": {
+    "stars": 2.5,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 16.0,
+    "aggregate_total": 32
+  },
   "title": "10m Annual Land Use Land Cover (9-class) V2",
   "assets": {
     "thumbnail": {
@@ -209,16 +221,8 @@
     }
   },
   "msft:region": "westeurope",
-  "stac_version": "1.0.0",
   "msft:group_id": "io-land-cover",
   "msft:container": "io-lulc",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/label/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "ai4edataeuwest",
   "msft:short_description": "Global land cover information with 9 classes for 2017-2023 at 10m resolution"
 }

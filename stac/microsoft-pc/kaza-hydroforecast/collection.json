@@ -1,4 +1,10 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "kaza-hydroforecast",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/kaza-hydroforecast/items",
@@ -7,15 +13,15 @@
     },
     {
       "href": "https://cdla.dev/sharing-1-0/",
-      "title": "Community Data License Agreement – Sharing, Version 1.0",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Community Data License Agreement – Sharing, Version 1.0"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/kaza-hydroforecast",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/kaza-hydroforecast",
@@ -24,31 +30,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./zambezi-at-chavuma.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "kaza-hydroforecast",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "HydroForecast - Kwando & Upper Zambezi Rivers",
   "assets": {
     "thumbnail": {
@@ -163,7 +170,6 @@
       "description": "All seasonal river flow forecasts for a specific forecast site, produced by Upstream Tech's HydroForecast model"
     }
   },
-  "stac_version": "1.0.0",
   "table:columns": [
     {
       "name": "initialization_time",
@@ -247,9 +253,6 @@
     }
   ],
   "msft:container": "hydroforecast",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
-  ],
   "msft:storage_account": "ai4edataeuwest",
   "msft:short_description": "Seasonal river flow forecasts for the Kwando and Upper Zambezi rivers in the KAZA region of Africa, produced by Upstream Tech's HydroForecast model.",
   "msft:region": "westeurope"

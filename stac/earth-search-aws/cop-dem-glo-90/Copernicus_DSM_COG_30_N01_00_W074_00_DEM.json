@@ -1,4 +1,14 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Copernicus_DSM_COG_30_N01_00_W074_00_DEM",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/grid/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "s3://earthsearch-data/cop-dem-glo-90/Copernicus_DSM_COG_30_N01_00_W074_00_DEM/Copernicus_DSM_COG_30_N01_00_W074_00_DEM.json",
@@ -7,13 +17,15 @@
     },
     {
       "href": "https://object.cloud.sdsc.edu/v1/AUTH_opentopography/www/metadata/Copernicus_metadata.pdf",
-      "title": "Copernicus DEM User handbook",
       "rel": "handbook",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Copernicus DEM User handbook",
+      "description": "Also includes data usage information"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/cop-dem-glo-90/items/Copernicus_DSM_COG_30_N01_00_W074_00_DEM/thumbnail",
-      "rel": "thumbnail"
+      "rel": "thumbnail",
+      "type": "application/json"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/cop-dem-glo-90/items/Copernicus_DSM_COG_30_N01_00_W074_00_DEM",
@@ -22,29 +34,32 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "Copernicus_DSM_COG_30_N01_00_W074_00_DEM",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
+    "datetime": "2021-04-22T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "platform": "tandem-x",
     "gsd": 90,
     "proj:epsg": 4326,
@@ -69,15 +84,12 @@
     "storage:region": "eu-central-1",
     "storage:requester_pays": false,
     "earthsearch:payload_id": "cop-dem-glo/workflow-cop-dem-glo-to-stac/febe9891ea9d984d8058fcd43f429e51",
-    "datetime": "2021-04-22T00:00:00Z",
     "processing:software": {
       "cop-dem-glo-to-stac": "2023.03.28"
     },
     "created": "2023-03-28T15:23:04.416Z",
     "updated": "2023-04-20T18:12:11.997Z"
   },
-  "type": "Feature",
-  "stac_version": "1.0.0",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -128,13 +140,6 @@
     1.0004166666666667,
     -73.00041666666667,
     2.0004166666666667
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/storage/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/grid/v1.1.0/schema.json"
   ],
   "collection": "cop-dem-glo-90"
 }

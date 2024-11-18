@@ -1,10 +1,17 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "nclimgrid-202209",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-nclimgrid-monthly&item=nclimgrid-202209",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-nclimgrid-monthly/items/nclimgrid-202209",
@@ -13,30 +20,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "nclimgrid-202209",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID nclimgrid-202209 against schema at https://schemas.stacspec.or..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.467545",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID nclimgrid-202209 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "created": "2022-10-26T21:35:01.173368Z",
     "proj:epsg": 4326,
     "proj:shape": [
@@ -60,7 +75,6 @@
     -66.999995,
     49.375001
   ],
-  "type": "Feature",
   "assets": {
     "prcp": {
       "href": "https://nclimgridwesteurope.blob.core.windows.net/nclimgrid-cogs/nclimgrid-monthly/nclimgrid-prcp-202209.tif",
@@ -171,10 +185,5 @@
       ]
     ]
   },
-  "collection": "noaa-nclimgrid-monthly",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "noaa-nclimgrid-monthly"
 }

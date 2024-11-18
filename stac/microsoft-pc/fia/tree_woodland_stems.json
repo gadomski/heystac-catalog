@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "tree_woodland_stems",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/fia/items/tree_woodland_stems",
@@ -7,30 +13,32 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "tree_woodland_stems",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
     "datetime": "2020-06-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "table:columns": [
       {
         "name": "CN",
@@ -145,7 +153,6 @@
     179.77847,
     71.352561
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "abfs://cpdata/raw/fia/tree_woodland_stems.parquet",
@@ -186,9 +193,5 @@
       ]
     ]
   },
-  "collection": "fia",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "fia"
 }

@@ -1,0 +1,113 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "/tmp/tmpjlcsf8o6",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-sea-surface-temperature-whoi-netcdf/items/tmp/tmpjlcsf8o6",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-18T13:15:15.477379",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID /tmp/tmpjlcsf8o6 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
+    "proj:epsg": 4326,
+    "proj:shape": [
+      720,
+      1440
+    ],
+    "end_datetime": "2021-08-31T22:30:00Z",
+    "proj:transform": [
+      0.25,
+      0.0,
+      -180.0,
+      0.0,
+      -0.25,
+      90.0
+    ],
+    "start_datetime": "2021-08-31T01:30:00Z",
+    "processing:level": "L4",
+    "noaa_cdr:interval": "three-hourly"
+  },
+  "bbox": [
+    -180,
+    -90.0,
+    180,
+    90.0
+  ],
+  "assets": {
+    "netcdf": {
+      "href": "https://noaacdr.blob.core.windows.net/sea-surface-temp-whoi/data/2021/SEAFLUX-OSB-CDR_V02R00_SST_D20210831_C20211223.nc",
+      "type": "application/x-netcdf",
+      "title": "NOAA Climate Data Record of Sea Surface Temperature - WHOI NetCDF",
+      "created": "2021-12-23T18:47:13Z",
+      "description": "SeaFlux Ocean Surface Bundle (OSB) Climate Data Record (CDR) of Sea Surface Temperature",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          180,
+          -90
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -90
+        ],
+        [
+          180,
+          -90
+        ]
+      ]
+    ]
+  },
+  "collection": "noaa-cdr-sea-surface-temperature-whoi-netcdf"
+}

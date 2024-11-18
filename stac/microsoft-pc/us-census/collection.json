@@ -1,4 +1,11 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "us-census",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/us-census/items",
@@ -7,15 +14,15 @@
     },
     {
       "href": "https://www.census.gov/about/policies/open-gov/open-data.html",
-      "title": "U.S. Census Open Data Policy",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "U.S. Census Open Data Policy"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/us-census",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/us-census",
@@ -24,31 +31,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./2020-census-blocks-population.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "us-census",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "US Census",
   "assets": {
     "thumbnail": {
@@ -191,7 +199,6 @@
       }
     }
   },
-  "stac_version": "1.0.0",
   "table:tables": [
     {
       "name": "American Indian/Alaska Native Areas/Hawaiian Home Lands (AIANNH)",
@@ -345,10 +352,6 @@
     }
   ],
   "msft:container": "us-census",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "ai4edataeuwest",
   "msft:short_description": "United States population counts at various levels of cartographic aggregation",
   "msft:region": "westeurope"

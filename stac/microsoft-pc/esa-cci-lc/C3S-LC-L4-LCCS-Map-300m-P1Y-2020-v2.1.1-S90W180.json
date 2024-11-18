@@ -1,16 +1,24 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-cci-lc-netcdf/items/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1",
-      "title": "Source NetCDF Item",
       "rel": "derived_from",
-      "type": "application/json"
+      "type": "application/json",
+      "title": "Source NetCDF Item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=esa-cci-lc&item=C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-cci-lc/items/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180",
@@ -19,30 +27,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180 against schema..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.469557",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "title": "ESA CCI Land Cover Map for Year 2020, Tile S90W180",
     "created": "2023-01-11T23:08:36.109666Z",
     "proj:epsg": 4326,
@@ -69,7 +85,6 @@
     -135.0,
     -45.000000000000014
   ],
-  "type": "Feature",
   "assets": {
     "lccs_class": {
       "href": "https://landcoverdata.blob.core.windows.net/esa-cci-lc/cog/v2.1.1/S90W180/2020/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1-S90W180-lccs_class.tif",
@@ -489,11 +504,5 @@
       ]
     ]
   },
-  "collection": "esa-cci-lc",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "esa-cci-lc"
 }

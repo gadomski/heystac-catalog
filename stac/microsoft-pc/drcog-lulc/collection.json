@@ -1,4 +1,12 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "drcog-lulc",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/drcog-lulc/items",
@@ -7,33 +15,33 @@
     },
     {
       "href": "https://drcog.org/legal-terms",
-      "title": "DRCOG Legal Terms",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "DRCOG Legal Terms"
     },
     {
       "href": "https://gis.drcog.org/rdc/supplemental/lulc_pilot_report.zip",
-      "title": "Supplemental Information",
       "rel": "describedby",
-      "type": "application/zip"
+      "type": "application/zip",
+      "title": "Supplemental Information"
     },
     {
       "href": "https://landcoverarchive.s3.amazonaws.com/2018/lulc_pilot_raster_2018.zip",
-      "title": "Land_Cover_Raster_Data_2018",
       "rel": "original",
-      "type": "application/zip"
+      "type": "application/zip",
+      "title": "Land_Cover_Raster_Data_2018"
     },
     {
       "href": "https://landcoverarchive.s3.amazonaws.com/2020/DRCOG_2020_Landcover.zip",
-      "title": "Land_Cover_Raster_Data_2020",
       "rel": "original",
-      "type": "application/zip"
+      "type": "application/zip",
+      "title": "Land_Cover_Raster_Data_2020"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/drcog-lulc",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/drcog-lulc",
@@ -42,31 +50,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./DRCOG_2020_LULC_E3510000_N1800000.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "drcog-lulc",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "Denver Regional Council of Governments Land Use Land Cover",
   "assets": {
     "thumbnail": {
@@ -211,13 +220,7 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "drcog-lulc",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.1.0/schema.json"
-  ],
   "msft:storage_account": "landcoverdata",
   "msft:short_description": "2018 and 2020 Land Use/Land Cover classification of the Denver, Colorado region.",
   "msft:region": "westeurope"

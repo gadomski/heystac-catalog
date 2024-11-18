@@ -1,56 +1,72 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "UT_StatewideSouth_2_2020-pointsourceid-5m-0-3",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://rockyweb.usgs.gov/vdelivery/Datasets/Staged/Elevation/LPC/Projects/UT_StatewideSouth_2020_A20/UT_StatewideSouth_2_2020/metadata/",
-      "title": "USGS Metadata",
       "rel": "alternate",
-      "type": "application/xml"
+      "type": "application/xml",
+      "title": "USGS Metadata"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5826",
-      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5826",
-      "rel": "derived_from"
+      "rel": "derived_from",
+      "type": "application/json",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5826"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5926",
-      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5926",
-      "rel": "derived_from"
+      "rel": "derived_from",
+      "type": "application/json",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC5926"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6026",
-      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6026",
-      "rel": "derived_from"
+      "rel": "derived_from",
+      "type": "application/json",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6026"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6126",
-      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6126",
-      "rel": "derived_from"
+      "rel": "derived_from",
+      "type": "application/json",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6126"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6127",
-      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6127",
-      "rel": "derived_from"
+      "rel": "derived_from",
+      "type": "application/json",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6127"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6226",
-      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6226",
-      "rel": "derived_from"
+      "rel": "derived_from",
+      "type": "application/json",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6226"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6227",
-      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6227",
-      "rel": "derived_from"
+      "rel": "derived_from",
+      "type": "application/json",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_11SQC6227"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-copc/items/USGS_LPC_UT_StatewideSouth_2020_A20_12STH6326",
-      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_12STH6326",
-      "rel": "derived_from"
+      "rel": "derived_from",
+      "type": "application/json",
+      "title": "USGS_LPC_UT_StatewideSouth_2020_A20_12STH6326"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=3dep-lidar-pointsourceid&item=UT_StatewideSouth_2_2020-pointsourceid-5m-0-3",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-lidar-pointsourceid/items/UT_StatewideSouth_2_2020-pointsourceid-5m-0-3",
@@ -59,30 +75,44 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "UT_StatewideSouth_2_2020-pointsourceid-5m-0-3",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID UT_StatewideSouth_2_2020-pointsourceid-5m-0-3 against schema a..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.445396",
+    "heystac:rating": {
+      "stars": 2.8333333333333335,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID UT_StatewideSouth_2_2020-pointsourceid-5m-0-3 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [
+          {
+            "rule_id": "validate-extensions",
+            "score": 0.6666666666666666,
+            "message": "Validation failed for Feature with ID UT_StatewideSouth_2_2020-pointsourceid-5m-0-3 against schema at https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+          }
+        ],
+        "low": []
+      },
+      "score": 11.333333333333334,
+      "total": 20
+    },
     "proj:shape": [
       160,
       1320
@@ -575,7 +605,6 @@
     -113.9757914,
     38.154431
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "https://usgslidareuwest.blob.core.windows.net/usgs-3dep-cogs/usgs-cogs/UT_StatewideSouth_2_2020/pointsourceid/UT_StatewideSouth_2_2020-pointsourceid-5m-0-3.tif",
@@ -638,11 +667,5 @@
       ]
     ]
   },
-  "collection": "3dep-lidar-pointsourceid",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "3dep-lidar-pointsourceid"
 }

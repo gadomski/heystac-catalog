@@ -1,4 +1,14 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "goes-glm",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/goes/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/goes-glm/items",
@@ -7,36 +17,38 @@
     },
     {
       "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C01527",
-      "title": "License",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "License"
     },
     {
       "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C01527",
-      "title": "Product Landing Page",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Product Landing Page"
     },
     {
       "href": "https://www.goes-r.gov/users/docs/PUG-main-vol1.pdf",
-      "title": "Product Definition and Users' Guide (PUG) Vol.1 Main",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Product Definition and Users' Guide (PUG) Vol.1 Main"
     },
     {
       "href": "https://www.goes-r.gov/products/docs/PUG-L2+-vol5.pdf",
-      "title": "Product Definition and Users' Guide (PUG) Vol.5 Level 2+ Products",
       "rel": "about",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Product Definition and Users' Guide (PUG) Vol.5 Level 2+ Products"
     },
     {
       "href": "https://doi.org/10.7289/V5KH0KK6",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/goes-glm",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/goes-glm",
@@ -45,31 +57,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
-      "href": "./OR_GLM-L2-LCFA_G18_s20243200842000_e20243200842200.json",
-      "rel": "item"
+      "href": "./OR_GLM-L2-LCFA_G18_s20243230842400_e20243230843000.json",
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "goes-glm",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "GOES-R Lightning Detection",
   "assets": {
     "thumbnail": {
@@ -370,16 +383,8 @@
     }
   },
   "sci:citation": "GOES-R Algorithm Working Group and GOES-R Series Program, (2018): NOAA GOES-R Series Geostationary Lightning Mapper (GLM) Level 2 Lightning Detection: Events, Groups, and Flashes. NOAA National Centers for Environmental Information. doi:10.7289/V5KH0KK6.",
-  "stac_version": "1.0.0",
   "msft:group_id": "goes",
   "msft:container": "noaa-goes-geoparquet",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/goes/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
-  ],
   "msft:storage_account": "goeseuwest",
   "msft:short_description": "Continuous lightning detection over the Western Hemisphere from the Geostationary Lightning Mapper (GLM) instrument.",
   "msft:region": "westeurope"

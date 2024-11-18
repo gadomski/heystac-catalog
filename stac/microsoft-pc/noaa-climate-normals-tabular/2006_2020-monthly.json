@@ -1,20 +1,29 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "2006_2020-monthly",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://doi.org/10.1175/BAMS-D-11-00197.1",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json"
     },
     {
       "href": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C01624/html",
-      "title": "U.S. Monthly Climate Normals (2006-2020) Landing Page",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "U.S. Monthly Climate Normals (2006-2020) Landing Page"
     },
     {
       "href": "https://www.ncei.noaa.gov/data/normals-monthly/2006-2020/doc/Normals_MLY_Documentation_2006-2020.pdf",
-      "title": "U.S. Monthly Climate Normals (2006-2020) Documentation",
       "rel": "describedby",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "U.S. Monthly Climate Normals (2006-2020) Documentation"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-tabular/items/2006_2020-monthly",
@@ -23,30 +32,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "2006_2020-monthly",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID 2006_2020-monthly against schema at https://schemas.stacspec.o..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.472778",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID 2006_2020-monthly against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "title": "Monthly Climate Normals for Period 2006-2020",
     "created": "2023-01-13T17:12:43.569562Z",
     "proj:epsg": 4269,
@@ -2244,7 +2261,6 @@
     171.3833,
     71.3214
   ],
-  "type": "Feature",
   "assets": {
     "geoparquet": {
       "href": "abfs://climate-normals-geoparquet/2006_2020-monthly.parquet",
@@ -2285,11 +2301,5 @@
       ]
     ]
   },
-  "collection": "noaa-climate-normals-tabular",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "noaa-climate-normals-tabular"
 }

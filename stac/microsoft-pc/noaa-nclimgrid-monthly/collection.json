@@ -1,4 +1,12 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "noaa-nclimgrid-monthly",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-nclimgrid-monthly/items",
@@ -7,27 +15,27 @@
     },
     {
       "href": "https://doi.org/10.7289/V5SX6B56",
-      "title": "NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid)",
       "rel": "cite-as",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid)"
     },
     {
       "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00332#Constraints",
-      "title": "NClimGrid Data Use and Access Constraints",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "NClimGrid Data Use and Access Constraints"
     },
     {
       "href": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00332",
-      "title": "Product Landing Page",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Product Landing Page"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/noaa-nclimgrid-monthly",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-nclimgrid-monthly",
@@ -36,31 +44,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./nclimgrid-202209.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "noaa-nclimgrid-monthly",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "Monthly NOAA U.S. Climate Gridded Dataset (NClimGrid)",
   "assets": {
     "thumbnail": {
@@ -199,14 +208,8 @@
     }
   },
   "sci:citation": "Vose, Russell S., Applequist, Scott, Squires, Mike, Durre, Imke, Menne, Matthew J., Williams, Claude N. Jr., Fenimore, Chris, Gleason, Karin, and Arndt, Derek (2014): NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid), Version 1. NOAA National Centers for Environmental Information. DOI:10.7289/V5SX6B56.",
-  "stac_version": "1.0.0",
   "msft:group_id": "noaa-nclimgrid",
   "msft:container": "nclimgrid-cogs",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-  ],
   "sci:publications": [
     {
       "doi": "10.1175/JAMC-D-13-0248.1",

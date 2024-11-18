@@ -1,4 +1,11 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "nasadem",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasadem/items",
@@ -7,14 +14,15 @@
     },
     {
       "href": "https://lpdaac.usgs.gov/data/data-citation-and-policies/",
-      "title": "Public Domain",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "Public Domain"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/nasadem",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasadem",
@@ -23,31 +31,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./NASADEM_HGT_s56w072.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "nasadem",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "NASADEM HGT v001",
   "assets": {
     "thumbnail": {
@@ -160,12 +169,7 @@
       "title": "Elevation"
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "nasadem-cog",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "nasademeuwest",
   "msft:short_description": "Global topographic data at 1 arc-second (~30m) horizontal resolution, derived primarily from data captured via the Shuttle Radar Topography Mission",
   "msft:region": "westeurope"

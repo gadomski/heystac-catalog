@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Chicago-2023-02-26",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/eclipse/items/Chicago-2023-02-26",
@@ -7,30 +13,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "Chicago-2023-02-26",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID Chicago-2023-02-26 against schema at https://schemas.stacspec...."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.468878",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID Chicago-2023-02-26 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "end_datetime": "2023-03-05T00:00:00Z",
     "table:columns": [
       {
@@ -122,7 +136,6 @@
     -87.5241371,
     42.02303859
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "abfs://eclipse/Chicago/2023-02-26/20230226-00_20230305-00.parquet",
@@ -4155,9 +4168,5 @@
       ]
     ]
   },
-  "collection": "eclipse",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "eclipse"
 }

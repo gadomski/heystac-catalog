@@ -1,0 +1,273 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "s3://earthsearch-data/sentinel-1-grd/2024/11/18/EW/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C.json",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/collections/sentinel-1-grd/items/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C/thumbnail",
+      "rel": "thumbnail",
+      "type": "application/json"
+    },
+    {
+      "href": "https://earth-search.aws.element84.com/v1/collections/sentinel-1-grd/items/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-18T19:02:15.641200Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
+    "sar:frequency_band": "C",
+    "sar:center_frequency": 5.405,
+    "sar:observation_direction": "right",
+    "sar:instrument_mode": "EW",
+    "sar:polarizations": [
+      "HH",
+      "HV"
+    ],
+    "sar:product_type": "GRD",
+    "sar:resolution_range": 93,
+    "sar:resolution_azimuth": 87,
+    "sar:pixel_spacing_range": 40,
+    "sar:pixel_spacing_azimuth": 40,
+    "sar:looks_range": 6,
+    "sar:looks_azimuth": 2,
+    "sar:looks_equivalent_number": 10.7,
+    "sat:platform_international_designator": "2014-016A",
+    "sat:orbit_state": "ascending",
+    "sat:absolute_orbit": 56613,
+    "sat:relative_orbit": 16,
+    "proj:epsg": 4326,
+    "proj:bbox": [
+      -36.711567,
+      72.284355,
+      -22.373295,
+      75.074501
+    ],
+    "proj:shape": [
+      10206,
+      5008
+    ],
+    "proj:transform": [
+      0.0028630734824281155,
+      0,
+      -36.711567,
+      0,
+      -0.000273382912012541,
+      75.074501
+    ],
+    "proj:centroid": {
+      "lat": 73.67048,
+      "lon": -29.26558
+    },
+    "platform": "sentinel-1a",
+    "constellation": "sentinel-1",
+    "start_datetime": "2024-11-18T19:02:00.612974Z",
+    "end_datetime": "2024-11-18T19:02:30.669427Z",
+    "s1:instrument_configuration_ID": "7",
+    "s1:datatake_id": "455068",
+    "s1:product_timeliness": "NRT-3h",
+    "s1:processing_level": "1",
+    "s1:resolution": "medium",
+    "s1:orbit_source": "PREORB",
+    "s1:slice_number": "1",
+    "s1:total_slices": "1",
+    "s1:shape": [
+      10206,
+      5008
+    ],
+    "s1:product_identifier": "S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE",
+    "s1:processing_datetime": "2024-11-18T19:11:50.000000Z",
+    "storage:platform": "AWS",
+    "storage:region": "eu-central-1",
+    "storage:requester_pays": true,
+    "processing:software": {
+      "sentinel1-to-stac": "2023.05.17"
+    },
+    "created": "2024-11-18T19:36:37.604Z",
+    "updated": "2024-11-18T19:36:37.604Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -23.707748,
+          75.0687309
+        ],
+        [
+          -30.7150512,
+          74.5087604
+        ],
+        [
+          -36.4566674,
+          73.8298919
+        ],
+        [
+          -34.2417152,
+          72.2899728
+        ],
+        [
+          -28.9584311,
+          72.924734
+        ],
+        [
+          -22.5724652,
+          73.4482681
+        ],
+        [
+          -23.707748,
+          75.0687309
+        ]
+      ]
+    ]
+  },
+  "assets": {
+    "safe-manifest": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/manifest.safe",
+      "type": "application/xml",
+      "title": "Manifest File",
+      "description": "General product metadata in XML format. Contains a high-level textual description of the product and references to all of product's components, the product metadata, including the product identification and the resource references, and references to the physical location of each component file contained in the product.",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "schema-product-hh": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/annotation/rfi/rfi-ew-hh.xml",
+      "type": "application/xml",
+      "title": "HH Product Schema",
+      "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "schema-product-hv": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/annotation/rfi/rfi-ew-hv.xml",
+      "type": "application/xml",
+      "title": "HV Product Schema",
+      "description": "Describes the main characteristics corresponding to the band: state of the platform during acquisition, image properties, Doppler information, geographic location, etc.",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "schema-calibration-hh": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/annotation/calibration/calibration-ew-hh.xml",
+      "type": "application/xml",
+      "title": "HH Calibration Schema",
+      "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "schema-calibration-hv": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/annotation/calibration/calibration-ew-hv.xml",
+      "type": "application/xml",
+      "title": "HV Calibration Schema",
+      "description": "Calibration metadata including calibration information and the beta nought, sigma nought, gamma and digital number look-up tables that can be used for absolute product calibration.",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "schema-noise-hh": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/annotation/calibration/noise-ew-hh.xml",
+      "type": "application/xml",
+      "title": "HH Noise Schema",
+      "description": "Estimated thermal noise look-up tables",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "schema-noise-hv": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/annotation/calibration/noise-ew-hv.xml",
+      "type": "application/xml",
+      "title": "HV Noise Schema",
+      "description": "Estimated thermal noise look-up tables",
+      "roles": [
+        "metadata"
+      ]
+    },
+    "thumbnail": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/preview/quick-look.png",
+      "type": "image/png",
+      "title": "Preview Image",
+      "description": "An averaged, decimated preview image in PNG format. Single polarization products are represented with a grey scale image. Dual polarization products are represented by a single composite colour image in RGB with the red channel (R) representing the  co-polarization VV or HH), the green channel (G) represents the cross-polarization (VH or HV) and the blue channel (B) represents the ratio of the cross an co-polarizations.",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "hh": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/measurement/ew-hh.tiff",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "HH Data",
+      "description": "Actual SAR data that have been processed into an image",
+      "raster:bands": [
+        {
+          "nodata": 0,
+          "data_type": "uint16"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "hv": {
+      "href": "s3://sentinel-s1-l1c/GRD/2024/11/18/EW/DH/S1A_EW_GRDM_1SDH_20241118T190200_20241118T190230_056613_06F19C_85BE/measurement/ew-hv.tiff",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "HV Data",
+      "description": "Actual SAR data that have been processed into an image",
+      "raster:bands": [
+        {
+          "nodata": 0,
+          "data_type": "uint16"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "bbox": [
+    -36.4566674,
+    72.2899728,
+    -22.5724652,
+    75.0687309
+  ],
+  "collection": "sentinel-1-grd"
+}

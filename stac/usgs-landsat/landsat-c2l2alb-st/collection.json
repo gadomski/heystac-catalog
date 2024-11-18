@@ -1,46 +1,56 @@
 {
-  "links": [
-    {
-      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2alb-st/items",
-      "rel": "items"
-    },
-    {
-      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2alb-st",
-      "rel": "canonical"
-    },
-    {
-      "href": "../catalog.json",
-      "rel": "parent"
-    },
-    {
-      "href": "../../catalog.json",
-      "rel": "root"
-    },
-    {
-      "href": "./LC09_L2SP_070021_20241106_20241107_02_A2_ST.json",
-      "rel": "item"
-    }
-  ],
-  "heystac:rating": 0,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 0,
-      "total": 1,
-      "message": "Validation failed for Collection with ID landsat-c2l2alb-st against schema at https://schemas.stacsp..."
-    }
-  ],
   "type": "Collection",
-  "id": "landsat-c2l2alb-st",
   "stac_version": "1.0.0",
+  "id": "landsat-c2l2alb-st",
   "stac_extensions": [
     "https://stac-extensions.github.io/view/v1.0.0/schema.json",
     "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
   ],
+  "links": [
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2alb-st/items",
+      "rel": "items",
+      "type": "application/json"
+    },
+    {
+      "href": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2alb-st",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./LC09_L2SP_035039_20241117_20241118_02_A1_ST.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.645833333333333,
+    "issues": {
+      "high": [
+        {
+          "rule_id": "validate-core",
+          "score": 0.0,
+          "message": "Validation failed for Collection with ID landsat-c2l2alb-st against schema at https://schemas.stacspec.org/v1.0.0/collection-spec/json-schema/collection.json"
+        }
+      ],
+      "medium": [],
+      "low": []
+    },
+    "score": 4.0,
+    "total": 12,
+    "aggregate_score": 23.333333333333332,
+    "aggregate_total": 32
+  },
   "title": "Landsat Collection 2 Level-2 Albers Surface Temperature (ST) Product",
   "description": "The Landsat Surface Temperature (ST) product represents the temperature of the Earth's surface in Kelvin (K).",
   "keywords": [

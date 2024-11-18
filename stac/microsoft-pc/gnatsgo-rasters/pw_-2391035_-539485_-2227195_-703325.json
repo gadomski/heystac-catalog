@@ -1,16 +1,25 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "pw_-2391035_-539485_-2227195_-703325",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://www.nrcs.usda.gov/wps/PA_NRCSConsumption/download?cid=nrcs142p2_051847&ext=pdf",
-      "title": "gSSURGO User Guide",
       "rel": "handbook",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "gSSURGO User Guide",
+      "description": "Also includes data usage information"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=gnatsgo-rasters&item=pw_-2391035_-539485_-2227195_-703325",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/gnatsgo-rasters/items/pw_-2391035_-539485_-2227195_-703325",
@@ -19,30 +28,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "pw_-2391035_-539485_-2227195_-703325",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
     "datetime": "2020-07-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 4.833333333333333,
+      "issues": {
+        "high": [],
+        "medium": [
+          {
+            "rule_id": "validate-extensions",
+            "score": 0.6666666666666666,
+            "message": "Validation failed for Feature with ID pw_-2391035_-539485_-2227195_-703325 against schema at https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+          }
+        ],
+        "low": []
+      },
+      "score": 19.333333333333332,
+      "total": 20
+    },
     "proj:bbox": [
       -2391035.0,
       -703325.0,
@@ -96,7 +113,6 @@
     132.58570215,
     4.50665947
   ],
-  "type": "Feature",
   "assets": {
     "mukey": {
       "href": "https://soils.blob.core.windows.net/gnatsgo/july2020/tiles/pw_-2391035_-539485_-2227195_-703325/mukey_pw_-2391035_-539485_-2227195_-703325.tif",
@@ -1129,11 +1145,5 @@
       ]
     ]
   },
-  "collection": "gnatsgo-rasters",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "gnatsgo-rasters"
 }

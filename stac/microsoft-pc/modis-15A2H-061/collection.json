@@ -1,4 +1,13 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "modis-15A2H-061",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-15A2H-061/items",
@@ -7,49 +16,57 @@
     },
     {
       "href": "https://lpdaac.usgs.gov/documents/926/MOD15_User_Guide_V61.pdf",
-      "title": "MOD15 User Guide",
-      "rel": "help"
+      "rel": "help",
+      "type": "application/json",
+      "title": "MOD15 User Guide"
     },
     {
       "href": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MCD15A2H",
-      "title": "MCD15A2H file specification",
-      "rel": "describedby"
+      "rel": "describedby",
+      "type": "application/json",
+      "title": "MCD15A2H file specification"
     },
     {
       "href": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD15A2H",
-      "title": "MOD15A2H file specification",
-      "rel": "describedby"
+      "rel": "describedby",
+      "type": "application/json",
+      "title": "MOD15A2H file specification"
     },
     {
       "href": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD15A2H",
-      "title": "MYD15A2H file specification",
-      "rel": "describedby"
+      "rel": "describedby",
+      "type": "application/json",
+      "title": "MYD15A2H file specification"
     },
     {
       "href": "https://doi.org/10.5067/MODIS/MCD15A2H.061",
-      "title": "LP DAAC - MCD15A2H",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "LP DAAC - MCD15A2H"
     },
     {
       "href": "https://doi.org/10.5067/MODIS/MOD15A2H.061",
-      "title": "LP DAAC - MOD15A2H",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "LP DAAC - MOD15A2H"
     },
     {
       "href": "https://doi.org/10.5067/MODIS/MYD15A2H.061",
-      "title": "LP DAAC - MYD15A2H",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "LP DAAC - MYD15A2H"
     },
     {
       "href": "https://lpdaac.usgs.gov/data/data-citation-and-policies/",
-      "title": "LP DAAC - Data Citation and Policies",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "LP DAAC - Data Citation and Policies"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/modis-15A2H-061",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-15A2H-061",
@@ -58,31 +75,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./MYD15A2H.A2024305.h35v10.061.2024317195203.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "modis-15A2H-061",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "MODIS Leaf Area Index/FPAR 8-Day",
   "assets": {
     "thumbnail": {
@@ -274,15 +292,8 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "modis",
   "msft:container": "modis-061",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "sci:publications": [
     {
       "doi": "10.5067/MODIS/MCD15A2H.061",

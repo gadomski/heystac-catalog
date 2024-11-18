@@ -1,4 +1,16 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "alos-fnf-mosaic",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/version/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/alos-fnf-mosaic/items",
@@ -7,21 +19,22 @@
     },
     {
       "href": "https://www.eorc.jaxa.jp/ALOS/en/dataset/pdf/DatasetDescription_PALSAR2_FNF_V200.pdf",
-      "title": "Global 25 m Resolution PALSAR-2/PALSAR Forest/Non-Forest Map (FNF)",
       "rel": "handbook",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Global 25 m Resolution PALSAR-2/PALSAR Forest/Non-Forest Map (FNF)",
+      "description": "Also includes data usage information"
     },
     {
       "href": "https://earth.jaxa.jp/policy/en.html",
-      "title": "JAXA Terms of Use of Research Data",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "JAXA Terms of Use of Research Data"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/alos-fnf-mosaic",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/alos-fnf-mosaic",
@@ -30,31 +43,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./S56W072_20_FNF.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "alos-fnf-mosaic",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "ALOS Forest/Non-Forest Annual Mosaic",
   "assets": {
     "thumbnail": {
@@ -189,17 +203,7 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "palsar",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/version/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "https://pceo.blob.core.windows.net/",
   "msft:short_description": "Global 25m resolution map classifying \"forest\" and \"non-forest\" landcover.",
   "msft:region": "westeurope"

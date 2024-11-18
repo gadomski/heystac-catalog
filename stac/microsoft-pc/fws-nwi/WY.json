@@ -1,292 +1,300 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "WY",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/usfws-nwi/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/driggs-c.pdf",
-      "title": "driggs-c",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "driggs-c"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/thermopolis-a.pdf",
-      "title": "thermopolis-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "thermopolis-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/price-a.pdf",
-      "title": "price-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "price-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/casper-a.pdf",
-      "title": "casper-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "casper-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/cheyenne-a.pdf",
-      "title": "cheyenne-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "cheyenne-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/cody-a.pdf",
-      "title": "cody-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "cody-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/ashton-a.pdf",
-      "title": "ashton-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "ashton-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/driggs-a.pdf",
-      "title": "driggs-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "driggs-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/thermopolis-c.pdf",
-      "title": "thermopolis-c",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "thermopolis-c"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/thermopolis-b.pdf",
-      "title": "thermopolis-b",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "thermopolis-b"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/greeley-b.pdf",
-      "title": "greeley-b",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "greeley-b"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/hardin-a.pdf",
-      "title": "hardin-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "hardin-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/sheridan-c.pdf",
-      "title": "sheridan-c",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "sheridan-c"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/gillette-a.pdf",
-      "title": "gillette-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "gillette-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/gillette-b.pdf",
-      "title": "gillette-b",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "gillette-b"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/greeley-a.pdf",
-      "title": "greeley-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "greeley-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/ogden-a.pdf",
-      "title": "ogden-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "ogden-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/new castle-a.pdf",
-      "title": "new castle-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "new castle-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/ekalaka-a.pdf",
-      "title": "ekalaka-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "ekalaka-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/rock springs-a.pdf",
-      "title": "rock springs-a",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "rock springs-a"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/reno-b.pdf",
-      "title": "reno-b",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "reno-b"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/preston-b.pdf",
-      "title": "preston-b",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "preston-b"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/lander-b.pdf",
-      "title": "lander-b",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "lander-b"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/lander-c.pdf",
-      "title": "lander-c",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "lander-c"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/E_Central_Montana.pdf",
-      "title": "E_Central_Montana",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "E_Central_Montana"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/Eastern_Montana.pdf",
-      "title": "Eastern_Montana",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Eastern_Montana"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/Western_Montana.pdf",
-      "title": "Western_Montana",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Western_Montana"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/West_River_SD_1.pdf",
-      "title": "West_River_SD_1",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "West_River_SD_1"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/wyoming.pdf",
-      "title": "wyoming",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "wyoming"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/Torrington_SW.pdf",
-      "title": "Torrington_SW",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Torrington_SW"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/ashton_ne_ashton_se.pdf",
-      "title": "ashton_ne_ashton_se",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "ashton_ne_ashton_se"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/gillette_ne_gillette_se.pdf",
-      "title": "gillette_ne_gillette_se",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "gillette_ne_gillette_se"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/thermopolis_ne_cody_ne_cody_se.pdf",
-      "title": "thermopolis_ne_cody_ne_cody_se",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "thermopolis_ne_cody_ne_cody_se"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/rawlins_se_rawlins_sw_rawlins_nw.pdf",
-      "title": "rawlins_se_rawlins_sw_rawlins_nw",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "rawlins_se_rawlins_sw_rawlins_nw"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/vernal_ne.pdf",
-      "title": "vernal_ne",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "vernal_ne"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/upper_yellowstone_river.pdf",
-      "title": "upper_yellowstone_river",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "upper_yellowstone_river"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYFieldSummaryReportPatsBottom.pdf",
-      "title": "WYFieldSummaryReportPatsBottom",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "WYFieldSummaryReportPatsBottom"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYFieldSummaryReportSWWY.pdf",
-      "title": "WYFieldSummaryReportSWWY",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "WYFieldSummaryReportSWWY"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYFieldReportThermopolisLander.pdf",
-      "title": "WYFieldReportThermopolisLander",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "WYFieldReportThermopolisLander"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYMapNarrativeSheridanSE.pdf",
-      "title": "WYMapNarrativeSheridanSE",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "WYMapNarrativeSheridanSE"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYPICodySheridanArmintoCasperTorr.pdf",
-      "title": "WYPICodySheridanArmintoCasperTorr",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "WYPICodySheridanArmintoCasperTorr"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYPIFlamingGorgeWyoming.pdf",
-      "title": "WYPIFlamingGorgeWyoming",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "WYPIFlamingGorgeWyoming"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYUserReportCasperNW.pdf",
-      "title": "WYUserReportCasperNW",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "WYUserReportCasperNW"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYUserReportOgdenNESE.pdf",
-      "title": "WYUserReportOgdenNESE",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "WYUserReportOgdenNESE"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/COalpineWetlands.pdf",
-      "title": "COalpineWetlands",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "COalpineWetlands"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/WYPIconvBlackHills.pdf",
-      "title": "WYPIconvBlackHills",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "WYPIconvBlackHills"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/UTsaltLakeII.pdf",
-      "title": "UTsaltLakeII",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "UTsaltLakeII"
     },
     {
       "href": "http://www.fws.gov/wetlands/Data/HisMapRep/UTFieldConvNotes.pdf",
-      "title": "UTFieldConvNotes",
       "rel": "archives",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "UTFieldConvNotes"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/fws-nwi/items/WY",
@@ -295,30 +303,32 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "WY",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
     "datetime": "2022-10-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "proj:epsg": 5070,
     "fws_nwi:state": "Wyoming",
     "fws_nwi:content": [
@@ -333,7 +343,6 @@
     -104.000492,
     45.124985
   ],
-  "type": "Feature",
   "assets": {
     "zip": {
       "href": "https://landcoverdata.blob.core.windows.net/fws-nwi-onboarding/WY_shapefile_wetlands.zip",
@@ -752,11 +761,5 @@
       ]
     ]
   },
-  "collection": "fws-nwi",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/usfws-nwi/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "fws-nwi"
 }

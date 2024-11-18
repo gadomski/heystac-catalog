@@ -1,4 +1,14 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "usgs-lcmap-hawaii-v10",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/usgs-lcmap-hawaii-v10/items",
@@ -7,39 +17,42 @@
     },
     {
       "href": "https://www.usgs.gov/special-topics/lcmap/collection-1-hawaii-science-products",
-      "title": "LCMAP Hawaii Science Products",
       "rel": "about",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "LCMAP Hawaii Science Products"
     },
     {
       "href": "https://www.usgs.gov/special-topics/lcmap/collection-1-hawaii-science-products",
-      "title": "Proprietary, Unrestricted",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Proprietary, Unrestricted"
     },
     {
       "href": "https://www.usgs.gov/special-topics/lcmap/lcmap-data-access",
-      "title": "USGS Data Access Options",
       "rel": "source",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "USGS Data Access Options"
     },
     {
       "href": "https://doi.org/10.1016/j.jag.2022.103015",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json"
     },
     {
       "href": "https://doi.org/10.1016/j.rse.2019.111356",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json"
     },
     {
       "href": "https://doi.org/10.5066/P91E8M23",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/usgs-lcmap-hawaii-v10",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/usgs-lcmap-hawaii-v10",
@@ -48,31 +61,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./LCMAP_HI_004002_2020_V10_CCDC.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "usgs-lcmap-hawaii-v10",
+  "heystac:rating": {
+    "stars": 3.6875,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 23.6,
+    "aggregate_total": 32
+  },
   "title": "USGS LCMAP Hawaii Collection 1.0",
   "assets": {
     "thumbnail": {
@@ -1276,16 +1290,8 @@
     }
   },
   "sci:citation": "U.S. Geological Survey (USGS), 2022, Land Change Monitoring, Assessment, and Projection (LCMAP) Collection 1.0 Science Products for Hawaii: USGS data release",
-  "stac_version": "1.0.0",
   "msft:group_id": "usgs-lcmap",
   "msft:container": "lcmap",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
-  ],
   "sci:publications": [
     {
       "doi": "10.1016/j.jag.2022.103015",

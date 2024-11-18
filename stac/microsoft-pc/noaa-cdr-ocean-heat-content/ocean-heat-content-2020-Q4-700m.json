@@ -1,46 +1,53 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ocean-heat-content-2020-Q4-700m",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/heat_content_anomaly_0-700_seasonal",
-      "title": "Source NetCDF item",
       "rel": "derived-from",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Source NetCDF item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_halosteric_sea_level_anomaly_0-700_seasonal",
-      "title": "Source NetCDF item",
       "rel": "derived-from",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Source NetCDF item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_salinity_anomaly_0-700_seasonal",
-      "title": "Source NetCDF item",
       "rel": "derived-from",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Source NetCDF item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_temperature_anomaly_0-700_seasonal",
-      "title": "Source NetCDF item",
       "rel": "derived-from",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Source NetCDF item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_thermosteric_sea_level_anomaly_0-700_seasonal",
-      "title": "Source NetCDF item",
       "rel": "derived-from",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Source NetCDF item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content-netcdf/items/mean_total_steric_sea_level_anomaly_0-700_seasonal",
-      "title": "Source NetCDF item",
       "rel": "derived-from",
-      "type": "application/geo+json"
+      "type": "application/geo+json",
+      "title": "Source NetCDF item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-cdr-ocean-heat-content&item=ocean-heat-content-2020-Q4-700m",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-cdr-ocean-heat-content/items/ocean-heat-content-2020-Q4-700m",
@@ -49,30 +56,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "ocean-heat-content-2020-Q4-700m",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID ocean-heat-content-2020-Q4-700m against schema at https://sche..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.476219",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID ocean-heat-content-2020-Q4-700m against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "proj:epsg": 4326,
     "proj:shape": [
       180,
@@ -97,7 +112,6 @@
     180.0,
     90.0
   ],
-  "type": "Feature",
   "assets": {
     "heat_content": {
       "href": "https://noaacdr.blob.core.windows.net/cogs/ocean-heat-content/heat_content_anomaly_0-700_seasonal_2020-Q4.tif",
@@ -233,10 +247,5 @@
       ]
     ]
   },
-  "collection": "noaa-cdr-ocean-heat-content",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "noaa-cdr-ocean-heat-content"
 }

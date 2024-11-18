@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "era5-pds-2020-12-fc",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/era5-pds/items/era5-pds-2020-12-fc",
@@ -7,30 +13,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "era5-pds-2020-12-fc",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID era5-pds-2020-12-fc against schema at https://schemas.stacspec..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.449189",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID era5-pds-2020-12-fc against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "era5:kind": "fc",
     "end_datetime": "2020-12-31T23:00:00Z",
     "cube:variables": {
@@ -183,7 +197,6 @@
     180,
     90
   ],
-  "type": "Feature",
   "assets": {
     "precipitation_amount_1hour_Accumulation": {
       "href": "abfs://era5/ERA5/2020/12/precipitation_amount_1hour_Accumulation.zarr",
@@ -277,9 +290,5 @@
       ]
     ]
   },
-  "collection": "era5-pds",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "era5-pds"
 }

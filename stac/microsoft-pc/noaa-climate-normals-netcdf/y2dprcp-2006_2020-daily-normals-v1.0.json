@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "y2dprcp-2006_2020-daily-normals-v1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-climate-normals-netcdf/items/y2dprcp-2006_2020-daily-normals-v1.0",
@@ -7,30 +13,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "y2dprcp-2006_2020-daily-normals-v1.0",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID y2dprcp-2006_2020-daily-normals-v1.0 against schema at https:/..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.473179",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID y2dprcp-2006_2020-daily-normals-v1.0 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "created": "2023-01-11T16:38:00.112577Z",
     "proj:epsg": 4326,
     "end_datetime": "2020-12-31T23:59:59Z",
@@ -44,7 +58,6 @@
     -66.999995,
     49.375001
   ],
-  "type": "Feature",
   "assets": {
     "netcdf": {
       "href": "https://noaanormals.blob.core.windows.net/gridded-normals/normals-daily/2006-2020/y2dprcp-2006_2020-daily-normals-v1.0.nc",
@@ -82,9 +95,5 @@
       ]
     ]
   },
-  "collection": "noaa-climate-normals-netcdf",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "noaa-climate-normals-netcdf"
 }

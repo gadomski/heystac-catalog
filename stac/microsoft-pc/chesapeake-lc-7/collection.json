@@ -1,4 +1,12 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "chesapeake-lc-7",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/chesapeake-lc-7/items",
@@ -7,21 +15,21 @@
     },
     {
       "href": "https://www.chesapeakeconservancy.org/wp-content/uploads/2020/06/Chesapeake_Conservancy_LandCover101Guide_June2020.pdf",
-      "title": "User Guide",
       "rel": "describedby",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "User Guide"
     },
     {
       "href": "https://www.chesapeakeconservancy.org/conservation-innovation-center/precision-conservation/chesapeake-bay-program/",
-      "title": "Data Availability Description",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Data Availability Description"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/chesapeake-lc-7",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/chesapeake-lc-7",
@@ -30,31 +38,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./Baywide_7class_20132014_E1800000_N1910000.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "chesapeake-lc-7",
+  "heystac:rating": {
+    "stars": 3.645833333333334,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 23.333333333333336,
+    "aggregate_total": 32
+  },
   "title": "Chesapeake Land Cover (7-class)",
   "assets": {
     "thumbnail": {
@@ -165,14 +174,8 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "chesapeake-lulc",
   "msft:container": "chesapeake",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
-  ],
   "msft:storage_account": "landcoverdata",
   "msft:short_description": "Chesapeake Bay Watershed land cover product with 7 classes at 1m resolution.",
   "msft:region": "westeurope"

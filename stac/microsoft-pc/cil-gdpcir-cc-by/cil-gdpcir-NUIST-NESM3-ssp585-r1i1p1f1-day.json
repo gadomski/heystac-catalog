@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "cil-gdpcir-NUIST-NESM3-ssp585-r1i1p1f1-day",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/cil-gdpcir-cc-by/items/cil-gdpcir-NUIST-NESM3-ssp585-r1i1p1f1-day",
@@ -7,30 +13,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "cil-gdpcir-NUIST-NESM3-ssp585-r1i1p1f1-day",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID cil-gdpcir-NUIST-NESM3-ssp585-r1i1p1f1-day against schema at h..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.477151",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID cil-gdpcir-NUIST-NESM3-ssp585-r1i1p1f1-day against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "cmip6:realm": "atmos",
     "cmip6:source": "NESM v3 (2016): \naerosol: none\natmos: ECHAM v6.3 (T63; 192 x 96 longitude/latitude; 47 levels; top level 1 Pa)\natmosChem: none\nland: JSBACH v3.1\nlandIce: none\nocean: NEMO v3.4 (NEMO v3.4, tripolar primarily 1deg; 384 x 362 longitude/latitude; 46 levels; top grid cell 0-6 m)\nocnBgchem: none\nseaIce: CICE4.1",
     "end_datetime": "2100-12-31T12:00:00Z",
@@ -163,7 +177,6 @@
     180,
     90
   ],
-  "type": "Feature",
   "assets": {
     "pr": {
       "href": "abfs://cil-gdpcir/ScenarioMIP/NUIST/NESM3/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
@@ -247,9 +260,5 @@
       ]
     ]
   },
-  "collection": "cil-gdpcir-cc-by",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "cil-gdpcir-cc-by"
 }

@@ -1,4 +1,12 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "mtbs",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/mtbs/items",
@@ -7,14 +15,15 @@
     },
     {
       "href": "https://catalog.data.gov/sl/dataset/mtbs-wildfire-burn-severity-mosaics-40c75",
-      "title": "CC BY",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "CC BY"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/mtbs",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/mtbs",
@@ -23,31 +32,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./mtbs_severity_conus_2018_30m.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "mtbs",
+  "heystac:rating": {
+    "stars": 4.6875,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 30.0,
+    "aggregate_total": 32
+  },
   "title": "MTBS: Monitoring Trends in Burn Severity",
   "assets": {
     "thumbnail": {
@@ -194,13 +204,7 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "cpdata",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "cpdataeuwest",
   "msft:short_description": "Annual burn severity mosaics for the continental United States and Alaska",
   "msft:region": "westeurope"

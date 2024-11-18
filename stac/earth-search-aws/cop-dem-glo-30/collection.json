@@ -1,9 +1,16 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "cop-dem-glo-30",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://spacedata.copernicus.eu/documents/20126/0/CSCDA_ESA_Mission-specific+Annex.pdf",
-      "title": "Copernicus DEM License",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "Copernicus DEM License"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/cop-dem-glo-30/items",
@@ -18,7 +25,8 @@
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/cop-dem-glo-30/aggregate",
       "rel": "aggregate",
-      "type": "application/json"
+      "type": "application/json",
+      "method": "GET"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/cop-dem-glo-30/aggregations",
@@ -32,31 +40,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./Copernicus_DSM_COG_10_N01_00_E125_00_DEM.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "cop-dem-glo-30",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "Copernicus DEM GLO-30",
   "extent": {
     "spatial": {
@@ -160,9 +169,5 @@
         }
       ]
     }
-  },
-  "stac_version": "1.0.0",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
-  ]
+  }
 }

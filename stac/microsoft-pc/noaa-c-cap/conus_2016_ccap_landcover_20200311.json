@@ -1,10 +1,18 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "conus_2016_ccap_landcover_20200311",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=noaa-c-cap&item=conus_2016_ccap_landcover_20200311",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/noaa-c-cap/items/conus_2016_ccap_landcover_20200311",
@@ -13,30 +21,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "conus_2016_ccap_landcover_20200311",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID conus_2016_ccap_landcover_20200311 against schema at https://s..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.446242",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID conus_2016_ccap_landcover_20200311 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "proj:epsg": 5070,
     "proj:shape": [
       97471,
@@ -59,7 +75,6 @@
     -64.966857,
     48.207712
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "https://ai4edataeuwest.blob.core.windows.net/noaa-c-cap/conus_2016_ccap_landcover_20200311.tif",
@@ -249,11 +264,5 @@
       ]
     ]
   },
-  "collection": "noaa-c-cap",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "noaa-c-cap"
 }

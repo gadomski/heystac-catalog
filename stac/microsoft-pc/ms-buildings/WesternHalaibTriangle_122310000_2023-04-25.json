@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "WesternHalaibTriangle_122310000_2023-04-25",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/ms-buildings/items/WesternHalaibTriangle_122310000_2023-04-25",
@@ -7,31 +13,33 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "WesternHalaibTriangle_122310000_2023-04-25",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
-    "title": "Building footprints",
     "datetime": "2023-04-25T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
+    "title": "Building footprints",
     "description": "Parquet dataset with the building footprints",
     "table:columns": [
       {
@@ -55,7 +63,6 @@
     33.895686222188225,
     21.861457041503243
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "abfs://footprints/delta/2023-04-25/ml-buildings.parquet/RegionName=WesternHalaibTriangle/quadkey=122310000",
@@ -97,9 +104,5 @@
       ]
     ]
   },
-  "collection": "ms-buildings",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "ms-buildings"
 }

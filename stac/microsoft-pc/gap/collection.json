@@ -1,4 +1,13 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "gap",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/label/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/gap/items",
@@ -7,14 +16,15 @@
     },
     {
       "href": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
-      "title": "Public Domain",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "Public Domain"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/gap",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/gap",
@@ -23,31 +33,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./gap_landfire_nationalterrestrialecosystems2011_938865_862215_1238865_562215.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "gap",
+  "heystac:rating": {
+    "stars": 4.6875,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 30.0,
+    "aggregate_total": 32
+  },
   "title": "USGS Gap Land Cover",
   "assets": {
     "thumbnail": {
@@ -4292,14 +4303,7 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "usgs-gap",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/label/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "ai4edataeuwest",
   "msft:short_description": "U.S.-wide land cover information for 2011",
   "msft:region": "westeurope"

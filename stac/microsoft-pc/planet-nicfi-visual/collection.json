@@ -1,4 +1,11 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "planet-nicfi-visual",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/planet-nicfi-visual/items",
@@ -7,33 +14,33 @@
     },
     {
       "href": "https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf",
-      "title": "Participant License Agreement.",
       "rel": "license",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Participant License Agreement."
     },
     {
       "href": "https://assets.planet.com/docs/NICFI_UserGuidesFAQ.pdf",
-      "title": "Participant License Agreement.",
       "rel": "documentation",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "Participant License Agreement."
     },
     {
       "href": "https://www.planet.com/nicfi/",
-      "title": "NICFI Program - Satellite Imagery and Monitoring | Planet",
       "rel": "documentation",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "NICFI Program - Satellite Imagery and Monitoring | Planet"
     },
     {
       "href": "https://developers.planet.com/nicfi/",
-      "title": "NICFI Program Resource Center",
       "rel": "documentation",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "NICFI Program Resource Center"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/planet-nicfi-visual",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/planet-nicfi-visual",
@@ -42,31 +49,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./c2156297-623d-4793-a91e-fb317c9fef04-746-1013.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "planet-nicfi-visual",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "Planet-NICFI Basemaps (Visual)",
   "assets": {
     "thumbnail": {
@@ -189,13 +197,8 @@
       "title": "Thumbnail"
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "planet-nicfi",
   "msft:container": "nicfi",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "planet",
   "msft:short_description": "Planet's high-resolution, analysis-ready mosaics of the world's tropics",
   "msft:region": "westeurope"

@@ -1,4 +1,11 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "mobi",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/mobi/items",
@@ -7,14 +14,15 @@
     },
     {
       "href": "https://aka.ms/mobi-license",
-      "title": "NatureServe MoBI license",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "NatureServe MoBI license"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/mobi",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/mobi",
@@ -23,31 +31,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./mobi.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "mobi",
+  "heystac:rating": {
+    "stars": 4.6875,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 30.0,
+    "aggregate_total": 32
+  },
   "title": "MoBI: Map of Biodiversity Importance",
   "assets": {
     "thumbnail": {
@@ -232,12 +241,7 @@
       "title": "Species richness for pollinators"
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "mobi",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "ai4edataeuwest",
   "msft:short_description": "Habitat information for 2,216 imperiled species occurring in the continental United States",
   "msft:region": "westeurope"

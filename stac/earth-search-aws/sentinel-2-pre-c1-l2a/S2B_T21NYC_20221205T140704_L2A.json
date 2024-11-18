@@ -1,4 +1,19 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "S2B_T21NYC_20221205T140704_L2A",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sentinel-2/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "s3://e84-earth-search-sentinel-data/sentinel-2-pre-c1-l2a/21/N/YC/2022/12/S2B_T21NYC_20221205T140704_L2A/S2B_T21NYC_20221205T140704_L2A.json",
@@ -7,13 +22,14 @@
     },
     {
       "href": "s3://sentinel-s2-l2a/tiles/21/N/YC/2022/12/5/0/metadata.xml",
-      "title": "Granule Metadata in Sinergize RODA Archive",
       "rel": "via",
-      "type": "application/xml"
+      "type": "application/xml",
+      "title": "Granule Metadata in Sinergize RODA Archive"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-pre-c1-l2a/items/S2B_T21NYC_20221205T140704_L2A/thumbnail",
-      "rel": "thumbnail"
+      "rel": "thumbnail",
+      "type": "application/json"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-pre-c1-l2a/items/S2B_T21NYC_20221205T140704_L2A",
@@ -22,29 +38,32 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "S2B_T21NYC_20221205T140704_L2A",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
+    "datetime": "2022-12-05T14:11:53.454000Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "created": "2024-05-01T21:13:07.275Z",
     "platform": "sentinel-2b",
     "constellation": "sentinel-2",
@@ -87,7 +106,6 @@
     "s2:datatake_type": "INS-NOBS",
     "s2:datastrip_id": "S2B_OPER_MSI_L2A_DS_2BPS_20221205T162557_S20221205T140704_N04.00",
     "s2:reflectance_conversion_factor": 1.02884777057783,
-    "datetime": "2022-12-05T14:11:53.454000Z",
     "earthsearch:payload_id": "roda-sentinel-2-c1-l2a/workflow-sentinel-2-c1-l2a-to-stac/5e98eb8371eb609c63561bf20fd3066a",
     "storage:platform": "AWS",
     "storage:region": "us-west-2",
@@ -97,8 +115,6 @@
     },
     "updated": "2024-05-01T21:13:07.275Z"
   },
-  "type": "Feature",
-  "stac_version": "1.0.0",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -908,18 +924,6 @@
     1.71876,
     -54.214277,
     2.71282
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
-    "https://stac-extensions.github.io/grid/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/mgrs/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/sentinel-2/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/storage/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/view/v1.0.0/schema.json"
   ],
   "collection": "sentinel-2-pre-c1-l2a"
 }

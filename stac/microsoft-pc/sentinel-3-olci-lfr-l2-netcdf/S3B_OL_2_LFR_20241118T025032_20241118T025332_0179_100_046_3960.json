@@ -1,0 +1,537 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "S3B_OL_2_LFR_20241118T025032_20241118T025332_0179_100_046_3960",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-3-olci-lfr-l2-netcdf/items/S3B_OL_2_LFR_20241118T025032_20241118T025332_0179_100_046_3960",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-18T02:52:01.896546Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
+    "s3:gsd": 300,
+    "s3:land": 0.0,
+    "platform": "Sentinel-3B",
+    "s3:coastal": 0.005171,
+    "s3:invalid": 2.0,
+    "instruments": [
+      "OLCI"
+    ],
+    "s3:cosmetic": 0.0,
+    "end_datetime": "2024-11-18T02:53:31.896546Z",
+    "s3:saturated": 0.0,
+    "constellation": "Sentinel-3",
+    "s3:duplicated": 1.58205,
+    "eo:cloud_cover": 81.0,
+    "start_datetime": "2024-11-18T02:50:31.896546Z",
+    "s3:product_name": "olci-lfr",
+    "s3:product_type": "OL_2_LFR___",
+    "s3:saline_water": 15.0,
+    "s3:tidal_region": 0.0,
+    "sat:orbit_state": "descending",
+    "s3:dubious_samples": 0.0,
+    "sat:absolute_orbit": 34198,
+    "sat:relative_orbit": 46,
+    "s3:fresh_inland_water": 0.0,
+    "s3:processing_timeliness": "NT",
+    "sat:platform_international_designator": "2018-039A"
+  },
+  "bbox": [
+    71.4156,
+    -65.858,
+    100.333,
+    -51.3292
+  ],
+  "assets": {
+    "iwv": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/iwv.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 3989105,
+      "file:checksum": "baf6cbe7a25e36fbd031dffd1cde596e",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa18",
+          "description": "Band 18 - Water vapour absorption reference. Common reference band with SLSTR. Vegetation monitoring",
+          "center_wavelength": 0.885,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa19",
+          "description": "Band 19 - Water vapour absorption, vegetation monitoring (maximum REFLECTANCE)",
+          "center_wavelength": 0.9,
+          "full_width_half_max": 0.01
+        }
+      ],
+      "description": "Integrated water vapour column"
+    },
+    "lqsf": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/lqsf.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 2438228,
+      "file:checksum": "78c71875e3a0a77878be4161eda4c03c",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Land quality and science flags"
+    },
+    "otci": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/otci.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 288679,
+      "file:checksum": "2bb90f0dd5f1dbefe9360145a4117518",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa10",
+          "description": "Band 10 - Chlorophyll fluorescence peak, red edge",
+          "center_wavelength": 0.68125,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa11",
+          "description": "Band 11 - Chlorophyll fluorescence baseline, red edge transition",
+          "center_wavelength": 0.70875,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa12",
+          "description": "Band 12 - O2 absorption / clouds, vegetation",
+          "center_wavelength": 0.75375,
+          "full_width_half_max": 0.0075
+        }
+      ],
+      "description": "OLCI Terrestrial Chlorophyll Index (OTCI)"
+    },
+    "gifapar": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/gifapar.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 189751,
+      "file:checksum": "ecb80d8f0ace479a9dfcb0a1b697bcd5",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Oa03",
+          "description": "Band 3 - Chlorophyll absorption maximum, biogeochemistry, vegetation",
+          "center_wavelength": 0.4425,
+          "full_width_half_max": 0.01
+        },
+        {
+          "name": "Oa10",
+          "description": "Band 10 - Chlorophyll fluorescence peak, red edge",
+          "center_wavelength": 0.68125,
+          "full_width_half_max": 0.0075
+        },
+        {
+          "name": "Oa17",
+          "description": "Band 17 - Atmospheric / aerosol correction, clouds, pixel co-registration",
+          "center_wavelength": 0.865,
+          "full_width_half_max": 0.02
+        }
+      ],
+      "description": "Green instantaneous Fraction of Absorbed Photosynthetically Active Radiation (FAPAR)"
+    },
+    "tie-meteo": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/tie_meteo.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 20110726,
+      "file:checksum": "f182ef80f0932b7bedd9cd0971af08fe",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Tie-point meteo annotations"
+    },
+    "rc-gifapar": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/rc_gifapar.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 718782,
+      "file:checksum": "ac29c345a5091f28ff31c784dc181901",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Rectified reflectance"
+    },
+    "safe-manifest": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/xfdumanifest.xml",
+      "file:size": 228102,
+      "file:checksum": "6c7b3d466f9826924527234175f348a9",
+      "type": "application/xml",
+      "roles": [
+        "metadata"
+      ],
+      "description": "SAFE product manifest"
+    },
+    "tie-geometries": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/tie_geometries.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 2299778,
+      "file:checksum": "7db8342e77b5610a8fdbc3441f2d1004",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Tie-point geometry annotations"
+    },
+    "geo-coordinates": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/geo_coordinates.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 54941089,
+      "file:checksum": "b7a6ddb025b07df9fe14e830a7cbbdb4",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Geo coordinate annotations"
+    },
+    "instrument-data": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/instrument_data.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 1312350,
+      "file:checksum": "d54cc1ef528aaf292eb3de6ea1008a65",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Instrument annotations"
+    },
+    "time-coordinates": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/time_coordinates.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 15433,
+      "file:checksum": "cb4bee080d2e6a040691e345be02de27",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Time coordinate annotations"
+    },
+    "tie-geo-coordinates": {
+      "href": "https://sentinel3euwest.blob.core.windows.net/sentinel-3/OLCI/OL_2_LFR___/2024/11/18/S3B_OL_2_LFR____20241118T025032_20241118T025332_20241118T111037_0179_100_046_3960_PS2_O_NT_002.SEN3/tie_geo_coordinates.nc",
+      "s3:shape": [
+        4091,
+        4865
+      ],
+      "file:size": 1321849,
+      "file:checksum": "8e989e6617283b982ee72529a915ff4f",
+      "s3:spatial_resolution": [
+        294,
+        270
+      ],
+      "type": "application/x-netcdf",
+      "roles": [
+        "data"
+      ],
+      "description": "Tie-point geo coordinate annotations"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          71.4156,
+          -60.5016
+        ],
+        [
+          72.4319,
+          -60.8698
+        ],
+        [
+          73.4754,
+          -61.2333
+        ],
+        [
+          74.5396,
+          -61.5873
+        ],
+        [
+          75.6229,
+          -61.9312
+        ],
+        [
+          76.7412,
+          -62.2664
+        ],
+        [
+          77.8737,
+          -62.5923
+        ],
+        [
+          79.0341,
+          -62.9108
+        ],
+        [
+          80.2243,
+          -63.2196
+        ],
+        [
+          81.4332,
+          -63.5166
+        ],
+        [
+          82.6678,
+          -63.8035
+        ],
+        [
+          83.9332,
+          -64.0805
+        ],
+        [
+          85.2178,
+          -64.3452
+        ],
+        [
+          86.5302,
+          -64.5975
+        ],
+        [
+          87.8687,
+          -64.8399
+        ],
+        [
+          89.2232,
+          -65.0687
+        ],
+        [
+          90.6074,
+          -65.2866
+        ],
+        [
+          92.0081,
+          -65.4902
+        ],
+        [
+          93.4326,
+          -65.6811
+        ],
+        [
+          94.8821,
+          -65.858
+        ],
+        [
+          96.5324,
+          -63.2931
+        ],
+        [
+          97.9578,
+          -60.7096
+        ],
+        [
+          99.2122,
+          -58.1164
+        ],
+        [
+          100.333,
+          -55.5152
+        ],
+        [
+          99.2685,
+          -55.3708
+        ],
+        [
+          98.2143,
+          -55.2167
+        ],
+        [
+          97.1707,
+          -55.054
+        ],
+        [
+          96.1324,
+          -54.8815
+        ],
+        [
+          95.1038,
+          -54.7007
+        ],
+        [
+          94.0872,
+          -54.5116
+        ],
+        [
+          93.0771,
+          -54.3146
+        ],
+        [
+          92.0793,
+          -54.1085
+        ],
+        [
+          91.087,
+          -53.8933
+        ],
+        [
+          90.1078,
+          -53.6708
+        ],
+        [
+          89.1392,
+          -53.4399
+        ],
+        [
+          88.1862,
+          -53.2025
+        ],
+        [
+          87.2358,
+          -52.9547
+        ],
+        [
+          86.3037,
+          -52.7022
+        ],
+        [
+          85.3763,
+          -52.4405
+        ],
+        [
+          84.464,
+          -52.1758
+        ],
+        [
+          83.5602,
+          -51.9002
+        ],
+        [
+          82.6645,
+          -51.6168
+        ],
+        [
+          81.784,
+          -51.3292
+        ],
+        [
+          79.6362,
+          -53.7026
+        ],
+        [
+          77.2263,
+          -56.0303
+        ],
+        [
+          74.5051,
+          -58.3025
+        ],
+        [
+          71.4156,
+          -60.5016
+        ]
+      ]
+    ]
+  },
+  "collection": "sentinel-3-olci-lfr-l2-netcdf"
+}

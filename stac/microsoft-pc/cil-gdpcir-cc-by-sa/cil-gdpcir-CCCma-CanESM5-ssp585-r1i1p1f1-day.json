@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "cil-gdpcir-CCCma-CanESM5-ssp585-r1i1p1f1-day",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/cil-gdpcir-cc-by-sa/items/cil-gdpcir-CCCma-CanESM5-ssp585-r1i1p1f1-day",
@@ -7,30 +13,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "cil-gdpcir-CCCma-CanESM5-ssp585-r1i1p1f1-day",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID cil-gdpcir-CCCma-CanESM5-ssp585-r1i1p1f1-day against schema at..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.474849",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID cil-gdpcir-CCCma-CanESM5-ssp585-r1i1p1f1-day against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "cmip6:realm": "atmos",
     "cmip6:source": "CanESM5 (2019): \\\\\\\\naerosol: interactive\\\\\\\\natmos: CanAM5 (T63L49 native atmosphere, T63 Linear Gaussian Grid; 128 x 64 longitude/latitude; 49 levels; top level 1 hPa)\\\\\\\\natmosChem: specified oxidants for aerosols\\\\\\\\nland: CLASS3.6/CTEM1.2\\\\\\\\nlandIce: specified ice sheets\\\\\\\\nocean: NEMO3.4.1 (ORCA1 tripolar grid, 1 deg with refinement to 1/3 deg within 20 degrees of the equator; 361 x 290 longitude/latitude; 45 vertical levels; top grid cell 0-6.19 m)\\\\\\\\nocnBgchem: Canadian Model of Ocean Carbon (CMOC); NPZD ecosystem with OMIP prescribed carbonate chemistry\\\\\\\\nseaIce: LIM2",
     "end_datetime": "2100-12-31T12:00:00Z",
@@ -167,7 +181,6 @@
     180,
     90
   ],
-  "type": "Feature",
   "assets": {
     "pr": {
       "href": "abfs://cil-gdpcir/ScenarioMIP/CCCma/CanESM5/ssp585/r1i1p1f1/day/pr/v1.1.zarr",
@@ -251,9 +264,5 @@
       ]
     ]
   },
-  "collection": "cil-gdpcir-cc-by-sa",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "cil-gdpcir-cc-by-sa"
 }

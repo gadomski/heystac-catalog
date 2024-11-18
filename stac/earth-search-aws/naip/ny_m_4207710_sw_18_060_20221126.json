@@ -1,4 +1,15 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "ny_m_4207710_sw_18_060_20221126",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/storage/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "s3://earthsearch-data/naip/ny/2022/ny_m_4207710_sw_18_060_20221126/ny_m_4207710_sw_18_060_20221126.json",
@@ -7,7 +18,8 @@
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/naip/items/ny_m_4207710_sw_18_060_20221126/thumbnail",
-      "rel": "thumbnail"
+      "rel": "thumbnail",
+      "type": "application/json"
     },
     {
       "href": "https://earth-search.aws.element84.com/v1/collections/naip/items/ny_m_4207710_sw_18_060_20221126",
@@ -16,29 +28,32 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "ny_m_4207710_sw_18_060_20221126",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
+    "datetime": "2022-11-26T16:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "naip:state": "ny",
     "naip:year": "2022",
     "gsd": 0.6,
@@ -73,15 +88,12 @@
     "storage:region": "us-west-2",
     "storage:requester_pays": true,
     "earthsearch:payload_id": "roda-naip/workflow-naip-to-stac/183d25040838b0b3aa613b1178fa8523",
-    "datetime": "2022-11-26T16:00:00Z",
     "processing:software": {
       "naip-to-stac": "2023.05.22"
     },
     "created": "2024-05-03T17:52:24.646Z",
     "updated": "2024-05-03T17:52:24.646Z"
   },
-  "type": "Feature",
-  "stac_version": "1.0.0",
   "geometry": {
     "type": "Polygon",
     "coordinates": [
@@ -177,14 +189,6 @@
     42.746572,
     -77.807111,
     42.815937
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/grid/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/storage/v1.0.0/schema.json"
   ],
   "collection": "naip"
 }

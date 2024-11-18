@@ -1,4 +1,13 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "nasa-nex-gddp-cmip6",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasa-nex-gddp-cmip6/items",
@@ -7,9 +16,9 @@
     },
     {
       "href": "https://pcmdi.llnl.gov/CMIP6/TermsOfUse/TermsOfUse6-1.html",
-      "title": "CMIP6 Terms of Use",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "CMIP6 Terms of Use"
     },
     {
       "href": "https://www.nccs.nasa.gov/sites/default/files/NEX-GDDP-CMIP6-Tech_Note.pdf",
@@ -18,9 +27,9 @@
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/nasa-nex-gddp-cmip6",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nasa-nex-gddp-cmip6",
@@ -29,31 +38,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./UKESM1-0-LL.ssp585.2100.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "nasa-nex-gddp-cmip6",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "Earth Exchange Global Daily Downscaled Projections (NEX-GDDP-CMIP6)",
   "assets": {
     "thumbnail": {
@@ -546,7 +556,6 @@
     }
   },
   "sci:citation": "Climate scenarios used were from the NEX-GDDP-CMIP6 dataset, prepared by the Climate Analytics Group and NASA Ames Research Center using the NASA Earth Exchange, and distributed by the NASA Center for Climate Simulation (NCCS).",
-  "stac_version": "1.0.0",
   "cube:variables": {
     "pr": {
       "type": "data",
@@ -790,12 +799,6 @@
       "description": "time"
     }
   },
-  "stac_extensions": [
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "nasagddp",
   "msft:short_description": [
     "Global downscaled climate scenarios derived from the General Circulation Model conducted under CMIP6."

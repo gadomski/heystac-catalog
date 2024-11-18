@@ -1,4 +1,12 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/datacube/v2.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/esa-cci-lc-netcdf/items/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1",
@@ -7,30 +15,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1 against schema at http..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.469820",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "title": "ESA CCI Land Cover Map for 2020",
     "created": "2023-01-11T18:52:07.171349Z",
     "proj:epsg": 4326,
@@ -63,7 +79,6 @@
     180.0,
     90.0
   ],
-  "type": "Feature",
   "assets": {
     "netcdf": {
       "href": "https://landcoverdata.blob.core.windows.net/esa-cci-lc/netcdf/C3S-LC-L4-LCCS-Map-300m-P1Y-2020-v2.1.1.nc",
@@ -231,11 +246,5 @@
       ]
     ]
   },
-  "collection": "esa-cci-lc-netcdf",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/processing/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/datacube/v2.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "esa-cci-lc-netcdf"
 }

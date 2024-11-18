@@ -1,4 +1,10 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "ecmwf-forecast",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/ecmwf-forecast/items",
@@ -7,21 +13,21 @@
     },
     {
       "href": "https://creativecommons.org/licenses/by/4.0/",
-      "title": "CC-BY-4.0 license",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "CC-BY-4.0 license"
     },
     {
       "href": "https://confluence.ecmwf.int/display/UDOC/ECMWF+Open+Data+-+Real+Time",
-      "title": "ECMWF Open Data (Real Time) documentation",
       "rel": "documentation",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "ECMWF Open Data (Real Time) documentation"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/ecmwf-forecast",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/ecmwf-forecast",
@@ -30,31 +36,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
-      "href": "./ecmwf-2024-11-14T12-wave-fc-360h-0.25.json",
-      "rel": "item"
+      "href": "./ecmwf-2024-11-17T12-wave-fc-360h-0.25.json",
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "ecmwf-forecast",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 30.0,
+    "aggregate_total": 30
+  },
   "title": "ECMWF Open Data (real-time)",
   "assets": {
     "thumbnail": {
@@ -155,11 +162,7 @@
     }
   },
   "msft:region": "westeurope",
-  "stac_version": "1.0.0",
   "msft:container": "ecmwf",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
-  ],
   "msft:storage_account": "ai4edataeuwest",
   "msft:short_description": "ECMWF Open Data (Real Time) forecasts"
 }

@@ -1,4 +1,13 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "sentinel-1-rtc",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc/items",
@@ -7,14 +16,15 @@
     },
     {
       "href": "https://creativecommons.org/licenses/by/4.0/",
-      "title": "CC BY 4.0",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "CC BY 4.0"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-1-rtc",
@@ -23,31 +33,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
-      "href": "./S1A_IW_GRDH_1SDV_20241115T054752_20241115T054811_056561_06EF7F_rtc.json",
-      "rel": "item"
+      "href": "./S1A_IW_GRDH_1SDV_20241118T061311_20241118T061329_056605_06F14B_rtc.json",
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "sentinel-1-rtc",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "Sentinel 1 Radiometrically Terrain Corrected (RTC)",
   "assets": {
     "thumbnail": {
@@ -277,15 +288,8 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "sentinel-1",
   "msft:container": "sentinel1-grd-rtc",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "sentinel1euwestrtc",
   "msft:requires_account": true,
   "msft:short_description": "Radiometrically terrain corrected SAR imagery derived from the Sentinel 1 Level 1 GRD product.",

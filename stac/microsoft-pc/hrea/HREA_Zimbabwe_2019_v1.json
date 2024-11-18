@@ -1,10 +1,16 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "HREA_Zimbabwe_2019_v1",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=hrea&item=HREA_Zimbabwe_2019_v1",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/hrea/items/HREA_Zimbabwe_2019_v1",
@@ -13,30 +19,32 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "HREA_Zimbabwe_2019_v1",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
     "datetime": "2019-12-31T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "proj:epsg": 4326
   },
   "bbox": [
@@ -45,7 +53,6 @@
     33.054955,
     -15.609359
   ],
-  "type": "Feature",
   "assets": {
     "lightscore": {
       "href": "https://hreadatasa.blob.core.windows.net/hrea/HREA/HREA_Zimbabwe_2019_v1/Zimbabwe_set_lightscore_sy_2019.tif",
@@ -184,9 +191,5 @@
       ]
     ]
   },
-  "collection": "hrea",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "hrea"
 }

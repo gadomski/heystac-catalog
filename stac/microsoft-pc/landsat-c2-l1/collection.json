@@ -1,4 +1,15 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "landsat-c2-l1",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l1/items",
@@ -7,19 +18,21 @@
     },
     {
       "href": "https://doi.org/10.5066/P9AF14YV",
-      "title": "Landsat 1-5 MSS Collection 2 Level-1",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "Landsat 1-5 MSS Collection 2 Level-1"
     },
     {
       "href": "https://www.usgs.gov/core-science-systems/hdds/data-policy",
-      "title": "Public Domain",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "Public Domain"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/landsat-c2-l1",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l1",
@@ -28,31 +41,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./LM05_L1GS_039039_20130107_02_T2.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "landsat-c2-l1",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "Landsat Collection 2 Level-1",
   "assets": {
     "thumbnail": {
@@ -576,17 +590,8 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "landsat",
   "msft:container": "landsat-c2",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "landsateuwest",
   "msft:short_description": "Landsat Collection 2 Level-1 data from the Multispectral Scanner System (MSS) onboard Landsat 1 through Landsat 5.",
   "msft:region": "westeurope"

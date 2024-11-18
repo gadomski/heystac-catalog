@@ -1,10 +1,18 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "DRCOG_2020_LULC_E3510000_N1800000",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=drcog-lulc&item=DRCOG_2020_LULC_E3510000_N1800000",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/drcog-lulc/items/DRCOG_2020_LULC_E3510000_N1800000",
@@ -13,30 +21,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "DRCOG_2020_LULC_E3510000_N1800000",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID DRCOG_2020_LULC_E3510000_N1800000 against schema at https://sc..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.465955",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID DRCOG_2020_LULC_E3510000_N1800000 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "created": "2022-07-15T15:25:46.629201Z",
     "mission": "2020 DRCOG LULC study covering 6,000 square miles",
     "proj:epsg": 6428,
@@ -62,7 +78,6 @@
     -103.674945,
     40.043227
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "https://landcoverdata.blob.core.windows.net/drcog-lulc/2020/DRCOG_2020_LULC_E3510000_N1800000.tif",
@@ -169,11 +184,5 @@
       ]
     ]
   },
-  "collection": "drcog-lulc",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "drcog-lulc"
 }

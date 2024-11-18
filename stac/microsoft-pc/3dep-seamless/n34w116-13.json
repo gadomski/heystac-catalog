@@ -1,14 +1,21 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "n34w116-13",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/13/TIFF/n34w116/USGS_13_n34w116.xml",
-      "rel": "via"
+      "rel": "via",
+      "type": "application/json"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=3dep-seamless&item=n34w116-13",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/3dep-seamless/items/n34w116-13",
@@ -17,31 +24,33 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "n34w116-13",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
-    "gsd": 10,
     "datetime": "2020-04-24T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
+    "gsd": 10,
     "proj:epsg": 5498,
     "proj:shape": [
       10812,
@@ -68,7 +77,6 @@
     -114.999444444105,
     34.0005555557951
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/13/TIFF/n34w116/USGS_13_n34w116.tif",
@@ -145,9 +153,5 @@
       ]
     ]
   },
-  "collection": "3dep-seamless",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "3dep-seamless"
 }

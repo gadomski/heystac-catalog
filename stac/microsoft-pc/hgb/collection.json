@@ -1,4 +1,11 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "hgb",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/hgb/items",
@@ -7,14 +14,15 @@
     },
     {
       "href": "https://earthdata.nasa.gov/earth-observation-data/data-use-policy",
-      "title": "EOSDIS Data Use Policy",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "EOSDIS Data Use Policy"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/hgb",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/hgb",
@@ -23,31 +31,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./hgb.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "hgb",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "HGB: Harmonized Global Biomass for 2010",
   "assets": {
     "thumbnail": {
@@ -161,12 +170,7 @@
       "title": "Uncertainty associated with global below-ground biomass"
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "cpdata",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "cpdataeuwest",
   "msft:short_description": "Global maps of aboveground and belowground biomass carbon density for the year 2010 at 300m resolution",
   "msft:region": "westeurope"

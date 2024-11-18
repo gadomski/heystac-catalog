@@ -1,10 +1,18 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "60W-2022",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=io-lulc-9-class&item=60W-2022",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/io-lulc-9-class/items/60W-2022",
@@ -13,30 +21,38 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "60W-2022",
   "properties": {
-    "heystac:rating": 0,
-    "heystac:total": 1,
-    "heystac:stars": 0.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 0,
-        "total": 1,
-        "message": "Validation failed for Feature with ID 60W-2022 against schema at https://schemas.stacspec.org/v1.0.0..."
-      }
-    ],
+    "datetime": "2024-11-18T13:15:15.475470",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID 60W-2022 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
     "proj:bbox": [
       353310.0,
       7097021.1319483295,
@@ -67,7 +83,6 @@
     180.0,
     71.63584468488295
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "https://ai4edataeuwest.blob.core.windows.net/io-lulc/nine-class/60W_20220101-20230101.tif",
@@ -1040,11 +1055,5 @@
       ]
     ]
   },
-  "collection": "io-lulc-9-class",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "io-lulc-9-class"
 }

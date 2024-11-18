@@ -1,4 +1,10 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "CHIRPS",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/deltares-water-availability/items/CHIRPS",
@@ -7,30 +13,32 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "CHIRPS",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
     "datetime": "1984-01-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
     "end_datetime": "2020-12-31T00:00:00Z",
     "cube:variables": {
       "P": {
@@ -330,7 +338,6 @@
     176.7875061,
     49.88750076
   ],
-  "type": "Feature",
   "assets": {
     "data": {
       "href": "https://deltaresreservoirssa.blob.core.windows.net/reservoirs/v2021.12/reservoirs_CHIRPS.nc",
@@ -378,9 +385,5 @@
       ]
     ]
   },
-  "collection": "deltares-water-availability",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "deltares-water-availability"
 }

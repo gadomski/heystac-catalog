@@ -1,4 +1,12 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "usda-cdl",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/classification/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/usda-cdl/items",
@@ -7,19 +15,21 @@
     },
     {
       "href": "https://www.nass.usda.gov/Research_and_Science/Cropland/SARS1a.php",
-      "title": "Product Landing Page",
-      "rel": "about"
+      "rel": "about",
+      "type": "application/json",
+      "title": "Product Landing Page"
     },
     {
       "href": "https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php#Section3_5.0",
-      "title": "Redistribution information",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "Redistribution information"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/usda-cdl",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/usda-cdl",
@@ -28,31 +38,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./cultivated_2021_973905_922575_90000.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "usda-cdl",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "USDA Cropland Data Layers (CDLs)",
   "assets": {
     "thumbnail": {
@@ -889,13 +900,7 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "usda-cdl",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/classification/v1.1.0/schema.json"
-  ],
   "msft:storage_account": "landcoverdata",
   "msft:short_description": "The UDA Cropland Data Layer is an annual raster, geo-referenced, crop-specific land cover data layer produced using satellite imagery and extensive agricultural ground truth collected during the current growing season.",
   "msft:region": "westeurope"

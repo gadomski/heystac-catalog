@@ -1,4 +1,14 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "nrcan-landcover",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/label/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nrcan-landcover/items",
@@ -7,14 +17,15 @@
     },
     {
       "href": "https://open.canada.ca/en/open-government-licence-canada",
-      "title": "Open Government Licence - Canada",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "Open Government Licence - Canada"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/nrcan-landcover",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/nrcan-landcover",
@@ -23,31 +34,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./CAN_LC_2015_CAL_16_13.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "nrcan-landcover",
+  "heystac:rating": {
+    "stars": 4.9375,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 31.6,
+    "aggregate_total": 32
+  },
   "title": "Land Cover of Canada",
   "assets": {
     "metadata": {
@@ -289,15 +301,7 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:container": "landcover",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/label/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "msft:storage_account": "nrcanlandcovereuwest",
   "msft:short_description": "Collection of Land Cover products for Canada as produced by Natural Resources Canada using Landsat satellite imagery. This collection of cartographic products offers classified Land Cover of Canada at a 30 metre scale, updated on a 5 year basis.",
   "msft:region": "westeurope"

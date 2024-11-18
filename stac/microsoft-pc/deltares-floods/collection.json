@@ -1,4 +1,11 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "deltares-floods",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/deltares-floods/items",
@@ -7,21 +14,21 @@
     },
     {
       "href": "https://ai4edatasetspublicassets.blob.core.windows.net/assets/aod_docs/11206409-003-ZWS-0003_v0.1-Planetary-Computer-Deltares-global-flood-docs.pdf",
-      "title": "User Guide",
       "rel": "documentation",
-      "type": "application/pdf"
+      "type": "application/pdf",
+      "title": "User Guide"
     },
     {
       "href": "https://cdla.dev/permissive-1-0/",
-      "title": "Community Data License Agreement - Permissive, Version 1.0",
       "rel": "license",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Community Data License Agreement - Permissive, Version 1.0"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/deltares-floods",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/deltares-floods",
@@ -30,31 +37,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
       "href": "./NASADEM-90m-2050-0250.json",
-      "rel": "item"
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 2,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 5.0,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "deltares-floods",
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 32
+  },
   "title": "Deltares Global Flood Maps",
   "assets": {
     "thumbnail": {
@@ -159,7 +167,6 @@
       "description": "Kerchunk index file."
     }
   },
-  "stac_version": "1.0.0",
   "cube:variables": {
     "inun": {
       "type": "data",
@@ -288,10 +295,6 @@
       "description": "time"
     }
   },
-  "stac_extensions": [
-    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
-  ],
   "msft:storage_account": "deltaresfloodssa",
   "msft:short_description": "Global estimates of coastal inundation under various sea level rise conditions and return periods.",
   "msft:region": "westeurope"

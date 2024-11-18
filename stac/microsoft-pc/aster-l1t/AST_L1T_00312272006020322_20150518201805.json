@@ -1,10 +1,20 @@
 {
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "AST_L1T_00312272006020322_20150518201805",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=aster-l1t&item=AST_L1T_00312272006020322_20150518201805",
-      "title": "Map of item",
       "rel": "preview",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Map of item"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/aster-l1t/items/AST_L1T_00312272006020322_20150518201805",
@@ -13,31 +23,39 @@
     },
     {
       "href": "./collection.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "./collection.json",
-      "rel": "collection"
+      "rel": "collection",
+      "type": "application/json"
     },
     {
       "href": "../../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     }
   ],
-  "id": "AST_L1T_00312272006020322_20150518201805",
   "properties": {
-    "heystac:rating": 1,
-    "heystac:total": 1,
-    "heystac:stars": 5.0,
-    "heystac:checks": [
-      {
-        "name": "validate-core",
-        "rating": 1,
-        "total": 1
-      }
-    ],
-    "created": "2015-05-18T20:21:47.235000Z",
     "datetime": "2006-12-27T02:03:22.718000Z",
+    "heystac:rating": {
+      "stars": 4.9,
+      "issues": {
+        "high": [],
+        "medium": [
+          {
+            "rule_id": "validate-extensions",
+            "score": 0.8,
+            "message": "Validation failed for Feature with ID AST_L1T_00312272006020322_20150518201805 against schema at https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+          }
+        ],
+        "low": []
+      },
+      "score": 19.6,
+      "total": 20
+    },
+    "created": "2015-05-18T20:21:47.235000Z",
     "platform": "terra",
     "proj:epsg": 32647,
     "instruments": [
@@ -60,7 +78,6 @@
     101.0889206,
     -71.9245548
   ],
-  "type": "Feature",
   "assets": {
     "TIR": {
       "href": "https://astersa.blob.core.windows.net/aster/images/L1T/2006/12/27/AST_L1T_00312272006020322_20150518201805_110656.TIR.tif",
@@ -2129,13 +2146,5 @@
       ]
     ]
   },
-  "collection": "aster-l1t",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
-  ],
-  "stac_version": "1.0.0"
+  "collection": "aster-l1t"
 }

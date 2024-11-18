@@ -1,4 +1,14 @@
 {
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "modis-10A1-061",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
+  ],
   "links": [
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-10A1-061/items",
@@ -7,24 +17,27 @@
     },
     {
       "href": "https://doi.org/10.5067/MODIS/MOD10A1.061",
-      "title": "MODIS/Terra Snow Cover Daily L3 Global 500m SIN Grid, Version 61",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "MODIS/Terra Snow Cover Daily L3 Global 500m SIN Grid, Version 61"
     },
     {
       "href": "https://doi.org/10.5067/MODIS/MYD10A1.061",
-      "title": "MODIS/Aqua Snow Cover Daily L3 Global 500m SIN Grid, Version 61",
-      "rel": "cite-as"
+      "rel": "cite-as",
+      "type": "application/json",
+      "title": "MODIS/Aqua Snow Cover Daily L3 Global 500m SIN Grid, Version 61"
     },
     {
       "href": "https://nsidc.org/data/data-programs/nsidc-daac/citing-nsidc-daac",
-      "title": "Use and Copyright | National Snow and Ice Data Center",
-      "rel": "license"
+      "rel": "license",
+      "type": "application/json",
+      "title": "Use and Copyright | National Snow and Ice Data Center"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/dataset/modis-10A1-061",
-      "title": "Human readable dataset overview and reference",
       "rel": "describedby",
-      "type": "text/html"
+      "type": "text/html",
+      "title": "Human readable dataset overview and reference"
     },
     {
       "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-10A1-061",
@@ -33,31 +46,32 @@
     },
     {
       "href": "../catalog.json",
-      "rel": "parent"
+      "rel": "parent",
+      "type": "application/json"
     },
     {
       "href": "../../catalog.json",
-      "rel": "root"
+      "rel": "root",
+      "type": "application/json"
     },
     {
-      "href": "./MYD10A1.A2024317.h35v10.061.2024319034932.json",
-      "rel": "item"
+      "href": "./MYD10A1.A2024321.h35v10.061.2024323032332.json",
+      "rel": "item",
+      "type": "application/geo+json"
     }
   ],
-  "heystac:rating": 1,
-  "heystac:cumulative_rating": 1,
-  "heystac:total": 1,
-  "heystac:cumulative_total": 2,
-  "heystac:stars": 2.5,
-  "heystac:checks": [
-    {
-      "name": "validate-core",
-      "rating": 1,
-      "total": 1
-    }
-  ],
-  "type": "Collection",
-  "id": "modis-10A1-061",
+  "heystac:rating": {
+    "stars": 3.75,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 24.0,
+    "aggregate_total": 32
+  },
   "title": "MODIS Snow Cover Daily",
   "assets": {
     "thumbnail": {
@@ -274,16 +288,8 @@
       ]
     }
   },
-  "stac_version": "1.0.0",
   "msft:group_id": "modis",
   "msft:container": "modis-061",
-  "stac_extensions": [
-    "https://stac-extensions.github.io/classification/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/table/v1.2.0/schema.json"
-  ],
   "sci:publications": [
     {
       "doi": "10.5067/MODIS/MOD10A1.061",
