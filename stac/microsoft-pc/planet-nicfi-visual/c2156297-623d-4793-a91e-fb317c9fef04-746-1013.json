@@ -44,14 +44,20 @@
   "properties": {
     "datetime": "2022-04-16T00:00:00Z",
     "heystac:rating": {
-      "stars": 5.0,
+      "stars": 4.545454545454546,
       "issues": {
         "high": [],
-        "medium": [],
+        "medium": [
+          {
+            "rule_id": "links",
+            "score": 0.0,
+            "message": "https://api.planet.com/basemaps/v1/mosaics/c2156297-623d-4793-a91e-fb317c9fef04/quads/746-1013 errored on GET (401): {\"message\":\"Credentials Required\"}\n\nhttps://api.planet.com/basemaps/v1/mosaics/c2156297-623d-4793-a91e-fb317c9fef04 errored on GET (401): {\"message\":\"Credentials Required\"}\n"
+          }
+        ],
         "low": []
       },
       "score": 20.0,
-      "total": 20
+      "total": 22
     },
     "gsd": 4.77,
     "proj:bbox": [

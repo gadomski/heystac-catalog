@@ -37,7 +37,7 @@
   "properties": {
     "datetime": "2024-11-18T13:15:15.461327",
     "heystac:rating": {
-      "stars": 3.0,
+      "stars": 3.1818181818181817,
       "issues": {
         "high": [
           {
@@ -49,8 +49,8 @@
         "medium": [],
         "low": []
       },
-      "score": 12.0,
-      "total": 20
+      "score": 14.0,
+      "total": 22
     },
     "created": "2024-11-12T19:52:03Z",
     "updated": "2024-11-12T13:57:22.043000Z",

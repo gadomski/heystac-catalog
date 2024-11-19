@@ -120,16 +120,16 @@
   ],
   "title": "Earth Search by Element 84",
   "heystac:rating": {
-    "stars": 5.0,
+    "stars": 4.871031746031747,
     "issues": {
       "high": [],
       "medium": [],
       "low": []
     },
-    "score": 10.0,
-    "total": 10,
-    "aggregate_score": 298.0,
-    "aggregate_total": 298
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 327.33333333333337,
+    "aggregate_total": 336
   },
   "description": "A STAC API of public datasets on AWS",
   "conformsTo": [

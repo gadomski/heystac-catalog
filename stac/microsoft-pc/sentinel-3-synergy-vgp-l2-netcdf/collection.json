@@ -60,10 +60,10 @@
       "medium": [],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 32.0,
-    "aggregate_total": 32
+    "score": 14.0,
+    "total": 14,
+    "aggregate_score": 34.0,
+    "aggregate_total": 34
   },
   "title": "Sentinel-3 Top of Atmosphere Reflectance (SPOT VEGETATION)",
   "assets": {

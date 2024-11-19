@@ -38,7 +38,7 @@
   "properties": {
     "datetime": "2024-11-18T13:15:15.443090",
     "heystac:rating": {
-      "stars": 1.0,
+      "stars": 1.3636363636363635,
       "issues": {
         "high": [
           {
@@ -55,8 +55,8 @@
         "medium": [],
         "low": []
       },
-      "score": 4.0,
-      "total": 20
+      "score": 6.0,
+      "total": 22
     },
     "proj:bbox": [
       353310.0,

@@ -52,16 +52,22 @@
     }
   ],
   "heystac:rating": {
-    "stars": 5.0,
+    "stars": 4.907407407407408,
     "issues": {
       "high": [],
-      "medium": [],
+      "medium": [
+        {
+          "rule_id": "links",
+          "score": 0.6666666666666666,
+          "message": "https://planetarycomputer.microsoft.com/api/data/v1/collection/map?collection=goes-cmi errored on GET (404): {\"detail\":\"Not Found\"}"
+        }
+      ],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 32.0,
-    "aggregate_total": 32
+    "score": 13.333333333333334,
+    "total": 14,
+    "aggregate_score": 35.333333333333336,
+    "aggregate_total": 36
   },
   "title": "GOES-R Cloud & Moisture Imagery",
   "assets": {

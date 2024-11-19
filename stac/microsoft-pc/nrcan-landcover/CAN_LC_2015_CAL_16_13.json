@@ -45,7 +45,7 @@
   "properties": {
     "datetime": "2015-01-01T00:00:00Z",
     "heystac:rating": {
-      "stars": 4.9,
+      "stars": 4.909090909090909,
       "issues": {
         "high": [],
         "medium": [
@@ -57,8 +57,8 @@
         ],
         "low": []
       },
-      "score": 19.6,
-      "total": 20
+      "score": 21.6,
+      "total": 22
     },
     "title": "2015 Land Cover of Canada",
     "sci:doi": "10.4095/315659",

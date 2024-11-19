@@ -55,16 +55,22 @@
     }
   ],
   "heystac:rating": {
-    "stars": 5.0,
+    "stars": 4.583333333333333,
     "issues": {
       "high": [],
-      "medium": [],
+      "medium": [
+        {
+          "rule_id": "links",
+          "score": 0.0,
+          "message": "https://spacedata.copernicus.eu/documents/20126/0/CSCDA_ESA_Mission-specific+Annex.pdf errored on GET: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)"
+        }
+      ],
       "low": []
     },
     "score": 12.0,
-    "total": 12,
-    "aggregate_score": 32.0,
-    "aggregate_total": 32
+    "total": 14,
+    "aggregate_score": 33.0,
+    "aggregate_total": 36
   },
   "title": "Copernicus DEM GLO-30",
   "extent": {

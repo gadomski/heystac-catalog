@@ -58,16 +58,16 @@
     }
   ],
   "heystac:rating": {
-    "stars": 3.75,
+    "stars": 3.888888888888889,
     "issues": {
       "high": [],
       "medium": [],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 24.0,
-    "aggregate_total": 32
+    "score": 14.0,
+    "total": 14,
+    "aggregate_score": 28.0,
+    "aggregate_total": 36
   },
   "title": "Sea Surface Temperature - Optimum Interpolation CDR",
   "assets": {

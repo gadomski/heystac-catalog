@@ -83,10 +83,10 @@
       "medium": [],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 32.0,
-    "aggregate_total": 32
+    "score": 14.0,
+    "total": 14,
+    "aggregate_score": 36.0,
+    "aggregate_total": 36
   },
   "description": "Atmospherically corrected global Landsat Collection 2 Level-2 data from the Thematic Mapper (TM) onboard Landsat 4 and 5, the Enhanced Thematic Mapper Plus (ETM+) onboard Landsat 7, and the Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS) onboard Landsat 8 and 9.",
   "item_assets": {

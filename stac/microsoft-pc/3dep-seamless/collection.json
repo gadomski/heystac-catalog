@@ -46,16 +46,16 @@
     }
   ],
   "heystac:rating": {
-    "stars": 5.0,
+    "stars": 4.861111111111111,
     "issues": {
       "high": [],
       "medium": [],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 32.0,
-    "aggregate_total": 32
+    "score": 14.0,
+    "total": 14,
+    "aggregate_score": 35.0,
+    "aggregate_total": 36
   },
   "title": "USGS 3DEP Seamless DEMs",
   "assets": {

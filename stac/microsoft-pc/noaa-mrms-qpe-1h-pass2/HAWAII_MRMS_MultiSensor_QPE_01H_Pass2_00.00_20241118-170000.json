@@ -45,8 +45,8 @@
         "medium": [],
         "low": []
       },
-      "score": 20.0,
-      "total": 20
+      "score": 22.0,
+      "total": 22
     },
     "description": "Multi-sensor accumulation 1-hour (2-hour latency) [mm]",
     "proj:projjson": {

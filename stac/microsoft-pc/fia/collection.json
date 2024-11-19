@@ -46,16 +46,22 @@
     }
   ],
   "heystac:rating": {
-    "stars": 5.0,
+    "stars": 4.852941176470588,
     "issues": {
       "high": [],
-      "medium": [],
+      "medium": [
+        {
+          "rule_id": "links",
+          "score": 0.5,
+          "message": "https://www.fs.usda.gov/rds/archive/datauseinfo/open errored on GET: The read operation timed out"
+        }
+      ],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 32.0,
-    "aggregate_total": 32
+    "score": 13.0,
+    "total": 14,
+    "aggregate_score": 33.0,
+    "aggregate_total": 34
   },
   "title": "Forest Inventory and Analysis",
   "assets": {

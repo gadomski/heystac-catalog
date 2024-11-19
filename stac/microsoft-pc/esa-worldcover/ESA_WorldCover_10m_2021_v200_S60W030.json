@@ -39,7 +39,7 @@
   "properties": {
     "datetime": "2024-11-18T13:15:15.484513",
     "heystac:rating": {
-      "stars": 3.0,
+      "stars": 3.1818181818181817,
       "issues": {
         "high": [
           {
@@ -51,8 +51,8 @@
         "medium": [],
         "low": []
       },
-      "score": 12.0,
-      "total": 20
+      "score": 14.0,
+      "total": 22
     },
     "created": "2023-04-06T16:03:26.737751Z",
     "mission": "sentinel-1, sentinel-2",

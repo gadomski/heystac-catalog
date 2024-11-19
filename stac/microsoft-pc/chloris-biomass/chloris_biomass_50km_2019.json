@@ -38,7 +38,7 @@
   "properties": {
     "datetime": "2019-01-01T00:00:00Z",
     "heystac:rating": {
-      "stars": 4.833333333333333,
+      "stars": 4.848484848484848,
       "issues": {
         "high": [],
         "medium": [
@@ -50,8 +50,8 @@
         ],
         "low": []
       },
-      "score": 19.333333333333332,
-      "total": 20
+      "score": 21.333333333333332,
+      "total": 22
     },
     "gsd": 4633,
     "proj:bbox": [

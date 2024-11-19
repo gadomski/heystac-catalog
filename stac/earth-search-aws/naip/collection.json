@@ -68,16 +68,22 @@
     }
   ],
   "heystac:rating": {
-    "stars": 5.0,
+    "stars": 4.62962962962963,
     "issues": {
       "high": [],
-      "medium": [],
+      "medium": [
+        {
+          "rule_id": "links",
+          "score": 0.6666666666666666,
+          "message": "https://www.fsa.usda.gov/help/policies-and-links/ errored on GET: The read operation timed out"
+        }
+      ],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 32.0,
-    "aggregate_total": 32
+    "score": 13.333333333333334,
+    "total": 14,
+    "aggregate_score": 33.333333333333336,
+    "aggregate_total": 36
   },
   "description": "The [National Agriculture Imagery Program](https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/) (NAIP) provides U.S.-wide, high-resolution aerial imagery, with four spectral bands (R, G, B, IR).  NAIP is administered by the [Aerial Field Photography Office](https://www.fsa.usda.gov/programs-and-services/aerial-photography/) (AFPO) within the [US Department of Agriculture](https://www.usda.gov/) (USDA).  Data are captured at least once every three years for each state.  This dataset represents NAIP data from 2010-present, in [cloud-optimized GeoTIFF](https://www.cogeo.org/) format.\n",
   "title": "NAIP: National Agriculture Imagery Program",

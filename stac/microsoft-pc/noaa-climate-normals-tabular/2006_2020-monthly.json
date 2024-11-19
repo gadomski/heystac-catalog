@@ -49,7 +49,7 @@
   "properties": {
     "datetime": "2024-11-18T13:15:15.472778",
     "heystac:rating": {
-      "stars": 3.0,
+      "stars": 3.1818181818181817,
       "issues": {
         "high": [
           {
@@ -61,8 +61,8 @@
         "medium": [],
         "low": []
       },
-      "score": 12.0,
-      "total": 20
+      "score": 14.0,
+      "total": 22
     },
     "title": "Monthly Climate Normals for Period 2006-2020",
     "created": "2023-01-13T17:12:43.569562Z",

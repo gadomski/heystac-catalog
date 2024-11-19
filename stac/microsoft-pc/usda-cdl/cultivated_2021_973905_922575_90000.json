@@ -44,7 +44,7 @@
   "properties": {
     "datetime": "2024-11-18T13:15:15.468344",
     "heystac:rating": {
-      "stars": 3.0,
+      "stars": 2.9545454545454546,
       "issues": {
         "high": [
           {
@@ -53,11 +53,17 @@
             "message": "Validation failed for Feature with ID cultivated_2021_973905_922575_90000 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
           }
         ],
-        "medium": [],
+        "medium": [
+          {
+            "rule_id": "links",
+            "score": 0.5,
+            "message": "https://landcoverdata.blob.core.windows.net/usda-cdl-onboarding/2021_Cultivated_Layer.zip errored on GET (404): ﻿<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>ResourceNotFound</Code><Message>The specified resource does not exist.\nRequestId:5e7de82b-d01e-0049-2379-3a35de000000\nTime:2024-11-19T11:55:23.4854784Z</Message></Error>"
+          }
+        ],
         "low": []
       },
-      "score": 12.0,
-      "total": 20
+      "score": 13.0,
+      "total": 22
     },
     "proj:epsg": 5070,
     "proj:shape": [

@@ -59,10 +59,10 @@
       "medium": [],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 24.0,
-    "aggregate_total": 32
+    "score": 14.0,
+    "total": 14,
+    "aggregate_score": 27.0,
+    "aggregate_total": 36
   },
   "title": "USDA Cropland Data Layers (CDLs)",
   "assets": {

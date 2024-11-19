@@ -45,14 +45,20 @@
   "properties": {
     "datetime": "2022-11-26T16:00:00Z",
     "heystac:rating": {
-      "stars": 5.0,
+      "stars": 4.545454545454546,
       "issues": {
         "high": [],
-        "medium": [],
+        "medium": [
+          {
+            "rule_id": "links",
+            "score": 0.0,
+            "message": "https://earth-search.aws.element84.com/v1/collections/naip/items/ny_m_4207710_sw_18_060_20221126/thumbnail errored on GET (404): {\"code\":\"NotFound\",\"description\":\"Not Found\"}"
+          }
+        ],
         "low": []
       },
       "score": 20.0,
-      "total": 20
+      "total": 22
     },
     "naip:state": "ny",
     "naip:year": "2022",

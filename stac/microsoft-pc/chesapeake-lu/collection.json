@@ -53,16 +53,22 @@
     }
   ],
   "heystac:rating": {
-    "stars": 3.645833333333334,
+    "stars": 3.611111111111111,
     "issues": {
       "high": [],
-      "medium": [],
+      "medium": [
+        {
+          "rule_id": "links",
+          "score": 0.3333333333333333,
+          "message": "https://www.chesapeakeconservancy.org/wp-content/uploads/2018/11/2013-Phase-6-Mapped-Land-Use-Definitions-Updated-PC-11302018.pdf errored on GET (403): <html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n\nhttps://www.chesapeakeconservancy.org/conservation-innovation-center/precision-conservation/chesapeake-bay-program/ errored on GET (403): <html>\r\n<head><title>403 Forbidden</title></head>\r\n<body>\r\n<center><h1>403 Forbidden</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+        }
+      ],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 23.333333333333336,
-    "aggregate_total": 32
+    "score": 12.666666666666666,
+    "total": 14,
+    "aggregate_score": 26.0,
+    "aggregate_total": 36
   },
   "title": "Chesapeake Land Use",
   "assets": {

@@ -54,10 +54,10 @@
       "medium": [],
       "low": []
     },
-    "score": 12.0,
-    "total": 12,
-    "aggregate_score": 32.0,
-    "aggregate_total": 32
+    "score": 14.0,
+    "total": 14,
+    "aggregate_score": 36.0,
+    "aggregate_total": 36
   },
   "title": "Sentinel 1 Level-1 Ground Range Detected (GRD)",
   "assets": {

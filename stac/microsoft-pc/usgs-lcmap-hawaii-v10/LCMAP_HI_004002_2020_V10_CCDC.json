@@ -40,7 +40,7 @@
   "properties": {
     "datetime": "2024-11-18T13:15:15.472056",
     "heystac:rating": {
-      "stars": 2.9,
+      "stars": 3.090909090909091,
       "issues": {
         "high": [
           {
@@ -58,8 +58,8 @@
         ],
         "low": []
       },
-      "score": 11.6,
-      "total": 20
+      "score": 13.6,
+      "total": 22
     },
     "title": "LCMAP Hawaii Collection 1.0 Land Cover and Land Change Products for Tile 004002, Year 2020",
     "created": "2023-01-12T17:53:16.830616Z",

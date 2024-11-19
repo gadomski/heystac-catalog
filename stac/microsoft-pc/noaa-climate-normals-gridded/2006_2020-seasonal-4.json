@@ -61,7 +61,7 @@
   "properties": {
     "datetime": "2024-11-18T13:15:15.473642",
     "heystac:rating": {
-      "stars": 3.0,
+      "stars": 3.1818181818181817,
       "issues": {
         "high": [
           {
@@ -73,8 +73,8 @@
         "medium": [],
         "low": []
       },
-      "score": 12.0,
-      "total": 20
+      "score": 14.0,
+      "total": 22
     },
     "title": "2006-2020 Seasonal Climate Normals for Fall (Sep-Oct-Nov)",
     "created": "2023-01-11T20:13:58.656543Z",

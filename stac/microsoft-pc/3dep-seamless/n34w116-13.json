@@ -41,14 +41,20 @@
   "properties": {
     "datetime": "2020-04-24T00:00:00Z",
     "heystac:rating": {
-      "stars": 5.0,
+      "stars": 4.7727272727272725,
       "issues": {
         "high": [],
-        "medium": [],
+        "medium": [
+          {
+            "rule_id": "links",
+            "score": 0.5,
+            "message": "https://ai4edataeuwest.blob.core.windows.net/3dep/Elevation/13/TIFF/n34w116/USGS_13_n34w116.xml errored on GET (409): ﻿<?xml version=\"1.0\" encoding=\"utf-8\"?><Error><Code>PublicAccessNotPermitted</Code><Message>Public access is not permitted on this storage account.\nRequestId:b25bc5c2-b01e-006b-5c79-3a3c21000000\nTime:2024-11-19T11:53:13.2034354Z</Message></Error>"
+          }
+        ],
         "low": []
       },
-      "score": 20.0,
-      "total": 20
+      "score": 21.0,
+      "total": 22
     },
     "gsd": 10,
     "proj:epsg": 5498,

@@ -122,16 +122,16 @@
   ],
   "title": "USGS Landsat",
   "heystac:rating": {
-    "stars": 3.7266323559991683,
+    "stars": 3.7321687370600416,
     "issues": {
       "high": [],
       "medium": [],
       "low": []
     },
-    "score": 10.0,
-    "total": 10,
-    "aggregate_score": 341.3595238095238,
-    "aggregate_total": 458
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 343.3595238095238,
+    "aggregate_total": 460
   },
   "description": "Production STAC API using stac-server",
   "conformsTo": [

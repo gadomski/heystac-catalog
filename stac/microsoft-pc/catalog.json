@@ -686,7 +686,7 @@
   ],
   "title": "Microsoft Planetary Computer",
   "heystac:rating": {
-    "stars": 4.341451381413706,
+    "stars": 4.365301001410764,
     "issues": {
       "high": [],
       "medium": [],
@@ -694,8 +694,8 @@
     },
     "score": 10.0,
     "total": 10,
-    "aggregate_score": 3226.5666666666666,
-    "aggregate_total": 3716
+    "aggregate_score": 3595.2619047619046,
+    "aggregate_total": 4118
   },
   "description": "Searchable spatiotemporal metadata describing Earth science datasets hosted by the Microsoft Planetary Computer",
   "conformsTo": [
