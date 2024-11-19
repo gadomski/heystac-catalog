@@ -1,0 +1,172 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "houston-landcover",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/houston-landcover/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/houston-landcover",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./landcover_Z_f_2019_cog.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 4.705882352941177,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 32.0,
+    "aggregate_total": 34
+  },
+  "title": "Houston Land Cover",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/urban-heat.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Arto Marttinen](https://unsplash.com/photos/6xh7H5tWj9c) (Sunset over Tokyo)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -95.99531873393823,
+          29.07716802830657,
+          -94.29534689027045,
+          30.39936449861516
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2001-01-01T00:00:00+00:00",
+          "2019-01-01T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "nodata": -999,
+      "rescale": [
+        [
+          0,
+          255
+        ]
+      ],
+      "colormap": {
+        "0": "#00BFFF",
+        "11": "#486DA2",
+        "12": "#E7EFFC",
+        "21": "#E1CDCE",
+        "22": "#DC9881",
+        "23": "#F10100",
+        "24": "#AB0101",
+        "31": "#B3AFA4",
+        "41": "#6BA966",
+        "42": "#1D6533",
+        "43": "#BDCC93",
+        "51": "#B29C46",
+        "52": "#D1BB82",
+        "71": "#EDECCD",
+        "72": "#D0D181",
+        "73": "#A4CC51",
+        "74": "#82BA9D",
+        "81": "#DDD83E",
+        "82": "#AE7229",
+        "90": "#BBD7ED",
+        "95": "#71A4C1"
+      },
+      "resampling": "bilinear"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://lpdaac.usgs.gov/product_search/",
+      "name": "USGS",
+      "roles": [
+        "producer"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "processor"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2001-01-01T00:00:00Z",
+      "2004-01-01T00:00:00Z",
+      "2006-01-01T00:00:00Z",
+      "2008-01-01T00:00:00Z",
+      "2011-01-01T00:00:00Z",
+      "2013-01-01T00:00:00Z",
+      "2016-01-01T00:00:00Z",
+      "2019-01-01T00:00:00Z"
+    ]
+  },
+  "description": "MODIS-derived land use-land cover over the Houston metro area (zoomed-in extent). Displays colors 0-255 from a lookup table for land cover type (ex: reds = urbanized).",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "year"
+}

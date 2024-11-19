@@ -1,0 +1,139 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "houston-aod-diff",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/houston-aod-diff/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/houston-aod-diff",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./HOUS_AOD_difference_2000_2019.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "Houston AOD: Difference Between 2000-2009 & 2010-2019",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/smog-city.png",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Nick van den Berg](https://unsplash.com/photos/2vb-_3t6YCM) (Smog Located In City)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -97.00906753206712,
+          27.992675617599986,
+          -93.99072817742552,
+          31.017446580357053
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00+00:00",
+          "2019-01-01T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "nodata": 0,
+      "rescale": [
+        [
+          -0.1,
+          0.1
+        ]
+      ],
+      "colormap_name": "bwr"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://lpdaac.usgs.gov/product_search/",
+      "name": "USGS",
+      "roles": [
+        "producer"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "processor"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2000-01-01T00:00:00Z"
+    ]
+  },
+  "description": "MODIS-calculated Aerosol Optical Depth (AOD) difference over the Houston metro area, differenced over a time period from 2000 to 2019.",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "year"
+}

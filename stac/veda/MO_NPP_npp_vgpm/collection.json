@@ -1,0 +1,125 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "MO_NPP_npp_vgpm",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/MO_NPP_npp_vgpm/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/MO_NPP_npp_vgpm",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./A_202012.L3m_MO_NPP_npp_vgpm_4km.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/ocean-production--dataset-cover.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Karl Callwood](https://unsplash.com/photos/Ko1sGLhZm5w) (Rocky ocean shore)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0000050868518,
+          -90.00000508655744,
+          180.0000050868518,
+          89.9999974571629
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00+00:00",
+          "2020-12-31T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "rescale": [
+        [
+          0,
+          1500
+        ]
+      ],
+      "colormap_name": "jet"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2020-01-01T00:00:00Z",
+      "2020-12-31T00:00:00Z"
+    ]
+  },
+  "description": "Ocean Net Primary Production (NPP): https://oceancolor.gsfc.nasa.gov/atbd/npp/",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": true,
+  "dashboard:time_density": "month"
+}

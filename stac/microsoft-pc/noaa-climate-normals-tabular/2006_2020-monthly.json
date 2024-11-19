@@ -49,7 +49,7 @@
   "properties": {
     "datetime": "2024-11-18T13:15:15.472778",
     "heystac:rating": {
-      "stars": 3.1818181818181817,
+      "stars": 3.0303030303030307,
       "issues": {
         "high": [
           {
@@ -58,10 +58,16 @@
             "message": "Validation failed for Feature with ID 2006_2020-monthly against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
           }
         ],
-        "medium": [],
+        "medium": [
+          {
+            "rule_id": "links",
+            "score": 0.6666666666666666,
+            "message": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C01624/html errored on GET: The read operation timed out"
+          }
+        ],
         "low": []
       },
-      "score": 14.0,
+      "score": 13.333333333333334,
       "total": 22
     },
     "title": "Monthly Climate Normals for Period 2006-2020",

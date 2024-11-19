@@ -1,0 +1,136 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "nightlights-hd-monthly",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nightlights-hd-monthly/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nightlights-hd-monthly",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./finalBMHD_ScaledVenice_202203.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "Black Marble High Definition Nightlights Monthly Dataset",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/nighttime-lights--dataset-cover.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [NASA Earth Observatory](https://earthobservatory.nasa.gov/images/90008/night-light-maps-open-up-new-applications) (Satellite image of Earth at night)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -122.63569641113281,
+          -37.08,
+          174.96,
+          54.584515
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-01T00:00:00+00:00",
+          "2022-03-31T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "rescale": [
+        [
+          0,
+          255
+        ]
+      ],
+      "colormap_name": "inferno"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://blackmarble.gsfc.nasa.gov/",
+      "name": "NASA Black Marble",
+      "roles": [
+        "producer",
+        "processor"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2019-01-01T00:00:00Z",
+      "2022-03-31T00:00:00Z"
+    ]
+  },
+  "description": "The High Definition Nightlights dataset is processed to eliminate light sources, including moonlight reflectance and other interferences. Darker colors indicate fewer night lights and less activity. Lighter colors indicate more night lights and more activity.",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": true,
+  "dashboard:time_density": "month"
+}

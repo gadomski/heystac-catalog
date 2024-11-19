@@ -1,0 +1,139 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "frp-max-thomasfire",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/frp-max-thomasfire/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/frp-max-thomasfire",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./thomas_fire_frpmax_201712.cog.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 34.0,
+    "aggregate_total": 34
+  },
+  "title": "Maximum Fire Radiative Power for Thomas Fire",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/mtbs-burn-severity--dataset-cover.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Mike Newbry](https://unsplash.com/photos/DwtX9mMHBJ0) (Hillside engulfed by wildfire)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -119.7279834250452,
+          34.19572604525683,
+          -118.88724142537933,
+          34.72668711929945
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-12-01T00:00:00+00:00",
+          "2017-12-31T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "nodata": "nan",
+      "rescale": [
+        [
+          1.0,
+          1080
+        ]
+      ],
+      "asset_bidx": "cog_default|1",
+      "colormap_name": "inferno_r"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://burnseverity.cr.usgs.gov/products/baer",
+      "name": "USGS Burnt Area Emergency Response (BAER)",
+      "roles": [
+        "producer"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "processor"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2017-12-01T00:00:00Z"
+    ]
+  },
+  "description": "Maximum Fire Radiative Power per 12hr fire line segment for Thomas fire of 2017",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false
+}

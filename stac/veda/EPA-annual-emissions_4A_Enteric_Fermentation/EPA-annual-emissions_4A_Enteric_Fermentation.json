@@ -1,0 +1,231 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "EPA-annual-emissions_4A_Enteric_Fermentation",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/EPA-annual-emissions_4A_Enteric_Fermentation/items/EPA-annual-emissions_4A_Enteric_Fermentation/map?assets=cog_default&nodata=0&rescale=0%2C43784598420&colormap_name=rainbow",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/EPA-annual-emissions_4A_Enteric_Fermentation/items/EPA-annual-emissions_4A_Enteric_Fermentation",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:31:37.714586",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID EPA-annual-emissions_4A_Enteric_Fermentation against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2012-12-31T23:59:59+00:00",
+    "start_datetime": "2012-01-01T00:00:00+00:00"
+  },
+  "bbox": [
+    -129.99999694660497,
+    19.999999240339655,
+    -59.99999923869774,
+    54.99999694496308
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/EPA-annual-emissions_4A_Enteric_Fermentation/EPA-annual-emissions_4A_Enteric_Fermentation.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -129.99999694660497,
+        19.999999240339655,
+        -59.99999923869774,
+        54.99999694496308
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        17500,
+        35000
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 3931789590528.0,
+            "min": 457.8540344238281,
+            "count": 11,
+            "buckets": [
+              176384,
+              4437,
+              607,
+              232,
+              91,
+              40,
+              14,
+              8,
+              5,
+              3
+            ]
+          },
+          "statistics": {
+            "mean": 97527760642.46255,
+            "stddev": 138783129849.69434,
+            "maximum": 3931789590528.0,
+            "minimum": 457.8540344238281,
+            "valid_percent": 34.679603576660156
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -129.99999694660497,
+              19.999999240339655
+            ],
+            [
+              -59.99999923869774,
+              19.999999240339655
+            ],
+            [
+              -59.99999923869774,
+              54.99999694496308
+            ],
+            [
+              -129.99999694660497,
+              54.99999694496308
+            ],
+            [
+              -129.99999694660497,
+              19.999999240339655
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.001999999934511635,
+        0.0,
+        -129.99999694660497,
+        0.0,
+        -0.0019999998688356242,
+        54.99999694496308,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/EPA-annual-emissions_4A_Enteric_Fermentation/items/EPA-annual-emissions_4A_Enteric_Fermentation/preview.png?assets=cog_default&nodata=0&rescale=0%2C43784598420&colormap_name=rainbow",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -129.99999694660497,
+          19.999999240339655
+        ],
+        [
+          -59.99999923869774,
+          19.999999240339655
+        ],
+        [
+          -59.99999923869774,
+          54.99999694496308
+        ],
+        [
+          -129.99999694660497,
+          54.99999694496308
+        ],
+        [
+          -129.99999694660497,
+          19.999999240339655
+        ]
+      ]
+    ]
+  },
+  "collection": "EPA-annual-emissions_4A_Enteric_Fermentation"
+}

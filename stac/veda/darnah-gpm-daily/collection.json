@@ -1,0 +1,136 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "darnah-gpm-daily",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/darnah-gpm-daily/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/darnah-gpm-daily",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./cog_Darnah_Flood_IMERG_2023-09-16.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 2.6470588235294117,
+    "issues": {
+      "high": [
+        {
+          "rule_id": "validate-core",
+          "score": 0.0,
+          "message": "Validation failed for Collection with ID darnah-gpm-daily against schema at https://schemas.stacspec.org/v1.0.0/collection-spec/json-schema/collection.json"
+        }
+      ],
+      "medium": [],
+      "low": []
+    },
+    "score": 4.0,
+    "total": 12,
+    "aggregate_score": 18.0,
+    "aggregate_total": 34
+  },
+  "title": "GPM IMERG data of 2023 Medicane Daniel",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/darnah-flood-background.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by Marwan Alfaituri (Reuters)](https://abcnews.go.com/International/casualties-libya-floods-avoided-world-meteorological-organization-chief/story?id=103200104) (Satellite imagery over Florida showing damage probability (Aerial view over the Wadi Darnah River post-flood in Derna, Libya on September 14, 2023)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -10.06113118213864,
+          14.912033716384059,
+          45.00559573438803,
+          48.50902534245416
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-09-04 00:00:00+00",
+          "2023-09-16 23:59:59+00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "nodata": 0,
+      "rescale": [
+        [
+          0.1,
+          500
+        ]
+      ],
+      "resampling": "bilinear",
+      "colormap_name": "inferno"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2023-09-04T00:00:00Z",
+      "2023-09-16T23:59:59Z"
+    ]
+  },
+  "description": " GPM IMERG data taken daily and aggregated throughout the life of 2023 Medicane Daniel ",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": true,
+  "dashboard:time_density": "day"
+}

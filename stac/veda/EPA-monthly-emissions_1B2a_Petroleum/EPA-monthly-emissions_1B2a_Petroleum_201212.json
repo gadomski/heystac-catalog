@@ -1,0 +1,231 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "EPA-monthly-emissions_1B2a_Petroleum_201212",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/EPA-monthly-emissions_1B2a_Petroleum/items/EPA-monthly-emissions_1B2a_Petroleum_201212/map?assets=cog_default&nodata=0&rescale=0%2C376365761167&colormap_name=rainbow",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/EPA-monthly-emissions_1B2a_Petroleum/items/EPA-monthly-emissions_1B2a_Petroleum_201212",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:31:48.781844",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID EPA-monthly-emissions_1B2a_Petroleum_201212 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2012-12-31T00:00:00+00:00",
+    "start_datetime": "2012-12-01T00:00:00+00:00"
+  },
+  "bbox": [
+    -129.99999694660497,
+    19.999999240339655,
+    -59.99999923869774,
+    54.99999694496308
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/EPA-monthly-emissions_1B2a_Petroleum/EPA-monthly-emissions_1B2a_Petroleum_201212.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -129.99999694660497,
+        19.999999240339655,
+        -59.99999923869774,
+        54.99999694496308
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        8750,
+        17500
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 16503205265408.0,
+            "min": 19623.6796875,
+            "count": 11,
+            "buckets": [
+              36789,
+              414,
+              86,
+              18,
+              4,
+              3,
+              4,
+              5,
+              1,
+              3
+            ]
+          },
+          "statistics": {
+            "mean": 157794051579.2129,
+            "stddev": 469804037186.6899,
+            "maximum": 16503205265408.0,
+            "minimum": 19623.6796875,
+            "valid_percent": 7.119560241699219
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -129.99999694660497,
+              19.999999240339655
+            ],
+            [
+              -59.99999923869774,
+              19.999999240339655
+            ],
+            [
+              -59.99999923869774,
+              54.99999694496308
+            ],
+            [
+              -129.99999694660497,
+              54.99999694496308
+            ],
+            [
+              -129.99999694660497,
+              19.999999240339655
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.00399999986902327,
+        0.0,
+        -129.99999694660497,
+        0.0,
+        -0.0039999997376712485,
+        54.99999694496308,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/EPA-monthly-emissions_1B2a_Petroleum/items/EPA-monthly-emissions_1B2a_Petroleum_201212/preview.png?assets=cog_default&nodata=0&rescale=0%2C376365761167&colormap_name=rainbow",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -129.99999694660497,
+          19.999999240339655
+        ],
+        [
+          -59.99999923869774,
+          19.999999240339655
+        ],
+        [
+          -59.99999923869774,
+          54.99999694496308
+        ],
+        [
+          -129.99999694660497,
+          54.99999694496308
+        ],
+        [
+          -129.99999694660497,
+          19.999999240339655
+        ]
+      ]
+    ]
+  },
+  "collection": "EPA-monthly-emissions_1B2a_Petroleum"
+}

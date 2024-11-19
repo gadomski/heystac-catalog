@@ -1,0 +1,830 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.0.0",
+  "id": "veda",
+  "stac_extensions": [],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections",
+      "rel": "data",
+      "type": "application/json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/conformance",
+      "rel": "conformance",
+      "type": "application/json",
+      "title": "STAC/OGC conformance classes implemented by this server"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/search",
+      "rel": "search",
+      "type": "application/geo+json",
+      "title": "STAC search",
+      "method": "GET"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/search",
+      "rel": "search",
+      "type": "application/geo+json",
+      "title": "STAC search",
+      "method": "POST"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/queryables",
+      "rel": "http://www.opengis.net/def/rel/ogc/1.0/queryables",
+      "type": "application/schema+json",
+      "title": "Queryables",
+      "method": "GET"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/openapi.json",
+      "rel": "service-desc",
+      "type": "application/vnd.oai.openapi+json;version=3.0",
+      "title": "OpenAPI service description"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/docs",
+      "rel": "service-doc",
+      "type": "text/html",
+      "title": "OpenAPI service documentation"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./no2-monthly-diff/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./climdex-tmaxxf-access-cm2-ssp126/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./snow-projections-diff-245/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./bangladesh-landcover-2001-2020/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./CMIP245-winter-median-pr/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-socioeconomic-nopop/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./grdi-v1-raster/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./CMIP245-winter-median-ta/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./barc-thomasfire/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./climdex-tmaxxf-access-cm2-ssp370/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./MO_NPP_npp_vgpm/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-monthly-emissions_4B_Manure_Management/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-thwaites/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./hls-ndvi/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-daily-emissions_5_Forest_Fires/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./conus-reach/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./grdi-vnl-raster/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./combined_CMIP6_daily_GISS-E2-1-G_tas_kerchunk_DEMO/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./sport-lis-vsm0_100cm-percentile/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./caldor-fire-behavior/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-monthly-emissions_4C_Rice_Cultivation/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./CMIP585-winter-median-pr/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./disalexi-etsuppression/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./co2-mean/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./caldor-fire-burn-severity/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./togo-agriculture-covid-19/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./nlcd-annual-conus/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./blue-tarp-planetscope/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./ecco-surface-height-change/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-monthly-emissions_1A_Combustion_Stationary/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./grdi-vnl-slope-raster/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./recovery-proxy-maps-covid-19/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./eis_fire_perimeter/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1A_Combustion_Mobile/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./fldas-soil-moisture-anomalies/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./no2-monthly/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./hls-l30-002-ej-reprocessed/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-housing-nopop/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./houston-ndvi/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./climdex-tmaxxf-access-cm2-ssp585/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1A_Combustion_Stationary/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1B1a_Abandoned_Coal/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./geoglam/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./soil-texture/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./campfire-albedo-wsa-diff/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1B1a_Coal_Mining_Surface/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-tws-nonstationarity-index/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-monthly-emissions_1B2b_Natural_Gas_Production/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_6D_Composting/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./GPM_3IMERGDF/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./frp-max-thomasfire/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./slowdown-proxy-covid-19-changing-landscapes/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1B1a_Coal_Mining_Underground/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-housing/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./darnah-flood/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./snow-projections-median-585/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./nceo_africa_2017/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./blue-tarp-detection/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./nightlights-hd-1band/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./darnah-gpm-daily/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./campfire-lst-day-diff/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1B2b_Natural_Gas_Processing/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./grdi-cdr-raster/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./hls-s30-002-ej-reprocessed/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1B2b_Natural_Gas_Production/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./hls-ndvi-difference/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./hls-entropy-difference/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./grdi-filled-missing-values-count/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1B2b_Natural_Gas_Transmission/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./damage_probability_2022-10-03/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./campfire-lst-night-diff/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-minority-nopop/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-overall/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./OMI_trno2-COG/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./grdi-imr-raster/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-socioeconomic/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_2C2_Ferroalloy_Production/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./mtbs-burn-severity/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_4A_Enteric_Fermentation/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-household-nopop/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_4B_Manure_Management/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./modis-annual-lai-2003-2020/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./snow-projections-median-245/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./oco2-geos-l3-daily/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./grdi-shdi-raster/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-minority/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./houston-urbanization/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_4C_Rice_Cultivation/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./OMSO2PCA-COG/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_4F_Field_Burning/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./snow-projections-diff-585/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-monthly-emissions_1B2a_Petroleum/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./nldas2/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-household/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./grdi-v1-built/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_2B5_Petrochemical_Production/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./nldas3/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./facebook_population_density/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_6A_Landfills_Industrial/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./houston-aod-diff/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_6B_Wastewater_Treatment_Domestic/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./landfill-emit/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./houston-landcover/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./houston-aod/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-tws-trend/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./landsat-c2l2-sr-lakes-aral-sea/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./IS2SITMOGR4-cog/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./hls-bais2-v2/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./landsat-nighttime-thermal/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./hls-swir-falsecolor-composite/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./landsat-c2l2-sr-lakes-lake-balaton/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./campfire-ndvi-diff/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-tws-anomaly/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-gpp-trend/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-gpp/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-evap/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-swe/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./houston-lst-day/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./houston-lst-diff/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-qsb/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./social-vulnerability-index-overall-nopop/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_6A_Landfills_Municipal/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-qs/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-tvegsuppression/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./landsat-c2l2-sr-lakes-tonle-sap/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./nightlights-hd-monthly/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-gws/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-totalprecip/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_6B_Wastewater_Treatment_Industrial/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1B2a_Petroleum/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./co2-diff/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-tws/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-monthly-emissions_4F_Field_Burning/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./nlcd-new-urbanization/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-etsuppression/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./CMIP585-winter-median-ta/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./climdex-tmaxxf-access-cm2-ssp245/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-tws-trend/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_5_Forest_Fires/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./campfire-nlcd/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_1B2b_Natural_Gas_Distribution/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./houston-lst-night/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./landsat-c2l2-sr-lakes-lake-biwa/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./landsat-c2l2-sr-antarctic-glaciers-pine-island/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./lis-global-da-streamflow/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    },
+    {
+      "href": "./landsat-c2l2-sr-lakes-vanern/collection.json",
+      "rel": "child",
+      "type": "application/json"
+    }
+  ],
+  "title": "NASA VEDA",
+  "heystac:rating": {
+    "stars": 4.128725165562914,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 10.0,
+    "total": 10,
+    "aggregate_score": 3990.0,
+    "aggregate_total": 4832
+  },
+  "description": "VEDA (Visualization, Exploration, and Data Analysis) is NASA's open-source Earth Science platform in the cloud.",
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
+    "http://www.opengis.net/spec/cql2/1.0/conf/cql2-json",
+    "https://api.stacspec.org/v1.0.0/item-search#fields",
+    "https://api.stacspec.org/v1.0.0/item-search#query",
+    "https://api.stacspec.org/v1.0.0/core",
+    "https://api.stacspec.org/v1.0.0-rc.2/item-search#context",
+    "http://www.opengis.net/spec/cql2/1.0/conf/cql2-text",
+    "http://www.opengis.net/spec/ogcapi-features-3/1.0/conf/filter",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+    "https://api.stacspec.org/v1.0.0/item-search",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+    "http://www.opengis.net/spec/ogcapi-features-3/1.0/conf/features-filter",
+    "https://api.stacspec.org/v1.0.0/collections",
+    "https://api.stacspec.org/v1.0.0/ogcapi-features",
+    "https://api.stacspec.org/v1.0.0-rc.2/item-search#filter",
+    "http://www.opengis.net/spec/cql2/1.0/conf/basic-cql2",
+    "https://api.stacspec.org/v1.0.0/item-search#sort"
+  ]
+}

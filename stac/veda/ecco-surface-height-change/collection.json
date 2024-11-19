@@ -1,0 +1,137 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "ecco-surface-height-change",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/ecco-surface-height-change/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/ecco-surface-height-change",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./SSH_2017_minus_1992.cog.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "ECCO sea-surface height change from 1992 to 2017",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/ecco-surface-height-change--dataset-cover.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Lance Asper](https://unsplash.com/photos/3P3NHLZGCp8) (Wave crashing on a sandy beach)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1992-01-01T00:00:00+00:00",
+          "2017-12-31T23:59:59+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "rescale": [
+        [
+          -0.313,
+          0.313
+        ]
+      ],
+      "colormap_name": "rdbu"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://podaac.jpl.nasa.gov/dataset/ECCO_L4_SSH_05DEG_MONTHLY_V4R4",
+      "name": "NASA JPL Physical Oceanography Distributed Active Archive Center (PODAAC)",
+      "roles": [
+        "producer"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "processor"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "1992-01-01T00:00:00Z"
+    ]
+  },
+  "description": "Gridded global sea-surface height change from 1992 to 2017 from the Estimating the Circulation and Climate of the Ocean (ECCO) ocean state estimate. The dataset was calculated as the difference between the annual means over 2017 and 1992, from the 0.5 degree, gridded monthly mean data product available on PO.DAAC (https://podaac.jpl.nasa.gov/dataset/ECCO_L4_SSH_05DEG_MONTHLY_V4R4).",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false
+}

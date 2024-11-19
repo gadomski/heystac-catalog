@@ -1,0 +1,154 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "IS2SITMOGR4-cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/IS2SITMOGR4-cog/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/IS2SITMOGR4-cog",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./IS2SITMOGR4_01_202104_005_002.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "ICESat-2 L4 Monthly Gridded Sea Ice Thickness (COGs)",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/sea-ice-thick--dataset-cover.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Matt Broch](https://unsplash.com/photos/bwD3GLrV4pY) (Huge chunk of ice calving into the sea below)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          31.269270721494188,
+          179.7061752664782,
+          85.18898561151076
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-11-01T00:00:00+00:00",
+          "2021-04-30T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "rescale": [
+        [
+          0,
+          16
+        ]
+      ],
+      "colormap_name": "plasma"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://nsidc.org/data/explore-data",
+      "name": "National Snow And Ice Data Center (NSIDC)",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2018-11-01T00:00:00Z",
+      "2018-12-01T00:00:00Z",
+      "2019-01-01T00:00:00Z",
+      "2019-02-01T00:00:00Z",
+      "2019-03-01T00:00:00Z",
+      "2019-04-01T00:00:00Z",
+      "2019-09-01T00:00:00Z",
+      "2019-10-01T00:00:00Z",
+      "2019-11-01T00:00:00Z",
+      "2019-12-01T00:00:00Z",
+      "2020-01-01T00:00:00Z",
+      "2020-02-01T00:00:00Z",
+      "2020-03-01T00:00:00Z",
+      "2020-04-01T00:00:00Z",
+      "2020-09-01T00:00:00Z",
+      "2020-10-01T00:00:00Z",
+      "2020-11-01T00:00:00Z",
+      "2020-12-01T00:00:00Z",
+      "2021-01-01T00:00:00Z",
+      "2021-02-01T00:00:00Z",
+      "2021-03-01T00:00:00Z",
+      "2021-04-01T00:00:00Z"
+    ]
+  },
+  "description": "ICESat-2 L4 Monthly Gridded Sea Ice Thickness (COGs)",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "month"
+}

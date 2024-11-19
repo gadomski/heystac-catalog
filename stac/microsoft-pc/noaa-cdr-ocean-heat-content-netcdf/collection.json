@@ -58,15 +58,21 @@
     }
   ],
   "heystac:rating": {
-    "stars": 3.823529411764706,
+    "stars": 3.75,
     "issues": {
       "high": [],
-      "medium": [],
+      "medium": [
+        {
+          "rule_id": "links",
+          "score": 0.75,
+          "message": "https://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/Ocean_Heat_Content/UseAgreement_01B-41.pdf errored on GET: The read operation timed out"
+        }
+      ],
       "low": []
     },
-    "score": 14.0,
+    "score": 13.5,
     "total": 14,
-    "aggregate_score": 26.0,
+    "aggregate_score": 25.5,
     "aggregate_total": 34
   },
   "title": "Global Ocean Heat Content CDR NetCDFs",

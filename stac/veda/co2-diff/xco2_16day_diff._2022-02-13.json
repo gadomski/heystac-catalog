@@ -1,0 +1,223 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "xco2_16day_diff._2022-02-13",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/co2-diff/items/xco2_16day_diff._2022-02-13/map?assets=cog_default&rescale=-1.5e-06%2C1.5e-06&colormap_name=coolwarm",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/co2-diff/items/xco2_16day_diff._2022-02-13",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2022-02-13T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -180.3125,
+    -90.25,
+    179.6875,
+    90.25
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/co2-diff/xco2_16day_diff._2022-02-13.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -180.3125,
+        -90.25,
+        179.6875,
+        90.25
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        361,
+        576
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 999999986991104.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 1.3448225975783439e-6,
+            "min": -9.323541689809645e-7,
+            "count": 11,
+            "buckets": [
+              44,
+              1138,
+              8367,
+              48516,
+              123894,
+              19191,
+              4426,
+              1321,
+              858,
+              181
+            ]
+          },
+          "statistics": {
+            "mean": 3.258585896365006e-8,
+            "stddev": 1.8628185960905366e-7,
+            "maximum": 1.3448225975783439e-6,
+            "minimum": -9.323541689809645e-7,
+            "valid_percent": 100.0
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.3125,
+              -90.25
+            ],
+            [
+              179.6875,
+              -90.25
+            ],
+            [
+              179.6875,
+              90.25
+            ],
+            [
+              -180.3125,
+              90.25
+            ],
+            [
+              -180.3125,
+              -90.25
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.625,
+        0.0,
+        -180.3125,
+        0.0,
+        -0.5,
+        90.25,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/co2-diff/items/xco2_16day_diff._2022-02-13/preview.png?assets=cog_default&rescale=-1.5e-06%2C1.5e-06&colormap_name=coolwarm",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180.3125,
+          -90.25
+        ],
+        [
+          179.6875,
+          -90.25
+        ],
+        [
+          179.6875,
+          90.25
+        ],
+        [
+          -180.3125,
+          90.25
+        ],
+        [
+          -180.3125,
+          -90.25
+        ]
+      ]
+    ]
+  },
+  "collection": "co2-diff"
+}

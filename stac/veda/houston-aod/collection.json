@@ -1,0 +1,140 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "houston-aod",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/houston-aod/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/houston-aod",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./HOUS_AOD_2010_2019_cog.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "Aerosol Optical Depth (AOD)",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/smog-city.png",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Nick van den Berg](https://unsplash.com/photos/2vb-_3t6YCM) (Smog Located In City)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -97.00008437922591,
+          27.992675617599986,
+          -93.99971133026672,
+          31.009709499642028
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00+00:00",
+          "2019-01-01T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "nodata": 0,
+      "rescale": [
+        [
+          0.1,
+          0.311
+        ]
+      ],
+      "colormap_name": "rdylbu_r"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://lpdaac.usgs.gov/product_search/",
+      "name": "USGS",
+      "roles": [
+        "producer"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "processor"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2000-01-01T00:00:00Z",
+      "2010-01-01T00:00:00Z"
+    ]
+  },
+  "description": "MODIS-calculated Aerosol Optical Depth (AOD) over the Houston metro area decadally averaged.",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "year"
+}

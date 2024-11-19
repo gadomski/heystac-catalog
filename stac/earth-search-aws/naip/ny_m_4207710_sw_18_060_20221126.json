@@ -52,7 +52,7 @@
           {
             "rule_id": "links",
             "score": 0.0,
-            "message": "https://earth-search.aws.element84.com/v1/collections/naip/items/ny_m_4207710_sw_18_060_20221126/thumbnail errored on GET (404): {\"code\":\"NotFound\",\"description\":\"Not Found\"}"
+            "message": "https://earth-search.aws.element84.com/v1/collections/naip/items/ny_m_4207710_sw_18_060_20221126/thumbnail errored on GET (404)"
           }
         ],
         "low": []

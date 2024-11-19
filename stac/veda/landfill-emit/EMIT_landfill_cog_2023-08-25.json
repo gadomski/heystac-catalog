@@ -1,0 +1,223 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "EMIT_landfill_cog_2023-08-25",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/landfill-emit/items/EMIT_landfill_cog_2023-08-25/map?bidx=1&assets=cog_default&rescale=1%2C1500&colormap_name=plasma",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/landfill-emit/items/EMIT_landfill_cog_2023-08-25",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2023-08-25T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -96.99428719345948,
+    32.521156113298424,
+    -96.67328554146772,
+    33.03953040266351
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/landfill-emit/EMIT_landfill_cog_2023-08-25.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -96.99428719345948,
+        32.521156113298424,
+        -96.67328554146772,
+        33.03953040266351
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        956,
+        592
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": -9999.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 3096.197021484375,
+            "min": -2284.946044921875,
+            "count": 11,
+            "buckets": [
+              10,
+              251,
+              2408,
+              10418,
+              16213,
+              9041,
+              2149,
+              364,
+              47,
+              10
+            ]
+          },
+          "statistics": {
+            "mean": 118.06433477548825,
+            "stddev": 536.9363079544964,
+            "maximum": 3096.197021484375,
+            "minimum": -2284.946044921875,
+            "valid_percent": 7.228704907836707
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -96.99428719345948,
+              32.521156113298424
+            ],
+            [
+              -96.67328554146772,
+              32.521156113298424
+            ],
+            [
+              -96.67328554146772,
+              33.03953040266351
+            ],
+            [
+              -96.99428719345948,
+              33.03953040266351
+            ],
+            [
+              -96.99428719345948,
+              32.521156113298424
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.000542232520256367,
+        0.0,
+        -96.99428719345948,
+        0.0,
+        -0.000542232520256367,
+        33.03953040266351,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/landfill-emit/items/EMIT_landfill_cog_2023-08-25/preview.png?bidx=1&assets=cog_default&rescale=1%2C1500&colormap_name=plasma",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -96.99428719345948,
+          32.521156113298424
+        ],
+        [
+          -96.67328554146772,
+          32.521156113298424
+        ],
+        [
+          -96.67328554146772,
+          33.03953040266351
+        ],
+        [
+          -96.99428719345948,
+          33.03953040266351
+        ],
+        [
+          -96.99428719345948,
+          32.521156113298424
+        ]
+      ]
+    ]
+  },
+  "collection": "landfill-emit"
+}

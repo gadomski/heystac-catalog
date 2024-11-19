@@ -1,0 +1,308 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "nlcd_2021_cog_v2",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/nlcd-annual-conus/items/nlcd_2021_cog_v2/map?bidx=1&assets=landcover&nodata=0&resampling=nearest&colormap_name=nlcd",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nlcd-annual-conus/items/nlcd_2021_cog_v2",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2021-01-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -130.23282801589895,
+    21.742307778016638,
+    -63.672191850655295,
+    49.177063191389536
+  ],
+  "assets": {
+    "landcover": {
+      "href": "s3://veda-data-store/nlcd-annual-conus/nlcd_2021_cog_v2.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Land Cover",
+      "proj:bbox": [
+        -2493045.0,
+        177285.0,
+        2342655.0,
+        3310005.0
+      ],
+      "proj:wkt2": "PROJCS[\"Albers_Conical_Equal_Area\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "proj:shape": [
+        104424,
+        161190
+      ],
+      "description": "National Land Cover Database (NLCD) annual land cover data for the United States.",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 95.0,
+            "min": 11.0,
+            "count": 11,
+            "buckets": [
+              18994,
+              20897,
+              3617,
+              87430,
+              78863,
+              0,
+              0,
+              49369,
+              81191,
+              22086
+            ]
+          },
+          "statistics": {
+            "mean": 57.07265614007014,
+            "stddev": 22.0493704302482,
+            "maximum": 95,
+            "minimum": 11,
+            "valid_percent": 53.306046451430724
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2493045.0,
+              177285.0
+            ],
+            [
+              2342655.0,
+              177285.0
+            ],
+            [
+              2342655.0,
+              3310005.0
+            ],
+            [
+              -2493045.0,
+              3310005.0
+            ],
+            [
+              -2493045.0,
+              177285.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "name": "Albers_Conical_Equal_Area",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+        "base_crs": {
+          "id": {
+            "code": 4326,
+            "authority": "EPSG"
+          },
+          "name": "WGS 84",
+          "datum": {
+            "name": "World Geodetic System 1984",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "Lat"
+              },
+              {
+                "name": "Geodetic longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "Lon"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "unnamed",
+          "method": {
+            "id": {
+              "code": 9822,
+              "authority": "EPSG"
+            },
+            "name": "Albers Equal Area"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8821,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of false origin",
+              "unit": "degree",
+              "value": 23
+            },
+            {
+              "id": {
+                "code": 8822,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of false origin",
+              "unit": "degree",
+              "value": -96
+            },
+            {
+              "id": {
+                "code": 8823,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of 1st standard parallel",
+              "unit": "degree",
+              "value": 29.5
+            },
+            {
+              "id": {
+                "code": 8824,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of 2nd standard parallel",
+              "unit": "degree",
+              "value": 45.5
+            },
+            {
+              "id": {
+                "code": 8826,
+                "authority": "EPSG"
+              },
+              "name": "Easting at false origin",
+              "unit": "metre",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8827,
+                "authority": "EPSG"
+              },
+              "name": "Northing at false origin",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        30.0,
+        0.0,
+        -2493045.0,
+        0.0,
+        -30.0,
+        3310005.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/nlcd-annual-conus/items/nlcd_2021_cog_v2/preview.png?bidx=1&assets=landcover&nodata=0&resampling=nearest&colormap_name=nlcd",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -130.23282801589895,
+          21.742307778016638
+        ],
+        [
+          -63.672191850655295,
+          21.742307778016638
+        ],
+        [
+          -63.672191850655295,
+          49.177063191389536
+        ],
+        [
+          -130.23282801589895,
+          49.177063191389536
+        ],
+        [
+          -130.23282801589895,
+          21.742307778016638
+        ]
+      ]
+    ]
+  },
+  "collection": "nlcd-annual-conus"
+}

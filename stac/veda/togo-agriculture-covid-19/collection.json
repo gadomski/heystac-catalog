@@ -1,0 +1,113 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "togo-agriculture-covid-19",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/togo-agriculture-covid-19/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/togo-agriculture-covid-19",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./togo_cropland_2020_v7-1_cog_v2.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 2.5,
+    "issues": {
+      "high": [
+        {
+          "rule_id": "validate-core",
+          "score": 0.0,
+          "message": "Validation failed for Collection with ID togo-agriculture-covid-19 against schema at https://schemas.stacspec.org/v1.0.0/collection-spec/json-schema/collection.json"
+        }
+      ],
+      "medium": [],
+      "low": []
+    },
+    "score": 4.0,
+    "total": 12,
+    "aggregate_score": 16.0,
+    "aggregate_total": 32
+  },
+  "title": "Togo Agriculture",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/togo-agriculture-covid-19.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [NASA](https://nasa.gov/) (NASA Harvest satellite-derived cropland map for Togo)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -0.14732,
+          6.104427298701888,
+          1.806708805200138,
+          11.13898
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01 00:00:00+00",
+          "2020-12-31 23:59:59+00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2020-01-01T00:00:00Z"
+    ]
+  },
+  "description": "NASA Harvest developed a national-level, satellite-derived cropland map for Togo at 10-meter resolution within a 10-day timeframe using data from the European Space Agency’s Copernicus Sentinel 2 satellite, the NASA-USGS Landsat satellites, and with data from commercial partner Planet Inc. Dark purple colors indicate lower probability of cropland while lighter yellow colors indicate higher probability of cropland within each pixel.",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false
+}

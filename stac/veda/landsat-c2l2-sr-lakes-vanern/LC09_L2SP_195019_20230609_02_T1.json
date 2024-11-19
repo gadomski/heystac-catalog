@@ -1,0 +1,202 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "LC09_L2SP_195019_20230609_02_T1",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://landsat.usgs.gov/stac/landsat-extension/v1.1.1/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/landsat-c2l2-sr-lakes-vanern/items/LC09_L2SP_195019_20230609_02_T1",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2023-06-09T10:12:43.999938Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    },
+    "gsd": 30.0,
+    "created": "2023-06-14T09:14:59.463019+00:00",
+    "sci:doi": "10.5066/P9OGBGM6",
+    "platform": "landsat-9",
+    "proj:epsg": 32633,
+    "proj:shape": [
+      8271,
+      8201
+    ],
+    "description": "Landsat Collection 2 Level-2",
+    "instruments": [
+      "oli",
+      "tirs"
+    ],
+    "eo:cloud_cover": 0.58,
+    "proj:transform": [
+      30.0,
+      0.0,
+      279885.0,
+      0.0,
+      -30.0,
+      6631815.0
+    ],
+    "view:off_nadir": 0,
+    "landsat:wrs_row": "019",
+    "landsat:scene_id": "LC91950192023160LGN00",
+    "landsat:wrs_path": "195",
+    "landsat:wrs_type": "2",
+    "view:sun_azimuth": 159.4064058,
+    "landsat:correction": "L2SP",
+    "view:sun_elevation": 52.98379609,
+    "landsat:cloud_cover_land": 0.48,
+    "landsat:collection_number": "02",
+    "landsat:collection_category": "T1"
+  },
+  "bbox": [
+    11.07991937,
+    57.54199555,
+    15.46214712,
+    59.82322445
+  ],
+  "assets": {
+    "red": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2023/195/019/LC09_L2SP_195019_20230609_20230611_02_T1/LC09_L2SP_195019_20230609_20230611_02_T1_SR_B4.TIF",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "Red Band",
+      "eo:bands": [
+        {
+          "name": "OLI_B4",
+          "common_name": "red",
+          "description": "Visible red",
+          "center_wavelength": 0.65,
+          "full_width_half_max": 0.04
+        }
+      ],
+      "description": "Collection 2 Level-2 Red Band (SR_B4) Surface Reflectance",
+      "raster:bands": [
+        {
+          "scale": 0.0000275,
+          "nodata": 0,
+          "offset": -0.2,
+          "data_type": "uint16",
+          "spatial_resolution": 30
+        }
+      ]
+    },
+    "blue": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2023/195/019/LC09_L2SP_195019_20230609_20230611_02_T1/LC09_L2SP_195019_20230609_20230611_02_T1_SR_B2.TIF",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "Blue Band",
+      "eo:bands": [
+        {
+          "name": "OLI_B2",
+          "common_name": "blue",
+          "description": "Visible blue",
+          "center_wavelength": 0.48,
+          "full_width_half_max": 0.06
+        }
+      ],
+      "description": "Collection 2 Level-2 Blue Band (SR_B2) Surface Reflectance",
+      "raster:bands": [
+        {
+          "scale": 0.0000275,
+          "nodata": 0,
+          "offset": -0.2,
+          "data_type": "uint16",
+          "spatial_resolution": 30
+        }
+      ]
+    },
+    "green": {
+      "href": "s3://usgs-landsat/collection02/level-2/standard/oli-tirs/2023/195/019/LC09_L2SP_195019_20230609_20230611_02_T1/LC09_L2SP_195019_20230609_20230611_02_T1_SR_B3.TIF",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "reflectance"
+      ],
+      "title": "Green Band",
+      "eo:bands": [
+        {
+          "name": "OLI_B3",
+          "common_name": "green",
+          "description": "Visible green",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.06
+        }
+      ],
+      "description": "Collection 2 Level-2 Green Band (SR_B3) Surface Reflectance",
+      "raster:bands": [
+        {
+          "scale": 0.0000275,
+          "nodata": 0,
+          "offset": -0.2,
+          "data_type": "uint16",
+          "spatial_resolution": 30
+        }
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          12.2626043,
+          59.7874695
+        ],
+        [
+          11.3024518,
+          58.1078173
+        ],
+        [
+          14.3242605,
+          57.6013077
+        ],
+        [
+          15.4251096,
+          59.2656932
+        ],
+        [
+          12.2626043,
+          59.7874695
+        ]
+      ]
+    ]
+  },
+  "collection": "landsat-c2l2-sr-lakes-vanern"
+}

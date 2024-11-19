@@ -59,7 +59,7 @@
         {
           "rule_id": "links",
           "score": 0.6666666666666666,
-          "message": "https://planetarycomputer.microsoft.com/api/data/v1/collection/map?collection=goes-cmi errored on GET (404): {\"detail\":\"Not Found\"}"
+          "message": "https://planetarycomputer.microsoft.com/api/data/v1/collection/map?collection=goes-cmi errored on GET (404)"
         }
       ],
       "low": []

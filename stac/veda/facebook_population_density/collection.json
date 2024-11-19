@@ -1,0 +1,142 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "facebook_population_density",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/facebook_population_density/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://arxiv.org/pdf/1712.05839.pdf",
+      "rel": "external",
+      "type": "application/pdf",
+      "title": "Mapping the world population one building at a time"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/facebook_population_density",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./hrsl_general_latest_global_cog_2015-01-01_2022-06-8.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 34.0,
+    "aggregate_total": 34
+  },
+  "title": "Population Density Maps using satellite imagery built by Meta",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/fb-population--dataset-cover.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by NASA (2015 high resolution population density for Paris)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.00041666666667,
+          -55.985972222324634,
+          179.82041666695605,
+          71.33069444444443
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00+00:00",
+          "2015-01-01T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "rescale": [
+        [
+          0,
+          69
+        ]
+      ],
+      "resampling": "bilinear",
+      "colormap_name": "ylorrd"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://dataforgood.facebook.com/dfg/tools/high-resolution-population-density-maps",
+      "name": "Meta Data for Good",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2015-01-01T00:00:00Z"
+    ]
+  },
+  "description": "Facebook high-resolution population density: Darker areas indicate higher population density areas and lighter areas indicate lower population density areas, with a 30m² resolution.",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false
+}

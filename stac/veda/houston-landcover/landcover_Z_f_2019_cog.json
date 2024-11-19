@@ -1,0 +1,310 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "landcover_Z_f_2019_cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/houston-landcover/items/landcover_Z_f_2019_cog/map?bidx=1&assets=cog_default&nodata=-999&rescale=0%2C255&colormap=%7B%220%22%3A+%22%2300BFFF%22%2C+%2211%22%3A+%22%23486DA2%22%2C+%2212%22%3A+%22%23E7EFFC%22%2C+%2221%22%3A+%22%23E1CDCE%22%2C+%2222%22%3A+%22%23DC9881%22%2C+%2223%22%3A+%22%23F10100%22%2C+%2224%22%3A+%22%23AB0101%22%2C+%2231%22%3A+%22%23B3AFA4%22%2C+%2241%22%3A+%22%236BA966%22%2C+%2242%22%3A+%22%231D6533%22%2C+%2243%22%3A+%22%23BDCC93%22%2C+%2251%22%3A+%22%23B29C46%22%2C+%2252%22%3A+%22%23D1BB82%22%2C+%2271%22%3A+%22%23EDECCD%22%2C+%2272%22%3A+%22%23D0D181%22%2C+%2273%22%3A+%22%23A4CC51%22%2C+%2274%22%3A+%22%2382BA9D%22%2C+%2281%22%3A+%22%23DDD83E%22%2C+%2282%22%3A+%22%23AE7229%22%2C+%2290%22%3A+%22%23BBD7ED%22%2C+%2295%22%3A+%22%2371A4C1%22%7D&resampling=bilinear",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/houston-landcover/items/landcover_Z_f_2019_cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2019-01-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 4.545454545454546,
+      "issues": {
+        "high": [],
+        "medium": [
+          {
+            "rule_id": "links",
+            "score": 0.0,
+            "message": "https://openveda.cloud/api/raster/collections/houston-landcover/items/landcover_Z_f_2019_cog/map?bidx=1&assets=cog_default&nodata=-999&rescale=0%2C255&colormap=%7B%220%22%3A+%22%2300BFFF%22%2C+%2211%22%3A+%22%23486DA2%22%2C+%2212%22%3A+%22%23E7EFFC%22%2C+%2221%22%3A+%22%23E1CDCE%22%2C+%2222%22%3A+%22%23DC9881%22%2C+%2223%22%3A+%22%23F10100%22%2C+%2224%22%3A+%22%23AB0101%22%2C+%2231%22%3A+%22%23B3AFA4%22%2C+%2241%22%3A+%22%236BA966%22%2C+%2242%22%3A+%22%231D6533%22%2C+%2243%22%3A+%22%23BDCC93%22%2C+%2251%22%3A+%22%23B29C46%22%2C+%2252%22%3A+%22%23D1BB82%22%2C+%2271%22%3A+%22%23EDECCD%22%2C+%2272%22%3A+%22%23D0D181%22%2C+%2273%22%3A+%22%23A4CC51%22%2C+%2274%22%3A+%22%2382BA9D%22%2C+%2281%22%3A+%22%23DDD83E%22%2C+%2282%22%3A+%22%23AE7229%22%2C+%2290%22%3A+%22%23BBD7ED%22%2C+%2295%22%3A+%22%2371A4C1%22%7D&resampling=bilinear errored on GET (403)"
+          }
+        ],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -95.99531873393823,
+    29.07716802830657,
+    -94.29534689027045,
+    30.39936449861516
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/houston-landcover/landcover_Z_f_2019_cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -10686150.0,
+        3364710.0,
+        -10496910.0,
+        3533370.0
+      ],
+      "proj:epsg": 3395,
+      "proj:wkt2": "PROJCS[\"WGS 84 / World Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_1SP\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3395\"]]",
+      "proj:shape": [
+        5622,
+        6308
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": -999.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 95.0,
+            "min": 11.0,
+            "count": 11,
+            "buckets": [
+              92542,
+              221312,
+              3652,
+              107193,
+              11793,
+              0,
+              0,
+              19862,
+              249362,
+              150800
+            ]
+          },
+          "statistics": {
+            "mean": 54.547851995759565,
+            "stddev": 30.797947880218707,
+            "maximum": 95.0,
+            "minimum": 11.0,
+            "valid_percent": 91.61461185651699
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10686150.0,
+              3364710.0
+            ],
+            [
+              -10496910.0,
+              3364710.0
+            ],
+            [
+              -10496910.0,
+              3533370.0
+            ],
+            [
+              -10686150.0,
+              3533370.0
+            ],
+            [
+              -10686150.0,
+              3364710.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 3395,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84 / World Mercator",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "base_crs": {
+          "id": {
+            "code": 4326,
+            "authority": "EPSG"
+          },
+          "name": "WGS 84",
+          "datum": {
+            "name": "World Geodetic System 1984",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "Lat"
+              },
+              {
+                "name": "Geodetic longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "Lon"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "unnamed",
+          "method": {
+            "id": {
+              "code": 9804,
+              "authority": "EPSG"
+            },
+            "name": "Mercator (variant A)"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8801,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8802,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8805,
+                "authority": "EPSG"
+              },
+              "name": "Scale factor at natural origin",
+              "unit": "unity",
+              "value": 1
+            },
+            {
+              "id": {
+                "code": 8806,
+                "authority": "EPSG"
+              },
+              "name": "False easting",
+              "unit": "metre",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8807,
+                "authority": "EPSG"
+              },
+              "name": "False northing",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        30.0,
+        0.0,
+        -10686150.0,
+        0.0,
+        -30.0,
+        3533370.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/houston-landcover/items/landcover_Z_f_2019_cog/preview.png?bidx=1&assets=cog_default&nodata=-999&rescale=0%2C255&colormap=%7B%220%22%3A+%22%2300BFFF%22%2C+%2211%22%3A+%22%23486DA2%22%2C+%2212%22%3A+%22%23E7EFFC%22%2C+%2221%22%3A+%22%23E1CDCE%22%2C+%2222%22%3A+%22%23DC9881%22%2C+%2223%22%3A+%22%23F10100%22%2C+%2224%22%3A+%22%23AB0101%22%2C+%2231%22%3A+%22%23B3AFA4%22%2C+%2241%22%3A+%22%236BA966%22%2C+%2242%22%3A+%22%231D6533%22%2C+%2243%22%3A+%22%23BDCC93%22%2C+%2251%22%3A+%22%23B29C46%22%2C+%2252%22%3A+%22%23D1BB82%22%2C+%2271%22%3A+%22%23EDECCD%22%2C+%2272%22%3A+%22%23D0D181%22%2C+%2273%22%3A+%22%23A4CC51%22%2C+%2274%22%3A+%22%2382BA9D%22%2C+%2281%22%3A+%22%23DDD83E%22%2C+%2282%22%3A+%22%23AE7229%22%2C+%2290%22%3A+%22%23BBD7ED%22%2C+%2295%22%3A+%22%2371A4C1%22%7D&resampling=bilinear",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -95.99531873393823,
+          29.07716802830657
+        ],
+        [
+          -94.29534689027045,
+          29.07716802830657
+        ],
+        [
+          -94.29534689027045,
+          30.39936449861516
+        ],
+        [
+          -95.99531873393823,
+          30.39936449861516
+        ],
+        [
+          -95.99531873393823,
+          29.07716802830657
+        ]
+      ]
+    ]
+  },
+  "collection": "houston-landcover"
+}

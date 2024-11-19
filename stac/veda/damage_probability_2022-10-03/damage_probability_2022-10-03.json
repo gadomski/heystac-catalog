@@ -1,0 +1,311 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "damage_probability_2022-10-03",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/damage_probability_2022-10-03/items/damage_probability_2022-10-03/map?bidx=1&assets=cog_default&rescale=0%2C99&colormap_name=magma",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/damage_probability_2022-10-03/items/damage_probability_2022-10-03",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:31:31.441485",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID damage_probability_2022-10-03 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2022-10-03T23:59:59+00:00",
+    "start_datetime": "2022-10-03T00:00:00+00:00"
+  },
+  "bbox": [
+    -82.37631113903603,
+    26.31173859507485,
+    -81.55897118067179,
+    27.0376515475538
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/damage_probability_2022-10-03/damage_probability_2022-10-03.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        363480.0,
+        2910930.0,
+        444210.0,
+        2990730.0
+      ],
+      "proj:wkt2": "PROJCS[\"UTM Zone 17, Northern Hemisphere\",GEOGCS[\"Unknown datum based upon the WGS 84 ellipsoid\",DATUM[\"Not specified (based on WGS 84 spheroid)\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-81],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "proj:shape": [
+        2660,
+        2691
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": -9999.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 98.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              443715,
+              47229,
+              48058,
+              45606,
+              36504,
+              30026,
+              17691,
+              8750,
+              3090,
+              516
+            ]
+          },
+          "statistics": {
+            "mean": 13.005365649566563,
+            "stddev": 20.18727922084254,
+            "maximum": 98.0,
+            "minimum": 0.0,
+            "valid_percent": 65.66828495187562
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              363480.0,
+              2910930.0
+            ],
+            [
+              444210.0,
+              2910930.0
+            ],
+            [
+              444210.0,
+              2990730.0
+            ],
+            [
+              363480.0,
+              2990730.0
+            ],
+            [
+              363480.0,
+              2910930.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "name": "UTM Zone 17, Northern Hemisphere",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "base_crs": {
+          "name": "Unknown datum based upon the WGS 84 ellipsoid",
+          "datum": {
+            "name": "Not specified (based on WGS 84 spheroid)",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "id": {
+                "code": 7030,
+                "authority": "EPSG"
+              },
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "lon"
+              },
+              {
+                "name": "Latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "lat"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "id": {
+            "code": 16017,
+            "authority": "EPSG"
+          },
+          "name": "UTM zone 17N",
+          "method": {
+            "id": {
+              "code": 9807,
+              "authority": "EPSG"
+            },
+            "name": "Transverse Mercator"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8801,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8802,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of natural origin",
+              "unit": "degree",
+              "value": -81
+            },
+            {
+              "id": {
+                "code": 8805,
+                "authority": "EPSG"
+              },
+              "name": "Scale factor at natural origin",
+              "unit": "unity",
+              "value": 0.9996
+            },
+            {
+              "id": {
+                "code": 8806,
+                "authority": "EPSG"
+              },
+              "name": "False easting",
+              "unit": "metre",
+              "value": 500000
+            },
+            {
+              "id": {
+                "code": 8807,
+                "authority": "EPSG"
+              },
+              "name": "False northing",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        30.0,
+        0.0,
+        363480.0,
+        0.0,
+        -30.0,
+        2990730.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/damage_probability_2022-10-03/items/damage_probability_2022-10-03/preview.png?bidx=1&assets=cog_default&rescale=0%2C99&colormap_name=magma",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -82.37631113903603,
+          26.31173859507485
+        ],
+        [
+          -81.55897118067179,
+          26.31173859507485
+        ],
+        [
+          -81.55897118067179,
+          27.0376515475538
+        ],
+        [
+          -82.37631113903603,
+          27.0376515475538
+        ],
+        [
+          -82.37631113903603,
+          26.31173859507485
+        ]
+      ]
+    ]
+  },
+  "collection": "damage_probability_2022-10-03"
+}

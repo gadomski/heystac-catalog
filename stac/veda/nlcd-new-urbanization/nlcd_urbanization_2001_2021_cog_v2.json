@@ -1,0 +1,316 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "nlcd_urbanization_2001_2021_cog_v2",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/nlcd-new-urbanization/items/nlcd_urbanization_2001_2021_cog_v2/map?bidx=1&assets=landcover&resampling=cubic_spline&colormap_name=reds",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nlcd-new-urbanization/items/nlcd_urbanization_2001_2021_cog_v2",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:32:20.788187",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID nlcd_urbanization_2001_2021_cog_v2 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2021-01-01T00:00:00+00:00",
+    "start_datetime": "2001-01-01T00:00:00+00:00"
+  },
+  "bbox": [
+    -145.43266265924112,
+    16.06114691846402,
+    -48.78565576579019,
+    48.952585603949515
+  ],
+  "assets": {
+    "landcover": {
+      "href": "s3://veda-data-store/nlcd-new-urbanization/nlcd_urbanization_2001_2021_cog_v2.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "NLCD Urbanization",
+      "proj:bbox": [
+        -3547833.3890824113,
+        -136352.87886981014,
+        3358312.0768009676,
+        3734845.1150093907
+      ],
+      "proj:wkt2": "PROJCS[\"Albers_Conical_Equal_Area\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "proj:shape": [
+        104425,
+        161191
+      ],
+      "description": "National Land Cover Database newly classified urban land use between 2001-2021",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 1.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "statistics": {
+            "mean": 0.0,
+            "stddev": 0.0,
+            "maximum": 0.0,
+            "minimum": 0.0,
+            "valid_percent": 0.0
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3547833.3890824113,
+              -136352.87886981014
+            ],
+            [
+              3358312.0768009676,
+              -136352.87886981014
+            ],
+            [
+              3358312.0768009676,
+              3734845.1150093907
+            ],
+            [
+              -3547833.3890824113,
+              3734845.1150093907
+            ],
+            [
+              -3547833.3890824113,
+              -136352.87886981014
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "name": "Albers_Conical_Equal_Area",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+        "base_crs": {
+          "id": {
+            "code": 4326,
+            "authority": "EPSG"
+          },
+          "name": "WGS 84",
+          "datum": {
+            "name": "World Geodetic System 1984",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "Lat"
+              },
+              {
+                "name": "Geodetic longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "Lon"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "unnamed",
+          "method": {
+            "id": {
+              "code": 9822,
+              "authority": "EPSG"
+            },
+            "name": "Albers Equal Area"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8821,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of false origin",
+              "unit": "degree",
+              "value": 23
+            },
+            {
+              "id": {
+                "code": 8822,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of false origin",
+              "unit": "degree",
+              "value": -96
+            },
+            {
+              "id": {
+                "code": 8823,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of 1st standard parallel",
+              "unit": "degree",
+              "value": 29.5
+            },
+            {
+              "id": {
+                "code": 8824,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of 2nd standard parallel",
+              "unit": "degree",
+              "value": 45.5
+            },
+            {
+              "id": {
+                "code": 8826,
+                "authority": "EPSG"
+              },
+              "name": "Easting at false origin",
+              "unit": "metre",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8827,
+                "authority": "EPSG"
+              },
+              "name": "Northing at false origin",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        42.844485522661806,
+        0.0,
+        -3547833.3890824113,
+        0.0,
+        -37.07156326434475,
+        3734845.1150093907,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/nlcd-new-urbanization/items/nlcd_urbanization_2001_2021_cog_v2/preview.png?bidx=1&assets=landcover&resampling=cubic_spline&colormap_name=reds",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -145.43266265924112,
+          16.06114691846402
+        ],
+        [
+          -48.78565576579019,
+          16.06114691846402
+        ],
+        [
+          -48.78565576579019,
+          48.952585603949515
+        ],
+        [
+          -145.43266265924112,
+          48.952585603949515
+        ],
+        [
+          -145.43266265924112,
+          16.06114691846402
+        ]
+      ]
+    ]
+  },
+  "collection": "nlcd-new-urbanization"
+}

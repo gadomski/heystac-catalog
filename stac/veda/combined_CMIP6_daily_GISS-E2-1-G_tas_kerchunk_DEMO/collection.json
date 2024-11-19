@@ -1,0 +1,153 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "combined_CMIP6_daily_GISS-E2-1-G_tas_kerchunk_DEMO",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/datacube/v2.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/combined_CMIP6_daily_GISS-E2-1-G_tas_kerchunk_DEMO/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/combined_CMIP6_daily_GISS-E2-1-G_tas_kerchunk_DEMO",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12
+  },
+  "title": "CMIP6 Daily GISS-E2-1-G TAS Kerchunk (DEMO)",
+  "assets": {
+    "zarr": {
+      "href": "s3://veda-data-store-staging/cmip6-GISS-E2-1-G-tas-kerchunk/combined_CMIP6_daily_GISS-E2-1-G_tas_kerchunk.json",
+      "type": "application/vnd+zarr",
+      "roles": [
+        "data"
+      ],
+      "title": "zarr"
+    },
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/cmip6-tas.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by NASA (CMIP6 Near-Surface Air Temperature Screenshot)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -59.0,
+          359.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1950-01-01T12:00:00+00:00",
+          "2014-12-31T12:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "data_type": "zarr",
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {},
+  "collection": "combined_CMIP6_daily_GISS-E2-1-G_tas_kerchunk_DEMO",
+  "description": "for zarr testing",
+  "cube:variables": {
+    "tas": {
+      "type": "data",
+      "unit": "K",
+      "attrs": {
+        "units": "K",
+        "comment": "near-surface (usually, 2 meter) air temperature; derived from downscaled tasmax & tasmin",
+        "long_name": "Daily Near-Surface Air Temperature",
+        "cell_methods": "area: mean time: maximum",
+        "standard_name": "air_temperature"
+      },
+      "shape": [
+        23725,
+        600,
+        1440
+      ],
+      "dimensions": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "description": "Daily Near-Surface Air Temperature"
+    }
+  },
+  "cube:dimensions": {
+    "lat": {
+      "axis": "y",
+      "step": 0.25,
+      "type": "spatial",
+      "extent": [
+        -59.875,
+        89.875
+      ],
+      "description": "latitude",
+      "reference_system": 4326
+    },
+    "lon": {
+      "axis": "x",
+      "step": 0.25,
+      "type": "spatial",
+      "extent": [
+        0.125,
+        359.875
+      ],
+      "description": "longitude",
+      "reference_system": 4326
+    },
+    "time": {
+      "step": "P1DT0H0M0S",
+      "type": "temporal",
+      "extent": [
+        "1950-01-01T12:00:00Z",
+        "2014-12-31T12:00:00Z"
+      ],
+      "description": "time"
+    }
+  },
+  "dashboard:is_periodic": true,
+  "dashboard:time_density": "day"
+}

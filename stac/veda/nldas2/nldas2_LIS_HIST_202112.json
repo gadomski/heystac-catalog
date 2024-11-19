@@ -1,0 +1,231 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "nldas2_LIS_HIST_202112",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/nldas2/items/nldas2_LIS_HIST_202112/map?assets=cog_default&rescale=0%2C200&colormap_name=magma",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nldas2/items/nldas2_LIS_HIST_202112",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:31:49.595175",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID nldas2_LIS_HIST_202112 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2021-12-31T00:00:00+00:00",
+    "start_datetime": "2021-12-01T00:00:00+00:00"
+  },
+  "bbox": [
+    -168.98000671647551,
+    7.019999961559591,
+    -51.93999145246978,
+    72.06000091582078
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/nldas2/nldas2_LIS_HIST_202112.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -168.98000671647551,
+        7.019999961559591,
+        -51.93999145246978,
+        72.06000091582078
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        1626,
+        2926
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": -9999.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 585.8749389648438,
+            "min": -3.0362255573272705,
+            "count": 11,
+            "buckets": [
+              58914,
+              31838,
+              4682,
+              1279,
+              864,
+              564,
+              293,
+              135,
+              77,
+              27
+            ]
+          },
+          "statistics": {
+            "mean": 54.35082545377155,
+            "stddev": 56.11731407648562,
+            "maximum": 585.8749389648438,
+            "minimum": -3.0362255573272705,
+            "valid_percent": 16.90532483552632
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -168.98000671647551,
+              7.019999961559591
+            ],
+            [
+              -51.93999145246978,
+              7.019999961559591
+            ],
+            [
+              -51.93999145246978,
+              72.06000091582078
+            ],
+            [
+              -168.98000671647551,
+              72.06000091582078
+            ],
+            [
+              -168.98000671647551,
+              7.019999961559591
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.04000000521668002,
+        0.0,
+        -168.98000671647551,
+        0.0,
+        -0.0400000005868765,
+        72.06000091582078,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/nldas2/items/nldas2_LIS_HIST_202112/preview.png?assets=cog_default&rescale=0%2C200&colormap_name=magma",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -168.98000671647551,
+          7.019999961559591
+        ],
+        [
+          -51.93999145246978,
+          7.019999961559591
+        ],
+        [
+          -51.93999145246978,
+          72.06000091582078
+        ],
+        [
+          -168.98000671647551,
+          72.06000091582078
+        ],
+        [
+          -168.98000671647551,
+          7.019999961559591
+        ]
+      ]
+    ]
+  },
+  "collection": "nldas2"
+}

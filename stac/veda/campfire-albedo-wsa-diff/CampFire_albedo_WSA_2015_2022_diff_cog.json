@@ -1,0 +1,297 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "CampFire_albedo_WSA_2015_2022_diff_cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/campfire-albedo-wsa-diff/items/CampFire_albedo_WSA_2015_2022_diff_cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:31:12.854790",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID CampFire_albedo_WSA_2015_2022_diff_cog against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
+    "end_datetime": "2022-01-01T00:00:00+00:00",
+    "start_datetime": "2015-01-01T00:00:00+00:00"
+  },
+  "bbox": [
+    -121.78011150193434,
+    39.59830951410488,
+    -121.35341172160868,
+    39.89994756050158
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/campfire-albedo-wsa-diff/CampFire_albedo_WSA_2015_2022_diff_cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -13556500.001143409,
+        4780500.000000117,
+        -13508999.998875955,
+        4824000.001248636
+      ],
+      "proj:epsg": 3395,
+      "proj:wkt2": "PROJCS[\"WGS 84 / World Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_1SP\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3395\"]]",
+      "proj:shape": [
+        88,
+        96
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": -9999.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 0.05630556660564262,
+            "min": -0.03458519349056827,
+            "count": 11,
+            "buckets": [
+              76,
+              270,
+              842,
+              1206,
+              874,
+              391,
+              330,
+              200,
+              106,
+              55
+            ]
+          },
+          "statistics": {
+            "mean": 0.00295379071810601,
+            "stddev": 0.01622162434015039,
+            "maximum": 0.05630556660564262,
+            "minimum": -0.03458519349056827,
+            "valid_percent": 51.49147727272727
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -13556500.001143409,
+              4780500.000000117
+            ],
+            [
+              -13508999.998875955,
+              4780500.000000117
+            ],
+            [
+              -13508999.998875955,
+              4824000.001248636
+            ],
+            [
+              -13556500.001143409,
+              4824000.001248636
+            ],
+            [
+              -13556500.001143409,
+              4780500.000000117
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 3395,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84 / World Mercator",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "base_crs": {
+          "id": {
+            "code": 4326,
+            "authority": "EPSG"
+          },
+          "name": "WGS 84",
+          "datum": {
+            "name": "World Geodetic System 1984",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "Lat"
+              },
+              {
+                "name": "Geodetic longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "Lon"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "unnamed",
+          "method": {
+            "id": {
+              "code": 9804,
+              "authority": "EPSG"
+            },
+            "name": "Mercator (variant A)"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8801,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8802,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8805,
+                "authority": "EPSG"
+              },
+              "name": "Scale factor at natural origin",
+              "unit": "unity",
+              "value": 1
+            },
+            {
+              "id": {
+                "code": 8806,
+                "authority": "EPSG"
+              },
+              "name": "False easting",
+              "unit": "metre",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8807,
+                "authority": "EPSG"
+              },
+              "name": "False northing",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        494.79169028597727,
+        0.0,
+        -13556500.001143409,
+        0.0,
+        -494.318196005897,
+        4824000.001248636,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -121.78011150193434,
+          39.59830951410488
+        ],
+        [
+          -121.35341172160868,
+          39.59830951410488
+        ],
+        [
+          -121.35341172160868,
+          39.89994756050158
+        ],
+        [
+          -121.78011150193434,
+          39.89994756050158
+        ],
+        [
+          -121.78011150193434,
+          39.59830951410488
+        ]
+      ]
+    ]
+  },
+  "collection": "campfire-albedo-wsa-diff"
+}

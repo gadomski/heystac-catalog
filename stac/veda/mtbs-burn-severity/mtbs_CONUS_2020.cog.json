@@ -1,0 +1,316 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "mtbs_CONUS_2020.cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/mtbs-burn-severity/items/mtbs_CONUS_2020.cog/map?assets=cog_default&rescale=1%2C4&colormap_name=rdylgn_r",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/mtbs-burn-severity/items/mtbs_CONUS_2020.cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:31:36.795200",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID mtbs_CONUS_2020.cog against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2020-12-31T00:00:00+00:00",
+    "start_datetime": "2020-01-01T00:00:00+00:00"
+  },
+  "bbox": [
+    -127.1623805772434,
+    23.891362443109564,
+    -71.71742653471044,
+    48.83087576185881
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/mtbs-burn-severity/mtbs_CONUS_2020.cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -2323545.0,
+        375525.0,
+        1784205.0,
+        3098835.0
+      ],
+      "proj:wkt2": "PROJCS[\"USA_Contiguous_Albers_Equal_Area_Conic_USGS_version\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-96],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "proj:shape": [
+        90777,
+        136925
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 6.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              366,
+              0,
+              1206,
+              0,
+              585,
+              0,
+              386,
+              0,
+              5,
+              14
+            ]
+          },
+          "statistics": {
+            "mean": 2.414519906323185,
+            "stddev": 0.9523748736064819,
+            "maximum": 6,
+            "minimum": 1,
+            "valid_percent": 0.36847615979381443
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2323545.0,
+              375525.0
+            ],
+            [
+              1784205.0,
+              375525.0
+            ],
+            [
+              1784205.0,
+              3098835.0
+            ],
+            [
+              -2323545.0,
+              3098835.0
+            ],
+            [
+              -2323545.0,
+              375525.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "name": "USA_Contiguous_Albers_Equal_Area_Conic_USGS_version",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "base_crs": {
+          "name": "NAD83",
+          "datum": {
+            "name": "North_American_Datum_1983",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "id": {
+                "code": 7019,
+                "authority": "EPSG"
+              },
+              "name": "GRS 1980",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257222101
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "lon"
+              },
+              {
+                "name": "Latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "lat"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "unnamed",
+          "method": {
+            "id": {
+              "code": 9822,
+              "authority": "EPSG"
+            },
+            "name": "Albers Equal Area"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8821,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of false origin",
+              "unit": "degree",
+              "value": 23
+            },
+            {
+              "id": {
+                "code": 8822,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of false origin",
+              "unit": "degree",
+              "value": -96
+            },
+            {
+              "id": {
+                "code": 8823,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of 1st standard parallel",
+              "unit": "degree",
+              "value": 29.5
+            },
+            {
+              "id": {
+                "code": 8824,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of 2nd standard parallel",
+              "unit": "degree",
+              "value": 45.5
+            },
+            {
+              "id": {
+                "code": 8826,
+                "authority": "EPSG"
+              },
+              "name": "Easting at false origin",
+              "unit": "metre",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8827,
+                "authority": "EPSG"
+              },
+              "name": "Northing at false origin",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        30.0,
+        0.0,
+        -2323545.0,
+        0.0,
+        -30.0,
+        3098835.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/mtbs-burn-severity/items/mtbs_CONUS_2020.cog/preview.png?assets=cog_default&rescale=1%2C4&colormap_name=rdylgn_r",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -127.1623805772434,
+          23.891362443109564
+        ],
+        [
+          -71.71742653471044,
+          23.891362443109564
+        ],
+        [
+          -71.71742653471044,
+          48.83087576185881
+        ],
+        [
+          -127.1623805772434,
+          48.83087576185881
+        ],
+        [
+          -127.1623805772434,
+          23.891362443109564
+        ]
+      ]
+    ]
+  },
+  "collection": "mtbs-burn-severity"
+}

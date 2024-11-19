@@ -1,0 +1,223 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "CONUS_Reach_2020.cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/conus-reach/items/CONUS_Reach_2020.cog/map?assets=cog_default&nodata=65535&rescale=1%2C1&colormap_name=gnbu_r",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/conus-reach/items/CONUS_Reach_2020.cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2020-01-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -124.70647662199997,
+    25.341586347000028,
+    -67.14524092289997,
+    49.32899588910003
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/conus-reach/CONUS_Reach_2020.cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -124.70647662199997,
+        25.341586347000028,
+        -67.14524092289997,
+        49.32899588910003
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        23013,
+        55223
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint16",
+          "histogram": {
+            "max": 65535.0,
+            "min": 59036.0,
+            "count": 11,
+            "buckets": [
+              13,
+              71,
+              316,
+              1486,
+              5236,
+              13820,
+              27298,
+              39584,
+              35640,
+              313784
+            ]
+          },
+          "statistics": {
+            "mean": 64983.265968054744,
+            "stddev": 916.9617612830109,
+            "maximum": 65535,
+            "minimum": 59036,
+            "valid_percent": 100.0
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -124.70647662199997,
+              25.341586347000028
+            ],
+            [
+              -67.14524092289997,
+              25.341586347000028
+            ],
+            [
+              -67.14524092289997,
+              49.32899588910003
+            ],
+            [
+              -124.70647662199997,
+              49.32899588910003
+            ],
+            [
+              -124.70647662199997,
+              25.341586347000028
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.0010423416999999998,
+        0.0,
+        -124.70647662199997,
+        0.0,
+        -0.0010423417,
+        49.32899588910003,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/conus-reach/items/CONUS_Reach_2020.cog/preview.png?assets=cog_default&nodata=65535&rescale=1%2C1&colormap_name=gnbu_r",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -124.70647662199997,
+          25.341586347000028
+        ],
+        [
+          -67.14524092289997,
+          25.341586347000028
+        ],
+        [
+          -67.14524092289997,
+          49.32899588910003
+        ],
+        [
+          -124.70647662199997,
+          49.32899588910003
+        ],
+        [
+          -124.70647662199997,
+          25.341586347000028
+        ]
+      ]
+    ]
+  },
+  "collection": "conus-reach"
+}

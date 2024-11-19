@@ -1,0 +1,311 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "LST_Night_1km_2010_2019_cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/houston-lst-night/items/LST_Night_1km_2010_2019_cog/map?bidx=1&assets=cog_default&rescale=14300%2C14830&resampling=bilinear&colormap_name=jet",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/houston-lst-night/items/LST_Night_1km_2010_2019_cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:32:26.971273",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID LST_Night_1km_2010_2019_cog against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2019-01-01T00:00:00+00:00",
+    "start_datetime": "2010-01-01T00:00:00+00:00"
+  },
+  "bbox": [
+    -97.00008437922591,
+    27.992675617599986,
+    -93.99971133026672,
+    31.009709499642028
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/houston-lst-night/LST_Night_1km_2010_2019_cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -10798000.0,
+        3228000.0,
+        -10464000.0,
+        3612000.0
+      ],
+      "proj:epsg": 3395,
+      "proj:wkt2": "PROJCS[\"WGS 84 / World Mercator\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Mercator_1SP\"],PARAMETER[\"central_meridian\",0],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3395\"]]",
+      "proj:shape": [
+        384,
+        334
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 1e20,
+            "min": 14349.24330357143,
+            "count": 11,
+            "buckets": [
+              86836,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              41420
+            ]
+          },
+          "statistics": {
+            "mean": 3.2294785429141733e19,
+            "stddev": 4.67602970157362e19,
+            "maximum": 1e20,
+            "minimum": 14349.24330357143,
+            "valid_percent": 0.0007796906187624749
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10798000.0,
+              3228000.0
+            ],
+            [
+              -10464000.0,
+              3228000.0
+            ],
+            [
+              -10464000.0,
+              3612000.0
+            ],
+            [
+              -10798000.0,
+              3612000.0
+            ],
+            [
+              -10798000.0,
+              3228000.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 3395,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84 / World Mercator",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "base_crs": {
+          "id": {
+            "code": 4326,
+            "authority": "EPSG"
+          },
+          "name": "WGS 84",
+          "datum": {
+            "name": "World Geodetic System 1984",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "Lat"
+              },
+              {
+                "name": "Geodetic longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "Lon"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "unnamed",
+          "method": {
+            "id": {
+              "code": 9804,
+              "authority": "EPSG"
+            },
+            "name": "Mercator (variant A)"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8801,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8802,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8805,
+                "authority": "EPSG"
+              },
+              "name": "Scale factor at natural origin",
+              "unit": "unity",
+              "value": 1
+            },
+            {
+              "id": {
+                "code": 8806,
+                "authority": "EPSG"
+              },
+              "name": "False easting",
+              "unit": "metre",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8807,
+                "authority": "EPSG"
+              },
+              "name": "False northing",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        1000.0,
+        0.0,
+        -10798000.0,
+        0.0,
+        -1000.0,
+        3612000.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/houston-lst-night/items/LST_Night_1km_2010_2019_cog/preview.png?bidx=1&assets=cog_default&rescale=14300%2C14830&resampling=bilinear&colormap_name=jet",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -97.00008437922591,
+          27.992675617599986
+        ],
+        [
+          -93.99971133026672,
+          27.992675617599986
+        ],
+        [
+          -93.99971133026672,
+          31.009709499642028
+        ],
+        [
+          -97.00008437922591,
+          31.009709499642028
+        ],
+        [
+          -97.00008437922591,
+          27.992675617599986
+        ]
+      ]
+    ]
+  },
+  "collection": "houston-lst-night"
+}

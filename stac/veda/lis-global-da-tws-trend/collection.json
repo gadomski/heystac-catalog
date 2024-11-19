@@ -1,0 +1,127 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "lis-global-da-tws-trend",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/lis-global-da-tws-trend/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/lis-global-da-tws-trend",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./DATWS_STL_based_trend_v3_2003_2021.cog.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "Terrestrial Water Storage Trend - LIS 10km Global DA",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/twsanomaly-globe.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by NASA LIS (TWS trend of anomalies from LIS outputs)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.9500000157243,
+          -59.98224871364589,
+          179.9973980503783,
+          89.9999999874719
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2003-01-01T00:00:00+00:00",
+          "2021-12-31T23:59:59+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "nodata": -9999.0,
+      "rescale": [
+        [
+          -20,
+          20
+        ]
+      ],
+      "colormap_name": "rdbu"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2003-01-01T00:00:00Z"
+    ]
+  },
+  "description": "Gridded trend in terrestrial water storage (theil-sen slope estimation in mm yr-1) from 10km global LIS with assimilation",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false
+}

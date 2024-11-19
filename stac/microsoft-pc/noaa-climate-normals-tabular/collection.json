@@ -63,7 +63,7 @@
     }
   ],
   "heystac:rating": {
-    "stars": 3.888888888888889,
+    "stars": 3.7962962962962967,
     "issues": {
       "high": [],
       "medium": [],
@@ -71,7 +71,7 @@
     },
     "score": 14.0,
     "total": 14,
-    "aggregate_score": 28.0,
+    "aggregate_score": 27.333333333333336,
     "aggregate_total": 36
   },
   "title": "NOAA US Tabular Climate Normals",

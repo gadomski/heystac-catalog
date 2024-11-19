@@ -90,15 +90,21 @@
     }
   ],
   "heystac:rating": {
-    "stars": 3.888888888888889,
+    "stars": 3.7962962962962967,
     "issues": {
       "high": [],
-      "medium": [],
+      "medium": [
+        {
+          "rule_id": "links",
+          "score": 0.6666666666666666,
+          "message": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MCD15A2H errored on GET (400)\nhttps://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD15A2H errored on GET (400)\nhttps://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD15A2H errored on GET (400)"
+        }
+      ],
       "low": []
     },
-    "score": 14.0,
+    "score": 13.333333333333334,
     "total": 14,
-    "aggregate_score": 28.0,
+    "aggregate_score": 27.333333333333336,
     "aggregate_total": 36
   },
   "title": "MODIS Leaf Area Index/FPAR 8-Day",

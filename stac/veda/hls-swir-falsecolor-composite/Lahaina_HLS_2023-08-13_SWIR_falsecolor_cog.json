@@ -1,0 +1,348 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Lahaina_HLS_2023-08-13_SWIR_falsecolor_cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/hls-swir-falsecolor-composite/items/Lahaina_HLS_2023-08-13_SWIR_falsecolor_cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2023-08-13T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 20.0,
+      "total": 20
+    }
+  },
+  "bbox": [
+    -157.08006491221116,
+    20.685657249416465,
+    -156.0067983462315,
+    21.69215133711284
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/hls-swir-falsecolor-composite/Lahaina_HLS_2023-08-13_SWIR_falsecolor_cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        699960.0,
+        2290200.0,
+        809760.0,
+        2400000.0
+      ],
+      "proj:epsg": 32604,
+      "proj:wkt2": "PROJCS[\"WGS 84 / UTM zone 4N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-159],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32604\"]]",
+      "proj:shape": [
+        3660,
+        3660
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "int16",
+          "histogram": {
+            "max": 6965.0,
+            "min": -9999.0,
+            "count": 11,
+            "buckets": [
+              8942,
+              0,
+              0,
+              0,
+              0,
+              60172,
+              916937,
+              50727,
+              11041,
+              757
+            ]
+          },
+          "statistics": {
+            "mean": 557.3982353210449,
+            "stddev": 1188.077894158098,
+            "maximum": 6965,
+            "minimum": -9999,
+            "valid_percent": 0.000095367431640625
+          }
+        },
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "int16",
+          "histogram": {
+            "max": 10661.0,
+            "min": -9999.0,
+            "count": 11,
+            "buckets": [
+              8942,
+              0,
+              0,
+              0,
+              783596,
+              134575,
+              93327,
+              22458,
+              5290,
+              388
+            ]
+          },
+          "statistics": {
+            "mean": 563.3841419219971,
+            "stddev": 1643.6003303132434,
+            "maximum": 10661,
+            "minimum": -9999,
+            "valid_percent": 0.000095367431640625
+          }
+        },
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "int16",
+          "histogram": {
+            "max": 9914.0,
+            "min": -9999.0,
+            "count": 11,
+            "buckets": [
+              8942,
+              0,
+              0,
+              0,
+              381549,
+              617079,
+              22401,
+              13307,
+              4797,
+              501
+            ]
+          },
+          "statistics": {
+            "mean": 181.4462127685547,
+            "stddev": 1299.75203488237,
+            "maximum": 9914,
+            "minimum": -9999,
+            "valid_percent": 0.000095367431640625
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              699960.0,
+              2290200.0
+            ],
+            [
+              809760.0,
+              2290200.0
+            ],
+            [
+              809760.0,
+              2400000.0
+            ],
+            [
+              699960.0,
+              2400000.0
+            ],
+            [
+              699960.0,
+              2290200.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 32604,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84 / UTM zone 4N",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "base_crs": {
+          "id": {
+            "code": 4326,
+            "authority": "EPSG"
+          },
+          "name": "WGS 84",
+          "datum": {
+            "name": "World Geodetic System 1984",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "Lat"
+              },
+              {
+                "name": "Geodetic longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "Lon"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "UTM zone 4N",
+          "method": {
+            "id": {
+              "code": 9807,
+              "authority": "EPSG"
+            },
+            "name": "Transverse Mercator"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8801,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8802,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of natural origin",
+              "unit": "degree",
+              "value": -159
+            },
+            {
+              "id": {
+                "code": 8805,
+                "authority": "EPSG"
+              },
+              "name": "Scale factor at natural origin",
+              "unit": "unity",
+              "value": 0.9996
+            },
+            {
+              "id": {
+                "code": 8806,
+                "authority": "EPSG"
+              },
+              "name": "False easting",
+              "unit": "metre",
+              "value": 500000
+            },
+            {
+              "id": {
+                "code": 8807,
+                "authority": "EPSG"
+              },
+              "name": "False northing",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        30.0,
+        0.0,
+        699960.0,
+        0.0,
+        -30.0,
+        2400000.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -157.08006491221116,
+          20.685657249416465
+        ],
+        [
+          -156.0067983462315,
+          20.685657249416465
+        ],
+        [
+          -156.0067983462315,
+          21.69215133711284
+        ],
+        [
+          -157.08006491221116,
+          21.69215133711284
+        ],
+        [
+          -157.08006491221116,
+          20.685657249416465
+        ]
+      ]
+    ]
+  },
+  "collection": "hls-swir-falsecolor-composite"
+}

@@ -1,0 +1,254 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "disalexi_etsuppression_2020.cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/disalexi-etsuppression/items/disalexi_etsuppression_2020.cog/map?assets=cog_default&rescale=-1.0%2C1.0&asset_bidx=cog_default%7C1&colormap_name=rdylbu",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/disalexi-etsuppression/items/disalexi_etsuppression_2020.cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2020-01-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -125.35091474603803,
+    29.833050585609307,
+    -108.1212275966256,
+    49.03903136008468
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/disalexi-etsuppression/disalexi_etsuppression_2020.cog.tiff",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -125.35091474603803,
+        29.833050585609307,
+        -108.1212275966256,
+        49.03903136008468
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        2138,
+        1918
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": "nan",
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 49.14285659790039,
+            "min": -1.0,
+            "count": 11,
+            "buckets": [
+              706086,
+              79,
+              17,
+              2,
+              3,
+              1,
+              0,
+              2,
+              0,
+              2
+            ]
+          },
+          "statistics": {
+            "mean": -0.168254005727196,
+            "stddev": 0.28464719454434045,
+            "maximum": 49.14285659790039,
+            "minimum": -1.0,
+            "valid_percent": 75.0425054406964
+          }
+        },
+        {
+          "scale": 1.0,
+          "nodata": "nan",
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float32",
+          "histogram": {
+            "max": 39.0,
+            "min": -1.0,
+            "count": 11,
+            "buckets": [
+              711208,
+              151,
+              31,
+              13,
+              9,
+              4,
+              4,
+              3,
+              5,
+              1
+            ]
+          },
+          "statistics": {
+            "mean": 0.13323522972777327,
+            "stddev": 0.2854079529055539,
+            "maximum": 39.0,
+            "minimum": -1.0,
+            "valid_percent": 75.59900792301416
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -125.35091474603803,
+              29.833050585609307
+            ],
+            [
+              -108.1212275966256,
+              29.833050585609307
+            ],
+            [
+              -108.1212275966256,
+              49.03903136008468
+            ],
+            [
+              -125.35091474603803,
+              49.03903136008468
+            ],
+            [
+              -125.35091474603803,
+              29.833050585609307
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.008983152841195215,
+        0.0,
+        -125.35091474603803,
+        0.0,
+        -0.008983152841195215,
+        49.03903136008468,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/disalexi-etsuppression/items/disalexi_etsuppression_2020.cog/preview.png?assets=cog_default&rescale=-1.0%2C1.0&asset_bidx=cog_default%7C1&colormap_name=rdylbu",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -125.35091474603803,
+          29.833050585609307
+        ],
+        [
+          -108.1212275966256,
+          29.833050585609307
+        ],
+        [
+          -108.1212275966256,
+          49.03903136008468
+        ],
+        [
+          -125.35091474603803,
+          49.03903136008468
+        ],
+        [
+          -125.35091474603803,
+          29.833050585609307
+        ]
+      ]
+    ]
+  },
+  "collection": "disalexi-etsuppression"
+}

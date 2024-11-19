@@ -1,0 +1,371 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "Darnah_HLS_Post_cog_2023-09-22",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/darnah-flood/items/Darnah_HLS_Post_cog_2023-09-22/map?bidx=1&assets=cog_default&rescale=0%2C5000&resampling=bilinear&colormap_name=magma",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/darnah-flood/items/Darnah_HLS_Post_cog_2023-09-22",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:31:20.922564",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID Darnah_HLS_Post_cog_2023-09-22 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2023-09-22T23:59:59+00:00",
+    "start_datetime": "2023-09-22T00:00:00+00:00"
+  },
+  "bbox": [
+    22.063841231299286,
+    32.42935916114897,
+    23.256368419576482,
+    33.43490918842431
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/darnah-flood/Darnah_HLS_Post_cog_2023-09-22.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        600000.0,
+        3590220.0,
+        709800.0,
+        3700020.0
+      ],
+      "proj:epsg": 32634,
+      "proj:wkt2": "PROJCS[\"WGS 84 / UTM zone 34N\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",21],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"32634\"]]",
+      "proj:shape": [
+        3660,
+        3660
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "int16",
+          "histogram": {
+            "max": 6647.0,
+            "min": -9999.0,
+            "count": 11,
+            "buckets": [
+              131,
+              0,
+              0,
+              0,
+              0,
+              59,
+              668464,
+              139201,
+              235667,
+              5054
+            ]
+          },
+          "statistics": {
+            "mean": 1483.9383668899536,
+            "stddev": 1750.3479117800753,
+            "maximum": 6647,
+            "minimum": -9999,
+            "valid_percent": 0.000095367431640625
+          }
+        },
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "int16",
+          "histogram": {
+            "max": 8896.0,
+            "min": -9999.0,
+            "count": 11,
+            "buckets": [
+              131,
+              0,
+              0,
+              0,
+              217,
+              612357,
+              124628,
+              258466,
+              47763,
+              5014
+            ]
+          },
+          "statistics": {
+            "mean": 1685.3122730255127,
+            "stddev": 2095.7640670088335,
+            "maximum": 8896,
+            "minimum": -9999,
+            "valid_percent": 0.000095367431640625
+          }
+        },
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "int16",
+          "histogram": {
+            "max": 8839.0,
+            "min": -9999.0,
+            "count": 11,
+            "buckets": [
+              131,
+              0,
+              0,
+              0,
+              664,
+              646182,
+              179772,
+              186409,
+              28514,
+              6904
+            ]
+          },
+          "statistics": {
+            "mean": 1333.7532358169556,
+            "stddev": 1799.5818305636963,
+            "maximum": 8839,
+            "minimum": -9999,
+            "valid_percent": 0.000095367431640625
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              600000.0,
+              3590220.0
+            ],
+            [
+              709800.0,
+              3590220.0
+            ],
+            [
+              709800.0,
+              3700020.0
+            ],
+            [
+              600000.0,
+              3700020.0
+            ],
+            [
+              600000.0,
+              3590220.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 32634,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84 / UTM zone 34N",
+        "type": "ProjectedCRS",
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "base_crs": {
+          "id": {
+            "code": 4326,
+            "authority": "EPSG"
+          },
+          "name": "WGS 84",
+          "datum": {
+            "name": "World Geodetic System 1984",
+            "type": "GeodeticReferenceFrame",
+            "ellipsoid": {
+              "name": "WGS 84",
+              "semi_major_axis": 6378137,
+              "inverse_flattening": 298.257223563
+            }
+          },
+          "coordinate_system": {
+            "axis": [
+              {
+                "name": "Geodetic latitude",
+                "unit": "degree",
+                "direction": "north",
+                "abbreviation": "Lat"
+              },
+              {
+                "name": "Geodetic longitude",
+                "unit": "degree",
+                "direction": "east",
+                "abbreviation": "Lon"
+              }
+            ],
+            "subtype": "ellipsoidal"
+          }
+        },
+        "conversion": {
+          "name": "UTM zone 34N",
+          "method": {
+            "id": {
+              "code": 9807,
+              "authority": "EPSG"
+            },
+            "name": "Transverse Mercator"
+          },
+          "parameters": [
+            {
+              "id": {
+                "code": 8801,
+                "authority": "EPSG"
+              },
+              "name": "Latitude of natural origin",
+              "unit": "degree",
+              "value": 0
+            },
+            {
+              "id": {
+                "code": 8802,
+                "authority": "EPSG"
+              },
+              "name": "Longitude of natural origin",
+              "unit": "degree",
+              "value": 21
+            },
+            {
+              "id": {
+                "code": 8805,
+                "authority": "EPSG"
+              },
+              "name": "Scale factor at natural origin",
+              "unit": "unity",
+              "value": 0.9996
+            },
+            {
+              "id": {
+                "code": 8806,
+                "authority": "EPSG"
+              },
+              "name": "False easting",
+              "unit": "metre",
+              "value": 500000
+            },
+            {
+              "id": {
+                "code": 8807,
+                "authority": "EPSG"
+              },
+              "name": "False northing",
+              "unit": "metre",
+              "value": 0
+            }
+          ]
+        },
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Easting",
+              "unit": "metre",
+              "direction": "east",
+              "abbreviation": ""
+            },
+            {
+              "name": "Northing",
+              "unit": "metre",
+              "direction": "north",
+              "abbreviation": ""
+            }
+          ],
+          "subtype": "Cartesian"
+        }
+      },
+      "proj:transform": [
+        30.0,
+        0.0,
+        600000.0,
+        0.0,
+        -30.0,
+        3700020.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/darnah-flood/items/Darnah_HLS_Post_cog_2023-09-22/preview.png?bidx=1&assets=cog_default&rescale=0%2C5000&resampling=bilinear&colormap_name=magma",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          22.063841231299286,
+          32.42935916114897
+        ],
+        [
+          23.256368419576482,
+          32.42935916114897
+        ],
+        [
+          23.256368419576482,
+          33.43490918842431
+        ],
+        [
+          22.063841231299286,
+          33.43490918842431
+        ],
+        [
+          22.063841231299286,
+          32.42935916114897
+        ]
+      ]
+    ]
+  },
+  "collection": "darnah-flood"
+}

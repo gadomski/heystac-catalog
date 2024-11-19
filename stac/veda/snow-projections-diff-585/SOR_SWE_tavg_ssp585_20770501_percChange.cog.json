@@ -1,0 +1,223 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "SOR_SWE_tavg_ssp585_20770501_percChange.cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/snow-projections-diff-585/items/SOR_SWE_tavg_ssp585_20770501_percChange.cog/map?bidx=1&assets=cog_default&nodata=nan&rescale=-100%2C100&resampling=bilinear&colormap_name=rdbu",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/snow-projections-diff-585/items/SOR_SWE_tavg_ssp585_20770501_percChange.cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2077-05-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -108.67998779296876,
+    36.66034850911023,
+    -105.39998779296708,
+    40.28965332194374
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/snow-projections-diff-585/SOR_SWE_tavg_ssp585_20770501_percChange.cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -108.67998779296876,
+        36.66034850911023,
+        -105.39998779296708,
+        40.28965332194374
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        188,
+        164
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": -9999.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 16.173552985797087,
+            "min": -100.0,
+            "count": 11,
+            "buckets": [
+              3799,
+              457,
+              511,
+              512,
+              476,
+              543,
+              616,
+              961,
+              1845,
+              1737
+            ]
+          },
+          "statistics": {
+            "mean": -46.754032489247514,
+            "stddev": 44.28158577121778,
+            "maximum": 16.173552985797087,
+            "minimum": -100.0,
+            "valid_percent": 37.1594447327452
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -108.67998779296876,
+              36.66034850911023
+            ],
+            [
+              -105.39998779296708,
+              36.66034850911023
+            ],
+            [
+              -105.39998779296708,
+              40.28965332194374
+            ],
+            [
+              -108.67998779296876,
+              40.28965332194374
+            ],
+            [
+              -108.67998779296876,
+              36.66034850911023
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.020000000000010232,
+        0.0,
+        -108.67998779296876,
+        0.0,
+        -0.019304812834220798,
+        40.28965332194374,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/snow-projections-diff-585/items/SOR_SWE_tavg_ssp585_20770501_percChange.cog/preview.png?bidx=1&assets=cog_default&nodata=nan&rescale=-100%2C100&resampling=bilinear&colormap_name=rdbu",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -108.67998779296876,
+          36.66034850911023
+        ],
+        [
+          -105.39998779296708,
+          36.66034850911023
+        ],
+        [
+          -105.39998779296708,
+          40.28965332194374
+        ],
+        [
+          -108.67998779296876,
+          40.28965332194374
+        ],
+        [
+          -108.67998779296876,
+          36.66034850911023
+        ]
+      ]
+    ]
+  },
+  "collection": "snow-projections-diff-585"
+}

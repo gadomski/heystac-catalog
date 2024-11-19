@@ -1,0 +1,129 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "hls-l30-002-ej-reprocessed",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/hls-l30-002-ej-reprocessed/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://cmr.earthdata.nasa.gov/search/concepts/C2021957657-LPCLOUD.html",
+      "rel": "external",
+      "type": "text/html",
+      "title": "NASA Common Metadata Repository Record for this Dataset"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/hls-l30-002-ej-reprocessed",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./HLS.L30.T15RYP.2021294T163232.v2.0-ej-reprocessed.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 34.0,
+    "aggregate_total": 34
+  },
+  "title": "HLSL30.002 Environmental Justice Events",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/hls-events-ej--dataset-cover.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [NASA](https://nasa.gov) (2017 harmonized Landsat 8 shortwave infrared (SWIR) false color composite image that provides enhanced contrast to detect flood extent)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -90.932637,
+          17.961538,
+          -65.110098,
+          30.71627
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-06-06T14:43:41.335694+00:00",
+          "2021-10-21T16:32:32.165563+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "post_process": "swir"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://lpdaac.usgs.gov/product_search/",
+      "name": "USGS",
+      "roles": [
+        "producer"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "processor"
+      ]
+    },
+    {
+      "url": "https://lpdaac.usgs.gov/products/hlsl30v002/",
+      "name": "Land Processes Distributed Active Archive Center (LP DAAC)",
+      "roles": [
+        "processor"
+      ]
+    }
+  ],
+  "summaries": {},
+  "description": "A subset of HLS L30 data to support visualization of specific events. Read more about the source data on the NASA CMR Landing page: https://cmr.earthdata.nasa.gov/search/concepts/C2021957295-LPCLOUD.html",
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "day"
+}

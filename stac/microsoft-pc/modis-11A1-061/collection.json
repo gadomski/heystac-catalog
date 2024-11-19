@@ -78,21 +78,21 @@
     }
   ],
   "heystac:rating": {
-    "stars": 3.8492063492063497,
+    "stars": 3.80952380952381,
     "issues": {
       "high": [],
       "medium": [
         {
           "rule_id": "links",
-          "score": 0.8571428571428571,
-          "message": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD11A1 errored on GET: The read operation timed out"
+          "score": 0.7142857142857143,
+          "message": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD11A1 errored on GET (400)\nhttps://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD11A1 errored on GET (400)"
         }
       ],
       "low": []
     },
-    "score": 13.714285714285714,
+    "score": 13.428571428571429,
     "total": 14,
-    "aggregate_score": 27.714285714285715,
+    "aggregate_score": 27.42857142857143,
     "aggregate_total": 36
   },
   "title": "MODIS Land Surface Temperature/Emissivity Daily",

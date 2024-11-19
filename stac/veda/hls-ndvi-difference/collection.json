@@ -1,0 +1,133 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "hls-ndvi-difference",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/hls-ndvi-difference/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/hls-ndvi-difference",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./ndvi_diff_ian_2022-09-30.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 2.6470588235294117,
+    "issues": {
+      "high": [
+        {
+          "rule_id": "validate-core",
+          "score": 0.0,
+          "message": "Validation failed for Collection with ID hls-ndvi-difference against schema at https://schemas.stacspec.org/v1.0.0/collection-spec/json-schema/collection.json"
+        }
+      ],
+      "medium": [],
+      "low": []
+    },
+    "score": 4.0,
+    "total": 12,
+    "aggregate_score": 18.0,
+    "aggregate_total": 34
+  },
+  "title": "HLS-derived NDVI difference for Assessing Impacts from Hurricane Iann",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/ian_goes_cover.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Joshua Stevens, using GOES 16 imagery courtesy of NESDIS](https://visibleearth.nasa.gov/images/150408/hurricane-ian-reaches-florida) (Hurricane Ian as seen from space as it makes landfall with the state of Florida. NASA Earth Observatory image.)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -82.37631113903603,
+          26.31173859507485,
+          -81.9037040761012,
+          27.035837664631245
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-09-30 00:00:00+00",
+          "2022-09-30 23:59:59+00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "rescale": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "colormap_name": "rdbu"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2022-09-30T00:00:00Z"
+    ]
+  },
+  "description": "Difference in NDVI calculated from Harmonized Landsat and Sentinel-2 Data for September 5th and September 30th, 2022",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "day"
+}

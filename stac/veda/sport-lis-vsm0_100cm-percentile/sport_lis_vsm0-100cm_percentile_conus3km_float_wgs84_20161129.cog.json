@@ -1,0 +1,223 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "sport_lis_vsm0-100cm_percentile_conus3km_float_wgs84_20161129.cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/sport-lis-vsm0_100cm-percentile/items/sport_lis_vsm0-100cm_percentile_conus3km_float_wgs84_20161129.cog/map?bidx=1&assets=cog_default&nodata=9999.0&rescale=0%2C100&resampling=bilinear&colormap_name=rdylbu",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/sport-lis-vsm0_100cm-percentile/items/sport_lis_vsm0-100cm_percentile_conus3km_float_wgs84_20161129.cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2016-11-29T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -124.94000000000003,
+    25.060000000000006,
+    -67.07000000000005,
+    52.92999999999999
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/sport-lis-vsm0_100cm-percentile/sport_lis_vsm0-100cm_percentile_conus3km_float_wgs84_20161129.cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -124.94000000000003,
+        25.060000000000006,
+        -67.07000000000005,
+        52.92999999999999
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        929,
+        1929
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 9999.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 120.92507934570312,
+            "min": -49.97126388549805,
+            "count": 11,
+            "buckets": [
+              2,
+              0,
+              26982,
+              73819,
+              48709,
+              40598,
+              48357,
+              66156,
+              67191,
+              9
+            ]
+          },
+          "statistics": {
+            "mean": 49.03283766754202,
+            "stddev": 33.673258228825574,
+            "maximum": 120.92507934570312,
+            "minimum": -49.97126388549805,
+            "valid_percent": 73.50372438006073
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -124.94000000000003,
+              25.060000000000006
+            ],
+            [
+              -67.07000000000005,
+              25.060000000000006
+            ],
+            [
+              -67.07000000000005,
+              52.92999999999999
+            ],
+            [
+              -124.94000000000003,
+              52.92999999999999
+            ],
+            [
+              -124.94000000000003,
+              25.060000000000006
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.029999999999999985,
+        0.0,
+        -124.94000000000003,
+        0.0,
+        -0.029999999999999985,
+        52.92999999999999,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/sport-lis-vsm0_100cm-percentile/items/sport_lis_vsm0-100cm_percentile_conus3km_float_wgs84_20161129.cog/preview.png?bidx=1&assets=cog_default&nodata=9999.0&rescale=0%2C100&resampling=bilinear&colormap_name=rdylbu",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -124.94000000000003,
+          25.060000000000006
+        ],
+        [
+          -67.07000000000005,
+          25.060000000000006
+        ],
+        [
+          -67.07000000000005,
+          52.92999999999999
+        ],
+        [
+          -124.94000000000003,
+          52.92999999999999
+        ],
+        [
+          -124.94000000000003,
+          25.060000000000006
+        ]
+      ]
+    ]
+  },
+  "collection": "sport-lis-vsm0_100cm-percentile"
+}

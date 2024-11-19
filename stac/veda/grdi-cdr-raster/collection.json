@@ -1,0 +1,133 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "grdi-cdr-raster",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/grdi-cdr-raster/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/grdi-cdr-raster",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./povmap-grdi-v1_CDR_2010-01-01_2010-12-31.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "GRDI CDR Constituent Raster",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/grdi--dataset-cover.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Jordan Opel](https://unsplash.com/photos/3VLHF9b9Plg) (Shacks along a river almost collapsing)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.99999999990004,
+          -55.983333333466476,
+          179.81666666676645,
+          82.18333333320012
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2010-01-01T00:00:00+00:00",
+          "2010-12-31T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "rescale": [
+        [
+          0,
+          100
+        ]
+      ],
+      "colormap_name": "viridis"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://sedac.ciesin.columbia.edu/data/set/povmap-grdi-v1",
+      "name": "NASA CIESIN",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2010-01-01T00:00:00Z"
+    ]
+  },
+  "description": "Global Gridded Relative Deprivation Index (GRDI) Child Dependency Ratio (CDR) Constituent raster",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "year"
+}

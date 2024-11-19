@@ -1,0 +1,132 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "nlcd-annual-conus",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nlcd-annual-conus/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nlcd-annual-conus",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./nlcd_2021_cog_v2.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 5.0,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 34.0,
+    "aggregate_total": 34
+  },
+  "title": "NLCD Land Use Land Cover Classifications",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/nlcd-cover.png",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Eric Kilby](https://openverse.org/image/a9e174e6-d4e1-4377-81e2-6e71bf1a9602?q=skyline) (Boston, MA skyline)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -125.0,
+          24.0,
+          -65.0,
+          50.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2001-01-01T00:00:00+00:00",
+          "2021-12-31T00:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "landcover"
+      ],
+      "nodata": 0,
+      "resampling": "nearest",
+      "colormap_name": "nlcd"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2001-01-01T00:00:00Z",
+      "2004-01-01T00:00:00Z",
+      "2006-01-01T00:00:00Z",
+      "2008-01-01T00:00:00Z",
+      "2011-01-01T00:00:00Z",
+      "2013-01-01T00:00:00Z",
+      "2016-01-01T00:00:00Z",
+      "2019-01-01T00:00:00Z",
+      "2021-01-01T00:00:00Z"
+    ]
+  },
+  "description": "National Land Cover Database Land Use Land Cover Classification datasets for CONUS 2000-2021",
+  "item_assets": {
+    "landcover": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Land Cover",
+      "description": "National Land Cover Database (NLCD) annual land cover data for the United States."
+    }
+  },
+  "datetime_range": "year",
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "year"
+}

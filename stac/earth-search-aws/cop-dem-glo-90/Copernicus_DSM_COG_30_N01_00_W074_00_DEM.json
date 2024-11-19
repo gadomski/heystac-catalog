@@ -58,7 +58,7 @@
           {
             "rule_id": "links",
             "score": 0.5,
-            "message": "https://earth-search.aws.element84.com/v1/collections/cop-dem-glo-90/items/Copernicus_DSM_COG_30_N01_00_W074_00_DEM/thumbnail errored on GET (404): {\"code\":\"NotFound\",\"description\":\"Not Found\"}"
+            "message": "https://earth-search.aws.element84.com/v1/collections/cop-dem-glo-90/items/Copernicus_DSM_COG_30_N01_00_W074_00_DEM/thumbnail errored on GET (404)"
           }
         ],
         "low": []

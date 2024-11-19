@@ -1,0 +1,186 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "soil-texture",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/soil-texture/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/soil-texture",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./soil_texture_Xcm_250m_cog_2017.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [
+        {
+          "rule_id": "validate-core",
+          "score": 0.0,
+          "message": "Validation failed for Collection with ID soil-texture against schema at https://schemas.stacspec.org/v1.0.0/collection-spec/json-schema/collection.json"
+        }
+      ],
+      "medium": [],
+      "low": []
+    },
+    "score": 4.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "ISRIC World Soil Texture Classification",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/soil-texture-background.jpeg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Soil Sensor](https://soilsensor.com/articles/soil-textures/) (Examples of two different soil types)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -56.00081039406058,
+          179.99994240015582,
+          83.99916720600001
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-01-01 00:00:00+00",
+          "2017-01-01 00:00:00+00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "soil_texture_0cm_250m"
+      ],
+      "nodata": 255,
+      "resampling": "nearest",
+      "return_mask": true,
+      "colormap_name": "soil_texture"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2017-01-01T00:00:00Z",
+      "2017-01-01T00:00:00Z"
+    ]
+  },
+  "description": "ISRIC World Soil Texture Classification at the surface level. Broken into 12 classes of 1:Cl, 2:SiCl, 3:SaCl, 4:ClLo, 5:SiClLo, 6:SaClLo, 7:Lo, 8:SiLo, 9:SaLo, 10:Si, 11:LoSa, 12:Sa.",
+  "item_assets": {
+    "soil_texture_0cm_250m": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (0 cm)",
+      "description": "ISRIC World Soil Texture Classification (0 cm)"
+    },
+    "soil_texture_5cm_250m": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (5 cm)",
+      "description": "ISRIC World Soil Texture Classification (5 cm)"
+    },
+    "soil_texture_15cm_250m": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (15cm)",
+      "description": "ISRIC World Soil Texture Classification (15 cm)"
+    },
+    "soil_texture_30cm_250m": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (30 cm)",
+      "description": "ISRIC World Soil Texture Classification (30 cm)"
+    },
+    "soil_texture_60cm_250m": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (60 cm)",
+      "description": "ISRIC World Soil Texture Classification (60 cm)"
+    },
+    "soil_texture_100cm_250m": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (100 cm)",
+      "description": "ISRIC World Soil Texture Classification (100 cm)"
+    },
+    "soil_texture_200cm_250m": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (200 cm)",
+      "description": "ISRIC World Soil Texture Classification (200 cm)"
+    }
+  },
+  "datetime_range": "year",
+  "dashboard:is_periodic": true,
+  "dashboard:time_density": "year"
+}

@@ -1,0 +1,320 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "togo_RPM_2020-01-01_to_2020-12-31_day.cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/recovery-proxy-maps-covid-19/items/togo_RPM_2020-01-01_to_2020-12-31_day.cog/map?bidx=1&bidx=2&bidx=3&assets=cog_default&resampling=bilinear",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/recovery-proxy-maps-covid-19/items/togo_RPM_2020-01-01_to_2020-12-31_day.cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:31:02.888828",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID togo_RPM_2020-01-01_to_2020-12-31_day.cog against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2020-12-31T23:59:59+00:00",
+    "start_datetime": "2020-01-01T00:00:00+00:00"
+  },
+  "bbox": [
+    -0.876020861,
+    5.686939596845617,
+    2.56425691673783,
+    11.529161819
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/recovery-proxy-maps-covid-19/togo_RPM_2020-01-01_to_2020-12-31_day.cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -0.876020861,
+        5.686939596845617,
+        2.56425691673783,
+        11.529161819
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        21032,
+        12385
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 255.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              6023,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6333
+            ]
+          },
+          "statistics": {
+            "mean": 130.698850760764,
+            "stddev": 127.45986565900016,
+            "maximum": 255,
+            "minimum": 0,
+            "valid_percent": 2.0010623963515757
+          }
+        },
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 199.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              6023,
+              0,
+              0,
+              0,
+              0,
+              10,
+              157,
+              856,
+              2184,
+              3126
+            ]
+          },
+          "statistics": {
+            "mean": 90.42910326966656,
+            "stddev": 88.95727424364935,
+            "maximum": 199,
+            "minimum": 0,
+            "valid_percent": 2.0010623963515757
+          }
+        },
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 2.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              9608,
+              0,
+              0,
+              0,
+              0,
+              1983,
+              0,
+              0,
+              0,
+              765
+            ]
+          },
+          "statistics": {
+            "mean": 0.28431531239883456,
+            "stddev": 0.5721071548199862,
+            "maximum": 2,
+            "minimum": 0,
+            "valid_percent": 2.0010623963515757
+          }
+        },
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 255.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              6023,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6333
+            ]
+          },
+          "statistics": {
+            "mean": 130.698850760764,
+            "stddev": 127.45986565900016,
+            "maximum": 255,
+            "minimum": 0,
+            "valid_percent": 2.0010623963515757
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.876020861,
+              5.686939596845617
+            ],
+            [
+              2.56425691673783,
+              5.686939596845617
+            ],
+            [
+              2.56425691673783,
+              11.529161819
+            ],
+            [
+              -0.876020861,
+              11.529161819
+            ],
+            [
+              -0.876020861,
+              5.686939596845617
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.0002777777777745523,
+        0.0,
+        -0.876020861,
+        0.0,
+        -0.0002777777777745523,
+        11.529161819,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/recovery-proxy-maps-covid-19/items/togo_RPM_2020-01-01_to_2020-12-31_day.cog/preview.png?bidx=1&bidx=2&bidx=3&assets=cog_default&resampling=bilinear",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -0.876020861,
+          5.686939596845617
+        ],
+        [
+          2.56425691673783,
+          5.686939596845617
+        ],
+        [
+          2.56425691673783,
+          11.529161819
+        ],
+        [
+          -0.876020861,
+          11.529161819
+        ],
+        [
+          -0.876020861,
+          5.686939596845617
+        ]
+      ]
+    ]
+  },
+  "collection": "recovery-proxy-maps-covid-19"
+}

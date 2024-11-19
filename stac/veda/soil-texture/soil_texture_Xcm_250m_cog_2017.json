@@ -1,0 +1,863 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "soil_texture_Xcm_250m_cog_2017",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/soil-texture/items/soil_texture_Xcm_250m_cog_2017/map?bidx=1&assets=soil_texture_0cm_250m&nodata=255&resampling=nearest&return_mask=True&colormap_name=soil_texture",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/soil-texture/items/soil_texture_Xcm_250m_cog_2017",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2017-01-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -180.0,
+    -56.00081039406058,
+    179.99994240015582,
+    83.99916720600001
+  ],
+  "assets": {
+    "soil_texture_0cm_250m": {
+      "href": "s3://veda-data-store/soil-texture/soil_texture_0cm_250m_cog_2017.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (0 cm)",
+      "proj:bbox": [
+        -180.0,
+        -56.00081039406058,
+        179.99994240015582,
+        83.99916720600001
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        67200,
+        172800
+      ],
+      "description": "ISRIC World Soil Texture Classification (0 cm)",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 255.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 12.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              1824,
+              834,
+              11673,
+              565,
+              13987,
+              50265,
+              3874,
+              23411,
+              0,
+              8954
+            ]
+          },
+          "statistics": {
+            "mean": 7.245252931439417,
+            "stddev": 2.060093213312782,
+            "maximum": 12,
+            "minimum": 1,
+            "valid_percent": 28.241257440476193
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              -56.00081039406058
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.0020833330000009018,
+        0.0,
+        -180.0,
+        0.0,
+        -0.0020833330000009018,
+        83.99916720600001,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "soil_texture_5cm_250m": {
+      "href": "s3://veda-data-store/soil-texture/soil_texture_5cm_250m_cog_2017.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (5 cm)",
+      "proj:bbox": [
+        -180.0,
+        -56.00081039406058,
+        179.99994240015582,
+        83.99916720600001
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        67200,
+        172800
+      ],
+      "description": "ISRIC World Soil Texture Classification (5 cm)",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 255.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 12.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              1966,
+              878,
+              11640,
+              509,
+              15027,
+              49874,
+              3462,
+              23875,
+              0,
+              8156
+            ]
+          },
+          "statistics": {
+            "mean": 7.194579978680441,
+            "stddev": 2.0298697893593163,
+            "maximum": 12,
+            "minimum": 1,
+            "valid_percent": 28.241257440476193
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              -56.00081039406058
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.0020833330000009018,
+        0.0,
+        -180.0,
+        0.0,
+        -0.0020833330000009018,
+        83.99916720600001,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "soil_texture_15cm_250m": {
+      "href": "s3://veda-data-store/soil-texture/soil_texture_15cm_250m_cog_2017.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (15 cm)",
+      "proj:bbox": [
+        -180.0,
+        -56.00081039406058,
+        179.99994240015582,
+        83.99916720600001
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        67200,
+        172800
+      ],
+      "description": "ISRIC World Soil Texture Classification (15 cm)",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 255.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 12.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              2813,
+              1235,
+              15789,
+              781,
+              17134,
+              47067,
+              2823,
+              20458,
+              0,
+              7287
+            ]
+          },
+          "statistics": {
+            "mean": 6.903108669087506,
+            "stddev": 2.1170575293797307,
+            "maximum": 12,
+            "minimum": 1,
+            "valid_percent": 28.241257440476193
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              -56.00081039406058
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.0020833330000009018,
+        0.0,
+        -180.0,
+        0.0,
+        -0.0020833330000009018,
+        83.99916720600001,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "soil_texture_30cm_250m": {
+      "href": "s3://veda-data-store/soil-texture/soil_texture_30cm_250m_cog_2017.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (30 cm)",
+      "proj:bbox": [
+        -180.0,
+        -56.00081039406058,
+        179.99994240015582,
+        83.99916720600001
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        67200,
+        172800
+      ],
+      "description": "ISRIC World Soil Texture Classification (30 cm)",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 255.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 12.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              5400,
+              2034,
+              20238,
+              992,
+              19001,
+              41688,
+              2154,
+              16867,
+              0,
+              7013
+            ]
+          },
+          "statistics": {
+            "mean": 6.531169022506869,
+            "stddev": 2.3271345149103637,
+            "maximum": 12,
+            "minimum": 1,
+            "valid_percent": 28.241257440476193
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              -56.00081039406058
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.0020833330000009018,
+        0.0,
+        -180.0,
+        0.0,
+        -0.0020833330000009018,
+        83.99916720600001,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "soil_texture_60cm_250m": {
+      "href": "s3://veda-data-store/soil-texture/soil_texture_60cm_250m_cog_2017.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (60 cm)",
+      "proj:bbox": [
+        -180.0,
+        -56.00081039406058,
+        179.99994240015582,
+        83.99916720600001
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        67200,
+        172800
+      ],
+      "description": "ISRIC World Soil Texture Classification (60 cm)",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 255.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 12.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              8259,
+              2920,
+              21233,
+              1040,
+              17337,
+              38256,
+              1318,
+              17972,
+              0,
+              7052
+            ]
+          },
+          "statistics": {
+            "mean": 6.355871978645775,
+            "stddev": 2.521361894028896,
+            "maximum": 12,
+            "minimum": 1,
+            "valid_percent": 28.241257440476193
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              -56.00081039406058
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.0020833330000009018,
+        0.0,
+        -180.0,
+        0.0,
+        -0.0020833330000009018,
+        83.99916720600001,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "soil_texture_100cm_250m": {
+      "href": "s3://veda-data-store/soil-texture/soil_texture_100cm_250m_cog_2017.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Soil Texture Class (100 cm)",
+      "proj:bbox": [
+        -180.0,
+        -56.00081039406058,
+        179.99994240015582,
+        83.99916720600001
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        67200,
+        172800
+      ],
+      "description": "ISRIC World Soil Texture Classification (100 cm)",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 255.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 12.0,
+            "min": 1.0,
+            "count": 11,
+            "buckets": [
+              8614,
+              2979,
+              19988,
+              754,
+              16788,
+              37979,
+              1177,
+              19652,
+              0,
+              7456
+            ]
+          },
+          "statistics": {
+            "mean": 6.424813887179665,
+            "stddev": 2.5715252480984647,
+            "maximum": 12,
+            "minimum": 1,
+            "valid_percent": 28.241257440476193
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              -56.00081039406058
+            ],
+            [
+              179.99994240015582,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              83.99916720600001
+            ],
+            [
+              -180.0,
+              -56.00081039406058
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.0020833330000009018,
+        0.0,
+        -180.0,
+        0.0,
+        -0.0020833330000009018,
+        83.99916720600001,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/soil-texture/items/soil_texture_Xcm_250m_cog_2017/preview.png?bidx=1&assets=soil_texture_0cm_250m&nodata=255&resampling=nearest&return_mask=True&colormap_name=soil_texture",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -56.00081039406058
+        ],
+        [
+          179.99994240015582,
+          -56.00081039406058
+        ],
+        [
+          179.99994240015582,
+          83.99916720600001
+        ],
+        [
+          -180,
+          83.99916720600001
+        ],
+        [
+          -180,
+          -56.00081039406058
+        ]
+      ]
+    ]
+  },
+  "collection": "soil-texture"
+}

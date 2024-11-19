@@ -1,0 +1,337 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "HLS.L30.T15RYP.2021294T163232.v2.0-ej-reprocessed",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/scientific/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/HLSL30.020/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0_stac.json",
+      "rel": "derived_from",
+      "type": "application/json"
+    },
+    {
+      "href": "https://doi.org/10.5067/HLS/HLSL30.002",
+      "rel": "cite-as",
+      "type": "application/json"
+    },
+    {
+      "href": "https://openveda.cloud/api/raster/collections/hls-l30-002-ej-reprocessed/items/HLS.L30.T15RYP.2021294T163232.v2.0-ej-reprocessed/map?assets=cog_default&post_process=swir",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/hls-l30-002-ej-reprocessed/items/HLS.L30.T15RYP.2021294T163232.v2.0-ej-reprocessed",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2021-10-21T16:32:32.165563Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    },
+    "sci:doi": "10.5067/HLS/HLSL30.002",
+    "platform": "landsat-8",
+    "proj:epsg": 32615,
+    "instruments": [
+      "oli"
+    ],
+    "end_datetime": "2021-10-21T16:32:32.165563+00:00",
+    "view:azimuth": 156.72237255,
+    "eo:cloud_cover": 63.0,
+    "start_datetime": "2021-10-21T16:32:32.165563+00:00",
+    "view:sun_azimuth": 153.97340252
+  },
+  "bbox": [
+    -90.932637,
+    29.703479,
+    -89.766437,
+    30.71627
+  ],
+  "assets": {
+    "B01": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B01.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B01",
+          "common_name": "coastal",
+          "center_wavelength": 0.48,
+          "full_width_half_max": 0.02
+        }
+      ]
+    },
+    "B02": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B02.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B02",
+          "common_name": "blue",
+          "center_wavelength": 0.44,
+          "full_width_half_max": 0.06
+        }
+      ]
+    },
+    "B03": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B03.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B03",
+          "common_name": "green",
+          "center_wavelength": 0.56,
+          "full_width_half_max": 0.06
+        }
+      ]
+    },
+    "B04": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B04.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B04",
+          "common_name": "red",
+          "center_wavelength": 0.65,
+          "full_width_half_max": 0.04
+        }
+      ]
+    },
+    "B05": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B05.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B05",
+          "common_name": "nir",
+          "center_wavelength": 0.86,
+          "full_width_half_max": 0.03
+        }
+      ]
+    },
+    "B06": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B06.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B06",
+          "common_name": "swir16",
+          "center_wavelength": 1.6,
+          "full_width_half_max": 0.08
+        }
+      ]
+    },
+    "B07": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B07.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B07",
+          "common_name": "swir22",
+          "center_wavelength": 2.2,
+          "full_width_half_max": 0.2
+        }
+      ]
+    },
+    "B09": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B09.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B09",
+          "common_name": "cirrus",
+          "center_wavelength": 1.37,
+          "full_width_half_max": 0.02
+        }
+      ]
+    },
+    "B10": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B10.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B10",
+          "common_name": "lwir11",
+          "center_wavelength": 10.9,
+          "full_width_half_max": 0.8
+        }
+      ]
+    },
+    "B11": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.B11.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "B11",
+          "common_name": "lwir12",
+          "center_wavelength": 12.0,
+          "full_width_half_max": 1.0
+        }
+      ]
+    },
+    "SAA": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.SAA.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SAA"
+        }
+      ]
+    },
+    "SZA": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.SZA.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "SZA"
+        }
+      ]
+    },
+    "VAA": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.VAA.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "VAA"
+        }
+      ]
+    },
+    "VZA": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.VZA.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "VZA"
+        }
+      ]
+    },
+    "Fmask": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.Fmask.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "eo:bands": [
+        {
+          "name": "Fmask"
+        }
+      ]
+    },
+    "thumbnail": {
+      "href": "s3://veda-data-store/hlsl30-002-ej-reprocessed/2021/15RYP/HLS.L30.T15RYP.2021294T163232.v2.0/HLS.L30.T15RYP.2021294T163232.v2.0.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/hls-l30-002-ej-reprocessed/items/HLS.L30.T15RYP.2021294T163232.v2.0-ej-reprocessed/preview.png?assets=cog_default&post_process=swir",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+      [
+        [
+          [
+            -90.932637,
+            29.726055
+          ],
+          [
+            -90.911814,
+            30.71627
+          ],
+          [
+            -89.766437,
+            30.692783
+          ],
+          [
+            -89.798642,
+            29.703479
+          ],
+          [
+            -90.932637,
+            29.726055
+          ]
+        ]
+      ]
+    ]
+  },
+  "collection": "hls-l30-002-ej-reprocessed"
+}

@@ -1,0 +1,219 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "LIS_Streamflow_201901010000.d01.cog",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/lis-global-da-streamflow/items/LIS_Streamflow_201901010000.d01.cog/map?bidx=1&assets=cog_default&rescale=0%2C2500&resampling=bilinear&colormap_name=viridis",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/lis-global-da-streamflow/items/LIS_Streamflow_201901010000.d01.cog",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2019-01-01T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -179.9500000157243,
+    -59.98224871364589,
+    179.9973980503783,
+    89.9999999874719
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/lis-global-da-streamflow/LIS_Streamflow_201901010000.d01.cog.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -179.9500000157243,
+        -59.98224871364589,
+        179.9973980503783,
+        89.9999999874719
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST]]",
+      "proj:shape": [
+        1500,
+        3600
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": 0.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 86446.6171875,
+            "min": 3.0482550872102263e-37,
+            "count": 11,
+            "buckets": [
+              126454,
+              207,
+              32,
+              16,
+              3,
+              4,
+              3,
+              0,
+              1,
+              16
+            ]
+          },
+          "statistics": {
+            "mean": 83.38267616292444,
+            "stddev": 1281.9820378449065,
+            "maximum": 86446.6171875,
+            "minimum": 3.0482550872102263e-37,
+            "valid_percent": 28.984923887587822
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -179.9500000157243,
+              -59.98224871364589
+            ],
+            [
+              179.9973980503783,
+              -59.98224871364589
+            ],
+            [
+              179.9973980503783,
+              89.9999999874719
+            ],
+            [
+              -179.9500000157243,
+              89.9999999874719
+            ],
+            [
+              -179.9500000157243,
+              -59.98224871364589
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "lat"
+            },
+            {
+              "name": "Longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.09998538835169517,
+        0.0,
+        -179.9500000157243,
+        0.0,
+        -0.09998816580074518,
+        89.9999999874719,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/lis-global-da-streamflow/items/LIS_Streamflow_201901010000.d01.cog/preview.png?bidx=1&assets=cog_default&rescale=0%2C2500&resampling=bilinear&colormap_name=viridis",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -179.9500000157243,
+          -59.98224871364589
+        ],
+        [
+          179.9973980503783,
+          -59.98224871364589
+        ],
+        [
+          179.9973980503783,
+          89.9999999874719
+        ],
+        [
+          -179.9500000157243,
+          89.9999999874719
+        ],
+        [
+          -179.9500000157243,
+          -59.98224871364589
+        ]
+      ]
+    ]
+  },
+  "collection": "lis-global-da-streamflow"
+}

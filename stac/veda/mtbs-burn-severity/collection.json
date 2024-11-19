@@ -1,0 +1,135 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "mtbs-burn-severity",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/mtbs-burn-severity/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/mtbs-burn-severity",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./mtbs_CONUS_2020.cog.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "MTBS Burn Severity",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/mtbs-burn-severity--dataset-cover.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Mike Newbry](https://unsplash.com/photos/DwtX9mMHBJ0) (Hillside engulfed by wildfire)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -127.1623805772434,
+          23.821031278155107,
+          -71.13506805308776,
+          49.08850271850093
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-01-01T00:00:00+00:00",
+          "2020-12-31T23:59:59+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "rescale": [
+        [
+          1,
+          4
+        ]
+      ],
+      "colormap_name": "rdylgn_r"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.mtbs.gov/",
+      "name": "Monitoring Trends in Burn Severity",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor",
+        "host"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2016-01-01T00:00:00Z",
+      "2020-12-31T00:00:00Z"
+    ]
+  },
+  "description": "Burn severities and extents of fires from Monitoring Trends in Burn Severity (MTBS) program during the years 2016-2020 over Western US",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": true,
+  "dashboard:time_density": "year"
+}

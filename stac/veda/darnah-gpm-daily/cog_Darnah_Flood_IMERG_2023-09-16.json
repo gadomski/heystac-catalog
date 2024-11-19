@@ -1,0 +1,230 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "cog_Darnah_Flood_IMERG_2023-09-16",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/darnah-gpm-daily/items/cog_Darnah_Flood_IMERG_2023-09-16/map?bidx=1&assets=cog_default&nodata=0&rescale=0.1%2C500&resampling=bilinear&colormap_name=inferno",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/darnah-gpm-daily/items/cog_Darnah_Flood_IMERG_2023-09-16",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:31:24.426287",
+    "heystac:rating": {
+      "stars": 3.1818181818181817,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID cog_Darnah_Flood_IMERG_2023-09-16 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 14.0,
+      "total": 22
+    },
+    "end_datetime": "2023-09-16T23:59:59+00:00",
+    "start_datetime": "2023-09-16T00:00:00+00:00"
+  },
+  "bbox": [
+    -10.06113118213864,
+    14.912033716384059,
+    45.00559573438803,
+    48.50902534245416
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/darnah-gpm-daily/cog_Darnah_Flood_IMERG_2023-09-16.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -10.06113118213864,
+        14.912033716384059,
+        45.00559573438803,
+        48.50902534245416
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        374,
+        613
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 1e20,
+            "min": 0.5000184388985829,
+            "count": 11,
+            "buckets": [
+              159038,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              70224
+            ]
+          },
+          "statistics": {
+            "mean": 3.0630457729584497e19,
+            "stddev": 4.609577889823087e19,
+            "maximum": 1e20,
+            "minimum": 0.5000184388985829,
+            "valid_percent": 0.0004361821845748532
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -10.06113118213864,
+              14.912033716384059
+            ],
+            [
+              45.00559573438803,
+              14.912033716384059
+            ],
+            [
+              45.00559573438803,
+              48.50902534245416
+            ],
+            [
+              -10.06113118213864,
+              48.50902534245416
+            ],
+            [
+              -10.06113118213864,
+              14.912033716384059
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.08983152841195215,
+        0.0,
+        -10.06113118213864,
+        0.0,
+        -0.08983152841195215,
+        48.50902534245416,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/darnah-gpm-daily/items/cog_Darnah_Flood_IMERG_2023-09-16/preview.png?bidx=1&assets=cog_default&nodata=0&rescale=0.1%2C500&resampling=bilinear&colormap_name=inferno",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -10.06113118213864,
+          14.912033716384059
+        ],
+        [
+          45.00559573438803,
+          14.912033716384059
+        ],
+        [
+          45.00559573438803,
+          48.50902534245416
+        ],
+        [
+          -10.06113118213864,
+          48.50902534245416
+        ],
+        [
+          -10.06113118213864,
+          14.912033716384059
+        ]
+      ]
+    ]
+  },
+  "collection": "darnah-gpm-daily"
+}

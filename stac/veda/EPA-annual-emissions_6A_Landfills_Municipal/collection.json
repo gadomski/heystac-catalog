@@ -1,0 +1,135 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "EPA-annual-emissions_6A_Landfills_Municipal",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/EPA-annual-emissions_6A_Landfills_Municipal/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/EPA-annual-emissions_6A_Landfills_Municipal",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./EPA-annual-emissions_6A_Landfills_Municipal.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "Gridded 2012 EPA Methane Emissions - Municipal Landfills",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/epa-waste--cover.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Antoine GIRET](https://unsplash.com/photos/7_TSzqJms4w) (Mountain of rubbish and garbage on the beach by the sea)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -129.99999694660497,
+          19.999999240339655,
+          -59.999999238697754,
+          54.99999694496308
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2012-01-01T00:00:00+00:00",
+          "2012-12-31T23:59:59+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "nodata": 0,
+      "rescale": [
+        [
+          0,
+          675446396026
+        ]
+      ],
+      "colormap_name": "rainbow"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.epa.gov/ghgemissions/gridded-2012-methane-emissions",
+      "name": "EPA",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2012-01-01T00:00:00Z",
+      "2012-12-31T23:59:59Z"
+    ]
+  },
+  "description": "Emissions from sector 6A from municipal solid waste landfills receiving household waste.",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": true,
+  "dashboard:time_density": "year"
+}

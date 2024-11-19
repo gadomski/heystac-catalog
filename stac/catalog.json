@@ -23,11 +23,16 @@
       "href": "./earth-search-aws/catalog.json",
       "rel": "child",
       "type": "application/json"
+    },
+    {
+      "href": "./veda/catalog.json",
+      "rel": "child",
+      "type": "application/json"
     }
   ],
   "title": "heystac",
   "heystac:rating": {
-    "stars": 4.3419524389772155,
+    "stars": 4.231128829145434,
     "issues": {
       "high": [],
       "medium": [],
@@ -35,8 +40,8 @@
     },
     "score": 10.0,
     "total": 10,
-    "aggregate_score": 4275.954761904762,
-    "aggregate_total": 4924
+    "aggregate_score": 8255.778571428571,
+    "aggregate_total": 9756
   },
   "description": "A curated geospatial asset discovery experience™\n\nEach collection has a single item, fetched regularly when we crawl the APIs.",
   "created": "2024-11-08T08:12:00-07:00",

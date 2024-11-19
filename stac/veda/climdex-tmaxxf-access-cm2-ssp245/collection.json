@@ -1,0 +1,152 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "climdex-tmaxxf-access-cm2-ssp245",
+  "stac_extensions": [],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/climdex-tmaxxf-access-cm2-ssp245/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/climdex-tmaxxf-access-cm2-ssp245",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./climdex-tmaxxf-access-cm2-ssp245-2100.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.6666666666666665,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 10.0,
+    "total": 10,
+    "aggregate_score": 22.0,
+    "aggregate_total": 30
+  },
+  "title": "CLIMDEX ACCESS CM2 SSP245 tmaxXF",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/cmip6-climdex-tmaxxf-access-cm2.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by NASA (CMIP6 Climdex TmaxXF Screenshot)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T00:00:00+00:00",
+          "2101-12-31T23:59:59+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-SA-4.0",
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2015-01-01T00:00:00Z",
+      "2100-12-31T00:00:00Z"
+    ]
+  },
+  "description": "CLIMDEX ACCESS CM2 SSP245 - variable tmaxXF",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    },
+    "tmax_above_86": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 86",
+      "description": "Tmax Above 86"
+    },
+    "tmax_above_90": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 90",
+      "description": "Tmax Above 90"
+    },
+    "tmax_above_100": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 100",
+      "description": "Tmax Above 100"
+    },
+    "tmax_above_110": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 110",
+      "description": "Tmax Above 110"
+    },
+    "tmax_above_115": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 115",
+      "description": "Tmax Above 115"
+    }
+  },
+  "dashboard:is_periodic": true,
+  "dashboard:time_density": "year"
+}

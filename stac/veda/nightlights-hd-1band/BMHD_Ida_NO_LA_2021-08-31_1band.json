@@ -1,0 +1,222 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "BMHD_Ida_NO_LA_2021-08-31_1band",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/raster/collections/nightlights-hd-1band/items/BMHD_Ida_NO_LA_2021-08-31_1band/map?bidx=1&assets=cog_default&rescale=0%2C255&colormap_name=inferno",
+      "rel": "preview",
+      "type": "text/html",
+      "title": "Map of Item"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nightlights-hd-1band/items/BMHD_Ida_NO_LA_2021-08-31_1band",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2021-08-31T00:00:00Z",
+    "heystac:rating": {
+      "stars": 5.0,
+      "issues": {
+        "high": [],
+        "medium": [],
+        "low": []
+      },
+      "score": 22.0,
+      "total": 22
+    }
+  },
+  "bbox": [
+    -90.3037818244749,
+    29.804659612978707,
+    -89.87578181971654,
+    30.07177072705947
+  ],
+  "assets": {
+    "cog_default": {
+      "href": "s3://veda-data-store/nightlights-hd-1band/BMHD_Ida_NO_LA_2021-08-31_1band.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "proj:bbox": [
+        -90.3037818244749,
+        29.804659612978707,
+        -89.87578181971654,
+        30.07177072705947
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        2404,
+        3852
+      ],
+      "description": "Cloud optimized default layer to display on map",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "uint8",
+          "histogram": {
+            "max": 224.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              629113,
+              5418,
+              4878,
+              3579,
+              2478,
+              2051,
+              1671,
+              1677,
+              1345,
+              3150
+            ]
+          },
+          "statistics": {
+            "mean": 4.304768371582031,
+            "stddev": 23.79588612813113,
+            "maximum": 224,
+            "minimum": 0,
+            "valid_percent": 0.000152587890625
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.3037818244749,
+              29.804659612978707
+            ],
+            [
+              -89.87578181971654,
+              29.804659612978707
+            ],
+            [
+              -89.87578181971654,
+              30.07177072705947
+            ],
+            [
+              -90.3037818244749,
+              30.07177072705947
+            ],
+            [
+              -90.3037818244749,
+              29.804659612978707
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.00011111111234640703,
+        0.0,
+        -90.3037818244749,
+        0.0,
+        -0.00011111111234640703,
+        30.07177072705947,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "rendered_preview": {
+      "title": "Rendered preview",
+      "href": "https://openveda.cloud/api/raster/collections/nightlights-hd-1band/items/BMHD_Ida_NO_LA_2021-08-31_1band/preview.png?bidx=1&assets=cog_default&rescale=0%2C255&colormap_name=inferno",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ],
+      "type": "image/png"
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -90.3037818244749,
+          29.804659612978707
+        ],
+        [
+          -89.87578181971654,
+          29.804659612978707
+        ],
+        [
+          -89.87578181971654,
+          30.07177072705947
+        ],
+        [
+          -90.3037818244749,
+          30.07177072705947
+        ],
+        [
+          -90.3037818244749,
+          29.804659612978707
+        ]
+      ]
+    ]
+  },
+  "collection": "nightlights-hd-1band"
+}

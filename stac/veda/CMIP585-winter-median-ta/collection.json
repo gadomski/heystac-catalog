@@ -1,0 +1,140 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "CMIP585-winter-median-ta",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/CMIP585-winter-median-ta/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/CMIP585-winter-median-ta",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./CMIP6ensembleMedian_diff_winter_tas_ssp585_20850214.cog.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 3.823529411764706,
+    "issues": {
+      "high": [],
+      "medium": [],
+      "low": []
+    },
+    "score": 12.0,
+    "total": 12,
+    "aggregate_score": 26.0,
+    "aggregate_total": 34
+  },
+  "title": "Projected changes to winter (January, February, and March) average daily air temperature",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/CMIP-winter-median.jpeg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by Justin Pflug (Photo of Nisqually glacier)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -126.0,
+          30.0,
+          -104.0,
+          51.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-01-01T00:00:00+00:00",
+          "2085-03-31T12:00:00+00:00"
+        ]
+      ]
+    }
+  },
+  "license": "MIT",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "cog_default"
+      ],
+      "rescale": [
+        [
+          -5.5,
+          5.5
+        ]
+      ],
+      "resampling": "bilinear",
+      "colormap_name": "rdbu_r"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp-cmip6",
+      "name": "NASA Center for Climate Simulation (NCCS)",
+      "roles": [
+        "producer",
+        "processor",
+        "licensor"
+      ]
+    },
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2025-01-01T00:00:00Z",
+      "2045-01-01T00:00:00Z",
+      "2065-01-01T00:00:00Z",
+      "2085-01-01T00:00:00Z"
+    ]
+  },
+  "description": "Differences in winter (January, February, and March) average daily air temperature between a historical period (1995 - 2014) and multiple 20-year periods from an ensemble of CMIP6 climate projections (SSP5-8.5) downscaled by NASA Earth Exchange (NEX-GDDP-CMIP6)",
+  "item_assets": {
+    "cog_default": {
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Default COG Layer",
+      "description": "Cloud optimized default layer to display on map"
+    }
+  },
+  "dashboard:is_periodic": false,
+  "dashboard:time_density": "year"
+}

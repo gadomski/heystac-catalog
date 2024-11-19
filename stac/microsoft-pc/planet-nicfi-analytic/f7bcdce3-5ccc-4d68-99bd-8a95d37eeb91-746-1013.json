@@ -51,7 +51,7 @@
           {
             "rule_id": "links",
             "score": 0.0,
-            "message": "https://api.planet.com/basemaps/v1/mosaics/f7bcdce3-5ccc-4d68-99bd-8a95d37eeb91/quads/746-1013 errored on GET (401): {\"message\":\"Credentials Required\"}\n\nhttps://api.planet.com/basemaps/v1/mosaics/f7bcdce3-5ccc-4d68-99bd-8a95d37eeb91 errored on GET (401): {\"message\":\"Credentials Required\"}\n"
+            "message": "https://api.planet.com/basemaps/v1/mosaics/f7bcdce3-5ccc-4d68-99bd-8a95d37eeb91/quads/746-1013 errored on GET (401)\nhttps://api.planet.com/basemaps/v1/mosaics/f7bcdce3-5ccc-4d68-99bd-8a95d37eeb91 errored on GET (401)"
           }
         ],
         "low": []

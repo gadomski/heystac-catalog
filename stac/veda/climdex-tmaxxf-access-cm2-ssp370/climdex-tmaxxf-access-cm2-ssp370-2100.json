@@ -1,0 +1,728 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "climdex-tmaxxf-access-cm2-ssp370-2100",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/climdex-tmaxxf-access-cm2-ssp370/items/climdex-tmaxxf-access-cm2-ssp370-2100",
+      "rel": "canonical",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "./collection.json",
+      "rel": "collection",
+      "type": "application/json"
+    },
+    {
+      "href": "../../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    }
+  ],
+  "properties": {
+    "datetime": "2024-11-19T12:30:46.209151",
+    "heystac:rating": {
+      "stars": 3.0,
+      "issues": {
+        "high": [
+          {
+            "rule_id": "validate-core",
+            "score": 0.0,
+            "message": "Validation failed for Feature with ID climdex-tmaxxf-access-cm2-ssp370-2100 against schema at https://schemas.stacspec.org/v1.0.0/item-spec/json-schema/item.json"
+          }
+        ],
+        "medium": [],
+        "low": []
+      },
+      "score": 12.0,
+      "total": 20
+    },
+    "end_datetime": "2100-12-31T00:00:00+00:00",
+    "start_datetime": "2100-01-01T00:00:00+00:00"
+  },
+  "bbox": [
+    -180.0,
+    -60.0,
+    180.0,
+    90.0
+  ],
+  "assets": {
+    "tmax_above_86": {
+      "href": "s3://veda-data-store/climdex-tmaxxf-access-cm2-ssp370/tmaxXF-ACCESS-CM2-ssp370_2100_tmax_above_86.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 86",
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        90.0
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        600,
+        1440
+      ],
+      "description": "Tmax Above 86",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": "nan",
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 365.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              45239,
+              12592,
+              10128,
+              10158,
+              6084,
+              4213,
+              4494,
+              5272,
+              5081,
+              30938
+            ]
+          },
+          "statistics": {
+            "mean": 151.18536650794715,
+            "stddev": 141.78207420077644,
+            "maximum": 365.0,
+            "minimum": 0.0,
+            "valid_percent": 30.691735582552692
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              -60.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.25,
+        0.0,
+        -180.0,
+        0.0,
+        -0.25,
+        90.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "tmax_above_90": {
+      "href": "s3://veda-data-store/climdex-tmaxxf-access-cm2-ssp370/tmaxXF-ACCESS-CM2-ssp370_2100_tmax_above_90.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 90",
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        90.0
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        600,
+        1440
+      ],
+      "description": "Tmax Above 90",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": "nan",
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 365.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              54216,
+              12604,
+              10217,
+              8337,
+              4895,
+              4491,
+              5619,
+              5341,
+              5816,
+              22663
+            ]
+          },
+          "statistics": {
+            "mean": 130.1192333772979,
+            "stddev": 135.85029638792375,
+            "maximum": 365.0,
+            "minimum": 0.0,
+            "valid_percent": 30.691735582552692
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              -60.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.25,
+        0.0,
+        -180.0,
+        0.0,
+        -0.25,
+        90.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "tmax_above_100": {
+      "href": "s3://veda-data-store/climdex-tmaxxf-access-cm2-ssp370/tmaxXF-ACCESS-CM2-ssp370_2100_tmax_above_100.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 100",
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        90.0
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        600,
+        1440
+      ],
+      "description": "Tmax Above 100",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": "nan",
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 364.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              82875,
+              12445,
+              7574,
+              6163,
+              5894,
+              6239,
+              5109,
+              3748,
+              3279,
+              873
+            ]
+          },
+          "statistics": {
+            "mean": 62.22415964351448,
+            "stddev": 89.28530263141093,
+            "maximum": 364.0,
+            "minimum": 0.0,
+            "valid_percent": 30.691735582552692
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              -60.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.25,
+        0.0,
+        -180.0,
+        0.0,
+        -0.25,
+        90.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "tmax_above_110": {
+      "href": "s3://veda-data-store/climdex-tmaxxf-access-cm2-ssp370/tmaxXF-ACCESS-CM2-ssp370_2100_tmax_above_110.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 110",
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        90.0
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        600,
+        1440
+      ],
+      "description": "Tmax Above 110",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": "nan",
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 254.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              110834,
+              6490,
+              4870,
+              2666,
+              2523,
+              2720,
+              1843,
+              1325,
+              694,
+              234
+            ]
+          },
+          "statistics": {
+            "mean": 17.998509675929032,
+            "stddev": 42.031377671113454,
+            "maximum": 254.0,
+            "minimum": 0.0,
+            "valid_percent": 30.691735582552692
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              -60.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.25,
+        0.0,
+        -180.0,
+        0.0,
+        -0.25,
+        90.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "tmax_above_115": {
+      "href": "s3://veda-data-store/climdex-tmaxxf-access-cm2-ssp370/tmaxXF-ACCESS-CM2-ssp370_2100_tmax_above_115.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "Tmax Above 115",
+      "proj:bbox": [
+        -180.0,
+        -60.0,
+        180.0,
+        90.0
+      ],
+      "proj:epsg": 4326,
+      "proj:wkt2": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]",
+      "proj:shape": [
+        600,
+        1440
+      ],
+      "description": "Tmax Above 115",
+      "raster:bands": [
+        {
+          "scale": 1.0,
+          "nodata": "nan",
+          "offset": 0.0,
+          "sampling": "area",
+          "data_type": "float64",
+          "histogram": {
+            "max": 191.0,
+            "min": 0.0,
+            "count": 11,
+            "buckets": [
+              120413,
+              4347,
+              2270,
+              1842,
+              1417,
+              1534,
+              1387,
+              605,
+              289,
+              95
+            ]
+          },
+          "statistics": {
+            "mean": 7.899626673820222,
+            "stddev": 24.515029144058875,
+            "maximum": 191.0,
+            "minimum": 0.0,
+            "valid_percent": 30.691735582552692
+          }
+        }
+      ],
+      "proj:geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              -60.0
+            ],
+            [
+              180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              90.0
+            ],
+            [
+              -180.0,
+              -60.0
+            ]
+          ]
+        ]
+      },
+      "proj:projjson": {
+        "id": {
+          "code": 4326,
+          "authority": "EPSG"
+        },
+        "name": "WGS 84",
+        "type": "GeographicCRS",
+        "datum": {
+          "name": "World Geodetic System 1984",
+          "type": "GeodeticReferenceFrame",
+          "ellipsoid": {
+            "name": "WGS 84",
+            "semi_major_axis": 6378137,
+            "inverse_flattening": 298.257223563
+          }
+        },
+        "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+        "coordinate_system": {
+          "axis": [
+            {
+              "name": "Geodetic latitude",
+              "unit": "degree",
+              "direction": "north",
+              "abbreviation": "Lat"
+            },
+            {
+              "name": "Geodetic longitude",
+              "unit": "degree",
+              "direction": "east",
+              "abbreviation": "Lon"
+            }
+          ],
+          "subtype": "ellipsoidal"
+        }
+      },
+      "proj:transform": [
+        0.25,
+        0.0,
+        -180.0,
+        0.0,
+        -0.25,
+        90.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -180,
+          -60
+        ],
+        [
+          180,
+          -60
+        ],
+        [
+          180,
+          90
+        ],
+        [
+          -180,
+          90
+        ],
+        [
+          -180,
+          -60
+        ]
+      ]
+    ]
+  },
+  "collection": "climdex-tmaxxf-access-cm2-ssp370"
+}

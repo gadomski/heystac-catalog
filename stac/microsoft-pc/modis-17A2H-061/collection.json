@@ -78,15 +78,21 @@
     }
   ],
   "heystac:rating": {
-    "stars": 3.888888888888889,
+    "stars": 3.80952380952381,
     "issues": {
       "high": [],
-      "medium": [],
+      "medium": [
+        {
+          "rule_id": "links",
+          "score": 0.7142857142857143,
+          "message": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MOD17A2H errored on GET (400)\nhttps://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD17A2H errored on GET (400)"
+        }
+      ],
       "low": []
     },
-    "score": 14.0,
+    "score": 13.428571428571429,
     "total": 14,
-    "aggregate_score": 28.0,
+    "aggregate_score": 27.42857142857143,
     "aggregate_total": 36
   },
   "title": "MODIS Gross Primary Productivity 8-Day",

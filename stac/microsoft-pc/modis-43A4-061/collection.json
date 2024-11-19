@@ -68,15 +68,21 @@
     }
   ],
   "heystac:rating": {
-    "stars": 5.0,
+    "stars": 4.944444444444445,
     "issues": {
       "high": [],
-      "medium": [],
+      "medium": [
+        {
+          "rule_id": "links",
+          "score": 0.8,
+          "message": "https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MCD43A4 errored on GET (400)"
+        }
+      ],
       "low": []
     },
-    "score": 14.0,
+    "score": 13.6,
     "total": 14,
-    "aggregate_score": 36.0,
+    "aggregate_score": 35.6,
     "aggregate_total": 36
   },
   "title": "MODIS Nadir BRDF-Adjusted Reflectance (NBAR) Daily",

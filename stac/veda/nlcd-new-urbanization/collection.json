@@ -1,0 +1,126 @@
+{
+  "type": "Collection",
+  "stac_version": "1.0.0",
+  "id": "nlcd-new-urbanization",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/render/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json"
+  ],
+  "links": [
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nlcd-new-urbanization/items",
+      "rel": "items",
+      "type": "application/geo+json"
+    },
+    {
+      "href": "https://openveda.cloud/api/stac/collections/nlcd-new-urbanization",
+      "rel": "canonical",
+      "type": "application/json"
+    },
+    {
+      "href": "../catalog.json",
+      "rel": "parent",
+      "type": "application/json"
+    },
+    {
+      "href": "../../catalog.json",
+      "rel": "root",
+      "type": "application/json"
+    },
+    {
+      "href": "./nlcd_urbanization_2001_2021_cog_v2.json",
+      "rel": "item",
+      "type": "application/geo+json"
+    }
+  ],
+  "heystac:rating": {
+    "stars": 2.6470588235294117,
+    "issues": {
+      "high": [
+        {
+          "rule_id": "validate-core",
+          "score": 0.0,
+          "message": "Validation failed for Collection with ID nlcd-new-urbanization against schema at https://schemas.stacspec.org/v1.0.0/collection-spec/json-schema/collection.json"
+        }
+      ],
+      "medium": [],
+      "low": []
+    },
+    "score": 4.0,
+    "total": 12,
+    "aggregate_score": 18.0,
+    "aggregate_total": 34
+  },
+  "title": "NLCD Urbanization",
+  "assets": {
+    "thumbnail": {
+      "href": "https://thumbnails.openveda.cloud/nlcd-cover.png",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail",
+      "description": "Photo by [Eric Kilby](https://openverse.org/image/a9e174e6-d4e1-4377-81e2-6e71bf1a9602?q=skyline) (Boston, MA skyline)"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -145.43266265924112,
+          16.06114691846402,
+          -48.78565576579019,
+          48.952585603949515
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2001-01-01 00:00:00+00",
+          "2021-01-01 00:00:00+00"
+        ]
+      ]
+    }
+  },
+  "license": "CC0-1.0",
+  "renders": {
+    "dashboard": {
+      "bidx": [
+        1
+      ],
+      "title": "VEDA Dashboard Render Parameters",
+      "assets": [
+        "landcover"
+      ],
+      "resampling": "cubic_spline",
+      "colormap_name": "reds"
+    }
+  },
+  "providers": [
+    {
+      "url": "https://www.earthdata.nasa.gov/dashboard/",
+      "name": "NASA VEDA",
+      "roles": [
+        "host"
+      ]
+    }
+  ],
+  "summaries": {
+    "datetime": [
+      "2001-01-01T00:00:00Z"
+    ]
+  },
+  "description": "National Land Cover Database Land Use Land Cover Classification new urbanization 2001-2021",
+  "item_assets": {
+    "landcover": {
+      "roles": [
+        "data",
+        "layer"
+      ],
+      "title": "NLCD Urbanization",
+      "description": "National Land Cover Database newly classified urban land use between 2001-2021"
+    }
+  },
+  "dashboard:is_periodic": false
+}
