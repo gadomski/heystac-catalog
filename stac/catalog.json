@@ -43,6 +43,38 @@
     "aggregate_score": 8255.778571428571,
     "aggregate_total": 9756
   },
+  "heystac:rules": {
+    "validate-core": {
+      "description": "Validate the STAC object against its core json-schema",
+      "importance": "high",
+      "function": "heystac.rules:validate_core"
+    },
+    "validate-geometry": {
+      "description": "Validate item geometries using shapely",
+      "importance": "high",
+      "function": "heystac.rules:validate_geometry"
+    },
+    "links": {
+      "description": "Check that http and https links are accessible",
+      "importance": "medium",
+      "function": "heystac.rules:links"
+    },
+    "validate-extensions": {
+      "description": "Validate the STAC object against all of its extension schemas",
+      "importance": "medium",
+      "function": "heystac.rules:validate_extensions"
+    },
+    "version": {
+      "description": "Ensure the STAC version is v1.0.0 or v1.1.0",
+      "importance": "medium",
+      "function": "heystac.rules:version"
+    }
+  },
+  "heystac:weights": {
+    "high": 8,
+    "medium": 2,
+    "low": 1
+  },
   "description": "A curated geospatial asset discovery experience™\n\nEach collection has a single item, fetched regularly when we crawl the APIs.",
   "created": "2024-11-08T08:12:00-07:00",
   "license": "MIT",
